@@ -1,7 +1,10 @@
+@charset "UTF-8";
+
+@import url(//fonts.googleapis.com/css?family=Merriweather:900italic,700italic,300,700);
 @import url(//fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
-/*@import url('//api.mobilis.co.kr/webfonts/v2/css/NanumGothicWeb');_NO__DOTCOMMA__AFTER__*/
 @import url(/css/auticons/auticons.css);
+
 body {
     padding: 50px;
     font: 16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -81,9 +84,9 @@ header.main {
 header.main ul.buttons {
   list-style:none;
   height:40px;
-  
+
   padding:0;
-  
+
   background: #eee;
   background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
@@ -91,7 +94,7 @@ header.main ul.buttons {
   background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
   background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
   background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  
+
   border-radius:5px;
   border:1px solid #d2d2d2;
   box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
@@ -330,14 +333,14 @@ article footer p.gotop {
     font-style: normal;
     text-align: left;
 }
-@media print, screen and (max-width: 320px) { 
+@media print, screen and (max-width: 320px) {
     section.main .nav { display: none }
     section.main .emblem { display: none }
     section.main .services small { display: none }
     section.main .posts .media > a { display: none }
     /*    section.main .posts .media .media-body > p { display: none; }*/
 }
-@media print, screen and (max-width: 960px), (max-height: 500px) { 
+@media print, screen and (max-width: 960px), (max-height: 500px) {
     div.wrapper {
         width: auto;
         margin: 0;
@@ -365,17 +368,17 @@ article footer p.gotop {
     }
     aside { text-align: left }
 }
-@media print, screen and (max-width: 720px) { 
+@media print, screen and (max-width: 720px) {
     body { word-wrap: break-word }
     header.main { padding: 0 }
     header.main ul.buttons { position: static }
     pre, code { word-wrap: normal }
 }
-@media print, screen and (max-width: 480px) { 
+@media print, screen and (max-width: 480px) {
     body { padding: 15px }
     header.main ul.buttons { display: none }
 }
-@media print { 
+@media print {
     body {
         padding: 0.4in;
         font-size: 12pt;
@@ -465,7 +468,7 @@ ul.share_links li {
     float: left;
     margin-right: 5px;
 }
-/* Button 
+/* Button
 https://github.com/ubuwaits/css3-buttons/blob/gh-pages/stylesheets/buttons.css
 */
 .button.minimal {
@@ -566,8 +569,8 @@ button.itunes::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
-/* iHover Effect 
- http://gudh.github.io/ihover/dist/index.html 
+/* iHover Effect
+ http://gudh.github.io/ihover/dist/index.html
 **/
 .ih-item {
     position: relative;
