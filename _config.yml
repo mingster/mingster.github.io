@@ -1,5 +1,39 @@
 name: mingster.github.io
-markdown: kramdown
+
 theme: jekyll-theme-hacker
-permalink: /blog/:year/:month/:day/:title
+
+
+
+# This is the default format.
+# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
+# permalink: /:categories/:year/:month/:day/:title
+permalink: /blog/:year/:month/:title.html
+
+include: ['.htaccess']
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
+markdown: redcarpet
+highlights: pygments
+lsi: false
+timezone: Asia/Taipei
+safe: false
+
+JB :
+  ASSET_PATH : https://mingster.github.io/assets
+  IMAGE_PATH : https://mingster.github.io/img
+# auto: true # deprecated
+
+# Themes are encouraged to use these universal variables
+# so be sure to set them if your theme uses them.
+#
 url: https://mingster.github.io
+title: mingster.github.io
+tagline: 
+about:
+author:
+  name: mingster
+  email: mingster.sai_at_gmail.com
+  github: mingster
+  twitter: mingster
+  facebook: mingshentsai
+  googleplus: +MingTsaigplus
+  feedburner : mingster/github
