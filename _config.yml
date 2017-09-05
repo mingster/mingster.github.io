@@ -1,1 +1,5 @@
+name: mingster.github.io
+markdown: kramdown
 theme: jekyll-theme-hacker
+permalink: /blog/:year/:month/:day/:title
+url: https://mingster.github.io
