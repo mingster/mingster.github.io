@@ -1,11 +1,16 @@
-# A sample Gemfile
-source "https://mingster.github.io"
+source 'https://rubygems.org'
+
+#source "https://mingster.github.io"
 
 # https://help.github.com/articles/using-jekyll-with-pages
 
-gem 'jekyll',     '=0.12.0'
-gem 'liquid',     '=2.4.1'
-gem 'redcarpet',  '=2.1.1'
-gem 'maruku',     '=0.6.0'
-gem 'rdiscount',  '=1.6.8'
-gem 'RedCloth',   '=4.2.9'
+gem 'jekyll'
+gem 'redcarpet'
+gem 'liquid'
+gem 'maruku'
+gem 'rdiscount'
+gem 'RedCloth'
+gem 'github-pages', group: :jekyll_plugins
+
+# to start development server, do this: 
+# bundle exec jekyll build && bundle exec jekyll serve

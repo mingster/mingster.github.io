@@ -6,38 +6,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-	<title>{{ page.title }} | {% if page.tagline %}{{page.tagline}}{% else %}{{ site.title }}{% endif %}</title>
+	<title>{% if page.tagline %}{{page.tagline}}{% else %}{{ site.title }}{% endif %}</title>
 
 	{% if page.description %}
-	<meta name="description" content="{{ page.description }}">{% endif %}
+	<meta name="description" content="{{ page.description }}"> {% endif %}
+
 	<meta name="author" content="{{ site.author.name }}">
-
 	<meta name="google-site-verification" content="" />
-	<meta name="baidu-site-verification" content="" />
-	<meta property="wb:webmaster" content="" />
-	<html xmlns:wb=“http://open.weibo.com/wb”>
-
 	<link rel="canonical" href="{{ url }}" />
 
 	<link href="http://feeds.feedburner.com/{{ site.author.feedburner }}/" rel="alternate" title="{{ site.sitename }} Feed" type="application/atom+xml">
 
 	<link rel="stylesheet" href="{{ site.JB.ASSET_PATH }}/css/bootstrap.min.css" />
-	<!--link rel="stylesheet" href="//cdn.jsdelivr.net/bootflat/2.0.0/css/bootflat.css" /-->
-	<link rel="stylesheet" href="{{ site.JB.ASSET_PATH }}/css/bootstrap.min.2.css" />
-	<!--link rel="stylesheet" href="/css/ihover.min.css"-->
+
 	<link rel="stylesheet" href="{{ site.JB.ASSET_PATH }}/css/pygment_trac.css" />
 	<link rel="stylesheet" href="{{ site.JB.ASSET_PATH }}/fancyBox/jquery.fancybox.css" />
 
-  <!-- Custom CSS -->
+	<!-- Custom CSS -->
 	<link rel="stylesheet" href="{{ site.JB.ASSET_PATH }}/css/style.css" type="text/css" media="screen" charset="utf-8" />
-  <!--
+	<!--
   <link rel="stylesheet" href="{{ site.JB.ASSET_PATH }}/css/default.css" type="text/css" media="screen" charset="utf-8" />
   -->
 
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
 
 	<!-- Open Graph -->
-	<!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
 	<meta property="og:locale" content="en_US">
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="{{ title }}">
@@ -45,11 +38,11 @@
 	<meta property="og:url" content="{{ url }}">
 	<meta property="og:site_name" content="{{ title }}">
 
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 
-	<!--[if lt IE9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-	<!-- 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> -->
 	<script type="text/javascript">
 		(function() {
 			var po = document.createElement('script');
@@ -64,73 +57,57 @@
 </head>
 
 <body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle collapsed" type="button" data-target="#topnav" data-toggle="collapse">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+        </button>
+				<a href="{{ url }}" class="navbar-brand pull-left">{{ site.title }}</a>
+			</div>
 
-	<div class="wrapper">
-		<header class="main">
-			<hgroup>
-				<h1 id="logo"><a href="/">{{ site.title }}</a></h1> {% if site.tagline %}
-				<p id="tagline">{{ site.tagline }}</p>
-				{% endif %}
-			</hgroup>
-			<ul class="buttons">
-				<!-- <li><a href="http://github.com/{{ site.author.github }}/" rel="me">Code <strong>GitHub</strong></a></li> -->
-				<li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">Follow <strong>Twitter</strong></a></li>
-				<li class="facebook"><a href="http://www.facebook.com/{{ site.author.facebook }}/" rel="me">Connect <strong>Facebook</strong></a></li>
-				<li class="google"><a href="https://plus.google.com/{{ site.author.googleplus }}/" rel="publisher">Plus Me<strong>Google+</strong></a></li>
-			</ul>
-
-			<p class="about text-justify">
-				{{ site.about }}
-			</p>
-
-		</header>
-
-		<section class="main" id="container">
-			<!--^frag-->{{ content }}
-			<!--$frag-->
-		</section>
-
-		<aside>
-			<nav>
-				<h3>Navigation</h3>
-				<ul>
-					<li><a href="/">Home</a></li>
-					<li><a href="/about.html">About</a></li>
-					<li><a href="/archive.html">Archive</a></li>
-					<li><a href="/tags.html">Tag List</a></li>
-					<li><a href="/categories.html">Categories</a></li>
+			<div id="topnav" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav" role="menu">
+					<li><a href="/coffee/">Cofee</a></li>
+					<li><a href="/柯p/">柯p</a></li>
 				</ul>
-			</nav>
-			<ul>
-				<li class="search">
-					<script>
-						(function() {
-							var cx = '011396242115913189926:7a1cte8z8t8';
-							var gcse = document.createElement('script');
-							gcse.type = 'text/javascript';
-							gcse.async = true;
-							gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-								'//www.google.com/cse/cse.js?cx=' + cx;
-							var s = document.getElementsByTagName('script')[0];
-							s.parentNode.insertBefore(gcse, s);
-						})();
-					</script>
-					<gcse:searchbox-only resultsUrl="/search.html"></gcse:searchbox-only>
-				</li>
-			</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="search"></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-			<h3>Contact</h3>
-			<p class="contact">
-			</p>
-		</aside>
-		<footer class="main">
-			<h3>Misc...</h3>
-			<p><small>
-			Powered by <a href="http://pages.github.com/">GitHub Pages</a>.
-			Themed with <a href="http://github.com/orderedlist/minimal/">minimal</a>.
-		</small></p>
-		</footer>
+	<div class="container">
+		<div id="page">
+			<div id="content">
+				<!--^frag-->
+				{{ content }}
+				<!--$frag-->
+			</div>
+		</div>
 	</div>
+
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+	<footer>
+		<div class="row">
+
+			<div class="social-icons">
+				<div class="col-xs-3"></div>
+
+				<div class="col-xs-3">
+					<a class="fa fa-github" href="https://github.com/mingster"></a>&nbsp;
+					<a class="fa fa-rss" href="/feed.xml"></a>
+				</div>
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3"></div>
+			</div>
+		</div>
+	</footer>
+</div>
 	<script src="{{ site.JB.ASSET_PATH }}/js/scale.fix.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" type="text/javascript"></script>
 	<!--script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script-->
@@ -145,6 +122,12 @@
 	<script type="text/javascript" src="{{ site.JB.ASSET_PATH }}/js/go-top.js"></script>
 
 	{% include ga.html %}
+
+	<script type="text/javascript">
+			if (top.location != self.location) top.location = self.location;
+			var active = window.location.pathname;
+			$("#topnav .nav a[href|='" + active + "']").parent().addClass("active");
+	</script>
 </body>
 
 </html>

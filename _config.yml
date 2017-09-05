@@ -11,6 +11,9 @@ lsi: false
 timezone: Asia/Taipei
 safe: false
 
+paginate: 8
+paginate_path: "posts/page:num"
+
 JB :
   ASSET_PATH : https://mingster.github.io/assets
   IMAGE_PATH : https://mingster.github.io/img
@@ -19,7 +22,7 @@ JB :
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-url: https://mingster.github.io
+#url: https://mingster.github.io
 title: mingster.github.io
 tagline:
 about:
