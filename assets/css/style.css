@@ -3,7 +3,9 @@
 @import url(//fonts.googleapis.com/css?family=Merriweather:900italic,700italic,300,700);
 @import url(//fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
-@import url(//mingster.github.io/assets/css/auticons/auticons.css);
+
+/*@import url(//mingster.github.io/assets/css/auticons/auticons.css);
+*/
 
 body {
     padding: 50px;
@@ -268,6 +270,8 @@ hr {
     height: 1px;
     margin: 0 0 20px;
 }
+
+/*
 footer.main {
     width: 270px;
     float: left;
@@ -275,6 +279,8 @@ footer.main {
     bottom: 50px;
     text-align: right;
 }
+*/
+
 aside {
     width: 270px;
     float: left;

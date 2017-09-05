@@ -12,5 +12,5 @@ gem 'rdiscount'
 gem 'RedCloth'
 gem 'github-pages', group: :jekyll_plugins
 
-# to start development server, do this: 
-# bundle exec jekyll build && bundle exec jekyll serve
+# to start development server, do this:
+# bundle exec jekyll build && bundle exec jekyll serve --incremental
