@@ -1,11 +1,87 @@
----
-layout: default
-title: Blog
----
+--- layout: default title: Blog ---
 
-https://www.youtube.com/watch?v=UDAc5M4nTk8
+<script src="/node_modules/video.js/dist/video.min.js"></script>
+<script src="/node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js"></script>
+<script src="/node_modules/videojs-youtube/dist/Youtube.min.js"></script>
+<script src="/node_modules/videojs-responsive-layout/dist/videojs-responsive-layout.min.js"></script>
+<script src="/node_modules/videojs-errors/dist/videojs-errors.min.js"></script>
+<script src="/node_modules/videojs-airplay/dist/videojs.airplay.js"></script>
 
-https://www.youtube.com/watch?v=k4NKFT7bthE
+<link href="/node_modules/video.js/dist/video-js.min.css" rel="stylesheet">
+</script>
+<link href="/node_modules/videojs-errors/dist/videojs-errors.css" rel="stylesheet">
+</script>
+<link href="/node_modules/videojs-airplay/dist/videojs.airplay.css" rel="stylesheet">
+</script>
 
+<div id="neededComponents" class="alert alert-danger" style="display: none"></div>
 
-https://www.youtube.com/watch?v=pqBcMEFZaws
+<video id="mediaplayer" class="video-js vjs-default-skin vjs-fluid" autoplay controls preload="auto" crossorigin="anonymous" data-setup='{ "techOrder": ["youtube"],["html5"] }'>
+</video>
+
+<div>
+	<a href="javascript:void(0);" class="yb1">Understanding Human Behaviors from the Perspective of Science</a>
+</div>
+<div>
+	<a href="javascript:void(0);" class="yb2">2013 生死的智慧：柯文哲 (Wen-je Ko) at TEDxTaipei </a>
+</div>
+<div>
+	<a href="javascript:void(0);" class="yb3">2014 白色的力量</a>
+</div>
+
+<script type="text/javascript">
+	var player = videojs.players.mediaplayer;
+	var yb1 = document.querySelector('.yb1');
+	var yb2 = document.querySelector('.yb2');
+	var yb3 = document.querySelector('.yb3');
+
+	yb1.addEventListener('click', function() {
+		player.src({
+			src: 'https://youtu.be/UDAc5M4nTk8',
+			type: 'video/youtube'
+		});
+	});
+	yb2.addEventListener('click', function() {
+		player.src({
+			src: 'https://youtu.be/N0zhdMwD2Z8',
+			type: 'video/youtube'
+		});
+	});
+	yb3.addEventListener('click', function() {
+		player.src({
+			src: 'https://youtu.be/eqbUIAnSKo8',
+			type: 'video/youtube'
+		});
+	});
+</script>
+
+<script type="text/javascript">
+	document.getElementById('neededComponents').style.display = 'none';
+	var player = videojs('mediaplayer', {
+			controlBar: {
+				volumeMenuButton: {}
+			},
+			registerPlugin: {
+				responsiveLayout: {},
+				airplayButton: {}
+			}
+		},
+		function() {
+			//console.log('Good to go!');
+			//this.play();
+		});
+	player.responsiveLayout();
+	//player.play();
+	player.on('play', function(e) {
+			document.getElementById('neededComponents').style.display = 'none';
+		}),
+		player.on('error', function(e) {
+			console.log(e);
+			e.stopImmediatePropagation();
+			var error = player.error();
+			console.log('error!', error.code, error.type, error.message);
+			if (error.code == 4) {
+				check();
+			}
+		});
+</script>
