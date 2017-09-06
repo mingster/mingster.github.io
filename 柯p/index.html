@@ -15,20 +15,40 @@ layout: default
 </script>
 <link href="/node_modules/videojs-airplay/dist/videojs.airplay.css" rel="stylesheet">
 </script>
+<style>
+body {background-color: #111;}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+#playerPage {
+    width: 100%;
+    background-color: #111;
+    margin-left: auto;
+    margin-right: auto;
+}
+#mediaplayer {
+    display: block;
+}
+</style>
+<div id="playerPage">
+  <div id="neededComponents" class="alert alert-danger" style="display: none"></div>
 
-<div id="neededComponents" class="alert alert-danger" style="display: none"></div>
+  <video id="mediaplayer" class="video-js vjs-default-skin vjs-fluid" autoplay controls preload="auto" crossorigin="anonymous" data-setup='{ "techOrder": ["youtube"],["html5"] }'>
+  </video>
 
-<video id="mediaplayer" class="video-js vjs-default-skin vjs-fluid" autoplay controls preload="auto" crossorigin="anonymous" data-setup='{ "techOrder": ["youtube"],["html5"] }'>
-</video>
-
-<div>
-	<a href="javascript:void(0);" class="yb1">Understanding Human Behaviors from the Perspective of Science</a>
-</div>
-<div>
-	<a href="javascript:void(0);" class="yb2">2013 生死的智慧：柯文哲 (Wen-je Ko) at TEDxTaipei </a>
-</div>
-<div>
-	<a href="javascript:void(0);" class="yb3">2014 白色的力量</a>
+  <div>
+  	<a href="javascript:void(0);" class="yb1">Understanding Human Behaviors from the Perspective of Science</a>
+  </div>
+  <div>
+  	<a href="javascript:void(0);" class="yb2">2013 生死的智慧：柯文哲 (Wen-je Ko) at TEDxTaipei </a>
+  </div>
+  <div>
+  	<a href="javascript:void(0);" class="yb3">2014 白色的力量</a>
+  </div>
 </div>
 
 <script type="text/javascript">
