@@ -5,7 +5,8 @@ permalink: /blog/:year/:month/:title.html
 
 include: ['.htaccess']
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
-markdown: redcarpet
+#markdown: redcarpet
+markdown: kramdown 
 highlights: pygments
 lsi: false
 timezone: Asia/Taipei
@@ -26,7 +27,7 @@ url: https://mingster.github.io
 
 title: mingster.github.io
 tagline:
-description: 
+description:
 about:
 author:
   name: mingster
