@@ -6,12 +6,12 @@ permalink: /blog/:year/:month/:title.html
 include: ['.htaccess']
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
 #markdown: redcarpet
-markdown: kramdown 
+markdown: kramdown
 highlights: pygments
 lsi: false
 timezone: Asia/Taipei
 safe: false
-
+pygments: true
 paginate: 8
 paginate_path: "posts/page:num"
 
