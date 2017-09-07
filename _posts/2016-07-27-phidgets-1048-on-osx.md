@@ -6,7 +6,7 @@ type: post
 published: true
 status: publish
 categories:
-- Coffee
+- 咖啡
 - Mac
 tags: []
 meta:

@@ -6,7 +6,7 @@ type: post
 published: true
 status: publish
 categories:
-- Coffee
+- 咖啡
 tags: []
 meta:
   blogger_blog: mingster.blogspot.com
@@ -31,5 +31,5 @@ author:
 <li>aeropress咖啡冠軍得主大部分用正向沖法，不用inverted method</li>
 <li>他是喝深焙的。</li>
 </ol>
-<p>最後來看一下2014 Aeropress冠軍： 
+<p>最後來看一下2014 Aeropress冠軍：
 <div class="separator" style="clear:both;text-align:center;">[youtube=https://www.youtube.com/watch?v=kdKVS5X0vJ0&amp;w=800&amp;h=450]</div>
