@@ -7,7 +7,9 @@ include: ['.htaccess']
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
 #markdown: redcarpet
 markdown: kramdown
-highlights: pygments
+
+highlights: rouge
+#highlights: pygments
 lsi: false
 timezone: Asia/Taipei
 safe: false
@@ -24,7 +26,6 @@ JB :
 # so be sure to set them if your theme uses them.
 #
 url: https://mingster.github.io
-
 title: mingster.github.io
 tagline:
 description:
