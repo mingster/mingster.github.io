@@ -1,5 +1,6 @@
-{% comment %}{% include navtabs.html %}{% endcomment %}
-
+{% comment %}
+	{% include navtabs.html %}
+{% endcomment %}
 <article class="page">
 	{% unless page.hide_title %}
   <div class="page-header">
@@ -10,10 +11,10 @@
 	{{ content }}
 
 	{% if page.shares %}
-	<p>{% include shares.html %}</p>	
+	<p>{% include shares.html %}</p>
 	{% endif %}
 
 	{% if page.disqus %}
-	{% include disqus.html %}
+		{% include disqus.html %}
 	{% endif %}
 </article>
