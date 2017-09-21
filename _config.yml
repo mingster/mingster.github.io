@@ -9,7 +9,6 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "
 markdown: kramdown
 
 highlights: rouge
-#highlights: pygments
 lsi: false
 timezone: Asia/Taipei
 safe: false
