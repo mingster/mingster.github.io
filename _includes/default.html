@@ -9,8 +9,7 @@
 	<title>{% if page.tagline %}{{page.tagline}}{% else %}{{ site.title }}{% endif %}</title>
 
 	{% if page.description %}
-	<meta name="description" content="{{ page.description }}" />
-	{% endif %}
+	<meta name="description" content="{{ page.description }}" /> {% endif %}
 
 	<meta name="author" content="{{ site.author.name }}" />
 	<meta name="google-site-verification" content="" />
@@ -18,14 +17,13 @@
 
 	<link href="http://feeds.feedburner.com/{{ site.author.feedburner }}/" rel="alternate" title="{{ site.sitename }} Feed" type="application/atom+xml" />
 
-	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
-	<link href="/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="{{ site.url }}/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+	<link href="{{ site.url }}/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 
-	<link rel="stylesheet" href="{{ site.JB.ASSET_PATH }}/css/pygment_trac.css" />
-	<link rel="stylesheet" href="{{ site.JB.ASSET_PATH }}/fancyBox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="{{ site.url }}/assets/fancyBox/jquery.fancybox.css" />
 
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="{{ site.JB.ASSET_PATH }}/css/style.css" type="text/css" media="screen" charset="utf-8" />
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/master.css" type="text/css" media="screen" charset="utf-8" />
 
 	<!-- Open Graph -->
 	<meta property="og:locale" content="en_US" />
@@ -87,24 +85,24 @@
 		</div>
 	</div>
 
-<div class="navbar navbar-inverse navbar-fixed-bottom">
-	<footer>
-		<div class="row">
+	<div class="navbar navbar-inverse navbar-fixed-bottom">
+		<footer>
+			<div class="row">
 
-			<div class="social-icons">
-				<div class="col-xs-3"></div>
+				<div class="social-icons">
+					<div class="col-xs-3"></div>
 
-				<div class="col-xs-3">
-					<a class="fa fa-github" href="https://github.com/mingster"></a>&nbsp;
-					<a class="fa fa-rss" href="/feed.xml"></a>
+					<div class="col-xs-3">
+						<a class="fa fa-github" href="https://github.com/mingster"></a>&nbsp;
+						<a class="fa fa-rss" href="/feed.xml"></a>
+					</div>
+					<div class="col-xs-3"></div>
+					<div class="col-xs-3"></div>
 				</div>
-				<div class="col-xs-3"></div>
-				<div class="col-xs-3"></div>
 			</div>
-		</div>
-	</footer>
-</div>
-	<script src="{{ site.JB.ASSET_PATH }}/js/scale.fix.js"></script>
+		</footer>
+	</div>
+	<script src="{{ site.url }}/assets/js/scale.fix.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 	<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
 
@@ -113,7 +111,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/ember.js/1.5.0/ember.js"></script-->
 	<!--script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.min.js"></script-->
-	<script src="{{ site.JB.ASSET_PATH }}/fancyBox/jquery.fancybox.pack.js"></script>
+	<script src="{{ site.url }}/assets/fancyBox/jquery.fancybox.pack.js"></script>
 	<!--
 	<script src="{{ site.JB.ASSET_PATH }}/js/application.js"></script>
 	<script type="text/javascript" src="{{ site.JB.ASSET_PATH }}/js/go-top.js"></script>
@@ -122,9 +120,9 @@
 	{% include ga.html %}
 
 	<script type="text/javascript">
-			if (top.location != self.location) top.location = self.location;
-			var active = window.location.pathname;
-			$("#topnav .nav a[href|='" + active + "']").parent().addClass("active");
+		if (top.location != self.location) top.location = self.location;
+		var active = window.location.pathname;
+		$("#topnav .nav a[href|='" + active + "']").parent().addClass("active");
 	</script>
 </body>
 

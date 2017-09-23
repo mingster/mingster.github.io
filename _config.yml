@@ -7,13 +7,10 @@ include: ['.htaccess']
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
 #markdown: redcarpet
 markdown: kramdown
-
 highlights: rouge
-#highlights: pygments
 lsi: false
 timezone: Asia/Taipei
 safe: false
-pygments: true
 paginate: 8
 paginate_path: "posts/page:num"
 
