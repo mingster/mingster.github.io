@@ -36,11 +36,10 @@ author:
   first_name: ''
   last_name: ''
 ---
-<p><img src="{{ site.JB.IMAGE_PATH }}/medium-cover.jpg" alt="medium-cover" width="200" height="300" />mac is so easy to use, now-a-day only if you paid.</p>
+<p><img src="{{ site.JB.IMAGE_PATH }}/medium-cover.jpg" alt="medium-cover" width="200" height="300" style="margin:10px" align="right"/>mac is so easy to use if you paid.</p>
 <p>Just now I want to make a ring tone for my own theme song originally from "<a href="https://yts.ag/movie/flash-gordon-1980" target="_blank" rel="noopener">Flash Gordon</a>" movie.  And learned that it's not easy at all.</p>
 <p>Like Apple folk, not gonna stop there, after a couple digging, here's how to do it.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><strong>Needed Software/ Environment</strong></p>
 <ul>
 <li>environment: macOS Sierra/ iTune 12.6</li>
