@@ -88,17 +88,15 @@ a {
     text-decoration: none;
 }
 a:hover { color: #069 }
+.small{  font-size: 0.9em;}
 a small {
-    font-size: 12px;
+  font-size: 0.7em;
     color: #777;
     margin-top: -0.6em;
     display: block;
 }
 a:hover small { color: #777 }
-.wrapper {
-    width: 860px;
-    margin: 0 auto;
-}
+
 blockquote {
     /*  border-left: 1px solid #e5e5e5;;
     margin: 0;
@@ -133,8 +131,6 @@ dt {
 }
 th { color: #444 }
 img { max-width: 100% }
-header.main {
-    width: 270px;
-    float: left;
-    position: fixed;
+footer{
+  font-size: 0.9em;
 }

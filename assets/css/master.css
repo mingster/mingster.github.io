@@ -1,7 +1,9 @@
-/*@import "reset.css";*/
-
+/*
+@import "reset.css";
+*/
 @import "mediaqueries.css";
 @import "mod.css";
 @import "base.css";
+
 @import "style.css";
 /*@import "syntaxhighlighter.css";*/
