@@ -14,7 +14,7 @@ Usage:
         => 'for post in site.posts reversed'
       2) Next make sure to change 'post.previous.date' to:
         => 'post.next.date'
-        
+
 -->{% endcomment %}
 
 {% for post in posts_collate  %}
@@ -24,22 +24,20 @@ Usage:
 {% capture next_month %}{{ post.previous.date | date: "%-m月" }}{% endcapture %}
 
 {% if forloop.first %}
-  <h2>{{this_year}}</h2>
-  <h4>{{this_month}}</h4>
-  <ul>
+  <h1>{{this_year}}</h1>
+  <div>
 {% endif %}
 
-<li><span>{{ post.date | date: "%Y年%-m月%-d日" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+<div class="col-md-2">{{ post.date | date: "%Y年%-m月%-d日" }}</div><div class="col-md-10"><a href="{{ post.url }}">{{ post.title }}</a></div>
 
 {% if forloop.last %}
-  </ul>
+  </div>
 {% else %}
   {% if this_year != next_year %}
-    </ul>
-    <h2>{{next_year}}</h2>
-    <!--h3>{{next_month}}</h3-->
-    <ul>
-  {% else %}    
+    </div>
+    <h1>{{next_year}}</h1>
+    <div>
+  {% else %}
     {% if this_month != next_month %}
       <!--/ul>
       <h3>{{next_month}}</h3>
@@ -48,4 +46,5 @@ Usage:
   {% endif %}
 {% endif %}
 {% endfor %}
+
 {% assign posts_collate = nil %}

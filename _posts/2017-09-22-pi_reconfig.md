@@ -6,7 +6,7 @@ type: post
 published: true
 status: publish
 categories:
-- Pi
+- Raspberry Pi
 tags:
 
 meta:

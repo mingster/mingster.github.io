@@ -19,4 +19,5 @@
       {% capture ASSET_PATH %}{{ BASE_PATH }}/assets/themes/{{ layout.theme.name }}{% endcapture %}
     {% endif %}
   {% endif %}
-{% endcapture %}{% assign jbcache = nil %}
+{% endcapture %}
+{% assign jbcache = nil %}
