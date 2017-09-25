@@ -8,7 +8,6 @@ status: publish
 categories:
 - 軟體工法
 - 企管
-- 企業工法
 tags: []
 meta:
   blogger_blog: mingstert.blogspot.com
