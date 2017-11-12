@@ -7,13 +7,23 @@ It is automatically transformed by [Jekyll](https://github.com/mojombo/jekyll) i
 ## Setup
 
 #### 1. Install Ruby
+Ruby and RubyGems are usually installed by default on Macs. If you are using the version from mac default, permission issues will occur.
 
-This website is compiled into a static website using
-[Jekyll](http://jekyllrb.com), a static-site generator written in Ruby. To
-install Ruby you can follow [this
-guide](https://www.ruby-lang.org/en/documentation/installation/). To check that
-Ruby is installed correctly, run `ruby --version` in your shell; it should be
-`1.9.3` or later.
+You are good if you get responses that look like this:
+```bash
+which ruby
+/usr/local/bin/ruby
+```
+and
+```bash
+which gem
+/usr/local/bin/gem
+```
+
+If not, install Ruby through Homebrew
+```bash
+brew install ruby
+```
 
 #### 2. Install Bundler to manage dependencies
 
@@ -21,23 +31,22 @@ Ruby is installed correctly, run `ruby --version` in your shell; it should be
 run:
 
 ```bash
-$ gem install bundler
+gem install bundler
 ```
 
 Once you have installed it, `cd` into the local clone of your fork and run:
 
 ```bash
-$ bundle install
+bundle install
 ```
-
-to download and install the necessary dependencies.
+This will read the GemFile to download and install the necessary dependencies.
 
 #### 3. Run Jekyll
 
 In order to run a development server (with live-reloading on) just run:
 
 ```bash
-$ bundle exec jekyll build && bundle exec jekyll serve --incremental
+bundle exec jekyll build && bundle exec jekyll serve --incremental
 ```
 
 The generated site will be available at [http://localhost:4000](http://localhost:4000). You can stop the
@@ -52,3 +61,7 @@ request**](https://help.github.com/articles/using-pull-requests/). For a nice
 wrap-up on how to open a good pull request have a look at the [Elixir
 contributing
 guide](https://github.com/elixir-lang/elixir/#contributing).
+
+## References
+ - [Install Jekyll on Mac](https://securityrat.github.io/mydoc_install_jekyll_on_mac.html)
+ - [Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
