@@ -8,12 +8,12 @@
     "bowser": "1.7.3",
     "font-awesome": "^4.7.0",
     "jquery": "3.2.1",
-    "video.js": "6.2.8",
+    "video.js": "^6.5.0",
     "videojs-airplay": "^1.0.3",
     "videojs-contrib-hls": "5.10.1",
     "videojs-errors": "^3.0.2",
     "videojs-responsive-layout": "^1.1.1",
-    "videojs-youtube": "^2.4.0"
+    "videojs-youtube": "2.4.1"
   },
   "devDependencies": {},
   "scripts": {
