@@ -107,47 +107,65 @@ okpg相關指令可以看[這裡](http://wiki.openwrt.org/doc/techref/opkg)。
 可以去下載xc2[編譯好的版本](https://github.com/xc2/shadowsocks-libev-tomato/releases)。
 解壓，拷到/opt/bin, /opt/include等相應目錄即可。
 
-### 設置
+### ssr設置
 ``` bash
 vi /opt/etc/shadowsocks.json
 ```
 ``` bash
 {
-    "server":"my_server_ip",
-    "server_port":8388,
+    "server":"0.0.0.0",
+    "server_port":8388,  # <- 最好是用443
     "local_port":1080,
-    "password":"barfoo!",
+    "password":"barfoo!", # <- 自己改
     "timeout":600,
-    "method":"chacha20-ietf-poly1305"
+    "method":"rc4-md5"
 }
 ```
-Run it:
 
-1. 首先要打開所設置的port -> 通訊埠轉送設定(Port Forwarding)
-2.
-``` bash
-ss-server -c /opt/etc/shadowsocks.json
+## 第五步 設置
+1. 防火牆
+Tomato WebUI -> 路由器管理 -> 系統指令 -> 防火牆
+```
+iptables -A INPUT -p tcp -s 0/0 --dport 8388 -j ACCEPT
+iptables -A OUTPUT -p tcp --sport 8388 -m state --state ESTABLISHED -j ACCEPT
+```
+### (optional)通訊埠轉送設定(Port Forwarding)
+其實設防火牆就夠了。但通常我也設這個，才會記得有裝過：
+假設router的內部IP是192.168.1.1，
+```
+啟用	通訊協定	來源位址	WAN通訊埠範圍	LAN通訊埠	目的位址	   註解
+On    TCP        *        8388        1080  192.168.1.1   ssr
 ```
 
-## Clients
-- iOS: [OpenWingy](https://itunes.apple.com/us/app/openwingy/id1294672758?mt=8)
+2. StartUp / init script
+Tomato WebUI -> 路由器管理 -> 系統指令 -> WAN連線後
+```
+ss-server -c /opt/etc/shadowsocks.json -u
+```
+
+## 第六步 Clients
+- iOS: [Potatso Lite](https://itunes.apple.com/us/app/potatso-lite/id1239860606?mt=8)
 - macOS: [Mac OS使用SSR教程](https://www.elink.hk/knowledgebase/90/Mac-OSSSR.html)
 - Windows, etc: [ShadowsocksR Clients and Server](https://dcamero.azurewebsites.net/shadowsocksr.html)
 
+## 第七步 測試
+1. 手動開啟ssr
+``` bash
+ss-server -c /opt/etc/shadowsocks.json -v
+```
+2. 連線測試
+最方便的方法是手機用4G網路(wifi關掉)，然後試著連線。
 
+# 經過幾次內外測試，這版本還是不好用(即便是自己編譯)。結論是router還是當ss client比較好。Server用raspberry pi或內網的mac/linux來跑ShadowsocksR。若不熟悉，可以先從[doub的小白一鍵安裝](https://doub.io/ss-jc42/)開始玩。
 
 ## (OPTIONAL) 自己編譯SSR
-首先先裝一些基本工具
-``` bash
-opkg install python git git-http
-opkg install libsodium mbedTLS udns
-opkg install shadowsocks-libev
-```
+看這裡 - [shadowsocks libev 3.0 cross compiling for tomato shibby](https://ilmvfx.wordpress.com/2017/02/04/shadowsocks-libev-3-0-cross-compiling-for-tomato-shibby/)
+
 
 ## References
  - [Advanced Tomato download](https://advancedtomato.com/downloads/router/r7000)
  - [Entware-ng](https://github.com/Entware-ng/Entware-ng/wiki/Install-on-the-TomatoUSB)
- - [shadowsocks libev 3.0 cross compiling for tomato shibby](https://ilmvfx.wordpress.com/2017/02/04/shadowsocks-libev-3-0-cross-compiling-for-tomato-shibby/)
- - [xc2/shadowsocks-libev-tomato](https://github.com/xc2/shadowsocks-libev-tomato/releases)
+ - [xc2/shadowsocks-libev-tomato](https://github.com/xc2/shadowsocks-libev-tomato)
  - [oglopss/tomato-shadowsocks](https://github.com/oglopss/tomato-shadowsocks)
  - [shadowsocks Quick Guide](https://shadowsocks.org/en/config/quick-guide.html)
+ - [ShadowsocksR-libev for OpenWrt](https://github.com/ywb94/openwrt-ssr)
