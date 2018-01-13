@@ -178,3 +178,9 @@ http://192.168.xx.xx:8123/
  - [Setup Home Assistant on Raspberry Pi by misperry in raspberry-pi](http://www.instructables.com/id/Setup-Home-Assistant-on-Raspberry-Pi/)
  - [Manual installation on a Raspberry Pi](https://home-assistant.io/docs/installation/raspberry-pi/)
  - [Autostarting with systemd](https://home-assistant.io/getting-started/autostart-systemd/)
+
+## 後記
+發現已有中文玩家: [Home Assistant 中文文档](https://home-assistant.cc)
+
+- 小米: [Home Assistant + 树莓派：强大的智能家居系统 · 小米篇](https://sspai.com/post/40113)
+- [利用 HomeAssistant +树莓派+ Amazon Echo 的智能家居实践](http://kittenyang.com/homeassistant_practice_03/)
