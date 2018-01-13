@@ -114,7 +114,9 @@ sudo npm upgrade -g homebridge-homeassistant
 cd /etc/default
 sudo vi homebridge
 ```
+
 貼上以下：
+
 ```
 # Defaults / Configuration options for homebridge
 # The following settings tells homebridge where to find the config.json file and where to persist the data (i.e. pairing and others)
@@ -122,11 +124,14 @@ HOMEBRIDGE_OPTS= /home/pi/.homebridge
 ```
 
 2. 服務文件
+
   ```
   cd /etc/systemd/system
   sudo vi homebridge.service
   ```
+
   貼上以下：
+
   ```
   [Unit]
   Description=Node.js HomeKit Server
@@ -150,15 +155,21 @@ HOMEBRIDGE_OPTS= /home/pi/.homebridge
 cd ~/
 sudo systemctl daemon-reload
 ```
+
 打開：
+
 ```
 sudo systemctl enable homebridge
 ```
+
 啟動：
+
 ```
 sudo systemctl start homebridge
 ```
+
 狀態：
+
 ```
 sudo systemctl status homebridge
 ```
@@ -174,6 +185,3 @@ sudo systemctl status homebridge
  - [入门智能家居，从米家到HomeKit （一）](https://sspai.com/post/39851)
  - [入门智能家居，从米家到HomeKit （一）](https://sspai.com/post/39851)
  - [入门智能家居，从 IFTTT 到 HomeKit 自动化（二）](https://sspai.com/post/39881)
-
-
-## 後記
