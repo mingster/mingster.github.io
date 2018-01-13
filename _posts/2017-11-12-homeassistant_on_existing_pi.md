@@ -154,7 +154,12 @@ sudo systemctl start home-assistant@pi
 
 - 停止服務：
 ```
-sudo systemctl start home-assistant@pi
+sudo systemctl stop home-assistant@pi
+```
+
+- 重啟：
+```
+sudo systemctl restart home-assistant@pi
 ```
 
 - 服務狀態：
