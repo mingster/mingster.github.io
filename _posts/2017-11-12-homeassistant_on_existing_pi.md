@@ -117,29 +117,29 @@ vi home-assistant@pi.service
 
 3. 內容如下：
 
-  ```
-  [Unit]
-  Description=Home Assistant
-  After=network.target
+```
+[Unit]
+Description=Home Assistant
+After=network.target
 
-  [Service]
-  Type=simple User=homeassistant
+[Service]
+Type=simple User=homeassistant
 
-  # make sure the virtualenv python binary is used
-  Environment=PATH="$VIRTUAL_ENV/bin:$PATH"
+# make sure the virtualenv python binary is used
+Environment=PATH="$VIRTUAL_ENV/bin:$PATH"
 
-  ExecStart=/srv/homeassistant/homeassistant_venv/bin/hass -c "/home/homeassistant/.homeassistant"
+ExecStart=/srv/homeassistant/homeassistant_venv/bin/hass -c "/home/homeassistant/.homeassistant"
 
-  [Install]
-  WantedBy=multi-user.target
-  ```
+[Install]
+WantedBy=multi-user.target
+```
 
 4. reload 新服務
 
-  ```
-  systemctl --system daemon-reload
-  systemctl enable home-assistant@pi
-  ```
+```
+systemctl --system daemon-reload
+systemctl enable home-assistant@pi
+```
 
 5. 退出root身份
 ```
@@ -169,7 +169,7 @@ sudo systemctl status home-assistant@pi -l
 
 - 讀log檔
 ```
-$ sudo journalctl -f -u home-assistant@pi
+sudo journalctl -f -u home-assistant@pi
 ```
 
 
