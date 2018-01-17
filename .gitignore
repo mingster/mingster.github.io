@@ -1,3 +1,13 @@
+# exclude all node_modules
+node_modules
+
+# except the one that we want to push to GitHub
+!/node_modules/video.js/dist
+!/node_modules/videojs-contrib-hls/dist
+!/node_modules/videojs-youtube/dist
+!/node_modules/videojs-responsive-layout/dist
+!/node_modules/videojs-errors/dist
+!/node_modules/videojs-airplay/dist
 
 .DS_Store
 .jekyll-metadata
