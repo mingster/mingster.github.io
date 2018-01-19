@@ -172,6 +172,13 @@ sudo systemctl status home-assistant@pi -l
 sudo journalctl -f -u home-assistant@pi
 ```
 
+- 更新
+```
+# 先進入到 homeassistant 身份
+sudo su -s /bin/bash homeassistant
+
+python3 -m pip install --upgrade homeassistant
+```
 
 ## 第七步
 開始玩 HomeAssistant!
@@ -182,6 +189,7 @@ http://192.168.xx.xx:8123/
 ## References
  - [Setup Home Assistant on Raspberry Pi by misperry in raspberry-pi](http://www.instructables.com/id/Setup-Home-Assistant-on-Raspberry-Pi/)
  - [Manual installation on a Raspberry Pi](https://home-assistant.io/docs/installation/raspberry-pi/)
+ - [https://home-assistant.io/docs/installation/virtualenv/](https://home-assistant.io/docs/installation/virtualenv/)
  - [Autostarting with systemd](https://home-assistant.io/getting-started/autostart-systemd/)
 
 ## 後記
