@@ -173,18 +173,19 @@ sudo journalctl -f -u home-assistant@pi
 ```
 
 - 更新
-```
-# 先進入到 homeassistant 身份
-sudo su -s /bin/bash homeassistant
 
-python3 -m pip install --upgrade homeassistant
+```
+'先進入到 homeassistant 身份
+sudo su -s /bin/bash homeassistant
+pip3 install --upgrade homeassistant
 ```
 
 ## 第七步
 開始玩 HomeAssistant!
 
-http://192.168.xx.xx:8123/
-
+```
+http://pi的IP:8123/
+```
 
 ## References
  - [Setup Home Assistant on Raspberry Pi by misperry in raspberry-pi](http://www.instructables.com/id/Setup-Home-Assistant-on-Raspberry-Pi/)
