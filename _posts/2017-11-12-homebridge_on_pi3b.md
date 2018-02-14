@@ -20,7 +20,7 @@ author:
 
 我們需要 HomeBridge 來搭入Apple HomeKit。這樣才能用Apple設備來與其他Home Automation溝通。
 
-HomeBridge是基於nodejs的應用，在Pi上，nodejs的版本很關鍵。不work大部份就是這裡出錯。
+HomeBridge是基於nodejs的應用，在Pi上，nodejs的版本很關鍵。不work 大部份就是這裡出錯。
 
 [少數派已經有文](https://sspai.com/post/38849)解釋了。以下是操作的筆記。
 
@@ -109,46 +109,9 @@ sudo npm upgrade -g homebridge-homeassistant
 ```
 
 ## 第五步 將 HomeBridge 安裝成服務
-1. 設置文件
-```
-cd /etc/default
-sudo vi homebridge
-```
 
-貼上以下：
+[Setup Homebridge to Start on Bootup](https://timleland.com/setup-homebridge-to-start-on-bootup/)
 
-```
-# Defaults / Configuration options for homebridge
-# The following settings tells homebridge where to find the config.json file and where to persist the data (i.e. pairing and others)
-HOMEBRIDGE_OPTS= /home/pi/.homebridge
-```
-
-2. 服務文件
-
-  ```
-  cd /etc/systemd/system
-  sudo vi homebridge.service
-  ```
-
-  貼上以下：
-
-  ```
-  [Unit]
-  Description=Node.js HomeKit Server
-  After=syslog.target network-online.target
-
-  [Service]
-  Type=simple
-  User=pi
-  EnvironmentFile=/etc/default/homebridge
-  ExecStart=/usr/lib/node_modules/homebridge/bin/homebridge $HOMEBRIDGE_OPTS
-  Restart=on-failure
-  RestartSec=10
-  KillMode=process
-
-  [Install]
-  WantedBy=multi-user.target
-  ```
 
 ## 第六步 測試
 ```
@@ -174,14 +137,13 @@ sudo systemctl start homebridge
 sudo systemctl status homebridge
 ```
 
-
-以上就是安裝HomeBridge的全步驟。
-
-若還沒裝 HomeAssistant，可以看[這裡](/blog/2018/01/homeassistant_on_existing_pi.html)。
-
 都裝好了，就可以開始[將設備接入](https://sspai.com/post/40075)。
 
 ## References
- - [入门智能家居，从米家到HomeKit （一）](https://sspai.com/post/39851)
- - [入门智能家居，从米家到HomeKit （一）](https://sspai.com/post/39851)
- - [入门智能家居，从 IFTTT 到 HomeKit 自动化（二）](https://sspai.com/post/39881)
+- [HomeBridge on Raspberry-Pi](https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi)
+- [homebridge-mi-aqara](https://github.com/YinHangCode/homebridge-mi-aqara)
+- [https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi](https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi)
+- [Setup Homebridge to Start on Bootup](https://timleland.com/setup-homebridge-to-start-on-bootup/)
+- [入门智能家居，从米家到HomeKit （一）](https://sspai.com/post/39851)
+- [入门智能家居，从米家到HomeKit （一）](https://sspai.com/post/39851)
+- [入门智能家居，从 IFTTT 到 HomeKit 自动化（二）](https://sspai.com/post/39881)
