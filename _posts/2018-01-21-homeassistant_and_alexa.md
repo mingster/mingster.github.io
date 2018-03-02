@@ -3,7 +3,7 @@ layout: post
 title: Home Assistant and Alexa on Pi
 date: 2018-01-21 23:19:41.000000000 +08:00
 type: post
-published: true
+published: false
 status: draft
 categories:
 - HomeAutomation
