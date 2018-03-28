@@ -2,6 +2,10 @@
 node_modules
 
 # except the one that we want to push to GitHub
+!/node_modules/bootstrap/dist
+!/node_modules/bowser
+!/node_modules/font-awesome
+!/node_modules/jquery/dist
 !/node_modules/video.js/dist
 !/node_modules/videojs-contrib-hls/dist
 !/node_modules/videojs-youtube/dist
@@ -12,7 +16,7 @@ node_modules
 .DS_Store
 .jekyll-metadata
 _site
-_posts/*.draft.*
+#_posts/*.draft.*
 *.db
 
 # Logs
