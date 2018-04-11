@@ -3,8 +3,8 @@ layout: post
 title: Smart Home Spec / 智慧家庭的規格 2018
 date: 2018-01-21 23:19:41.000000000 +08:00
 type: post
-published: false
-status: draft
+published: true
+status: publish
 categories:
 - HomeAutomation
 tags: Smart Home
