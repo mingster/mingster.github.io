@@ -24,7 +24,7 @@ author:
 環境：
 - Raspberry Pi up and running
 
-## 第一步 更新Pi
+# 第一步 更新Pi
 ```
 sudo apt-get update
 sudo apt-get upgrade -y
@@ -36,7 +36,7 @@ uname -a
 Linux pi1 4.9.59-v7+ #1047 SMP Sun Oct 29 12:19:23 GMT 2017 armv7l GNU/Linux
 ```
 
-## 第二步 開HomeAssistant專屬的帳號
+# 第二步 開HomeAssistant專屬的帳號
 ```
 sudo useradd -rm homeassistant
 ```
@@ -45,7 +45,7 @@ sudo useradd -rm homeassistant
 sudo passwd  homeassistant
 ```
 
-## 第三步 安裝HomeAssistant所需軟體
+# 第三步 安裝HomeAssistant所需軟體
 ```
 sudo apt-get install python3 python3-venv python3-pip
 ```
@@ -63,7 +63,7 @@ source /srv/homeassistant/homeassistant_venv/bin/activate
 exit
 ```
 
-### 設置homeassistant的.bashrc，登入就進入vd
+## 設置homeassistant的.bashrc，登入就進入vd
 ```
 vi /home/homeassistant/.bashrc
 ```
@@ -81,7 +81,7 @@ sudo su -s /bin/bash homeassistant
 (homeassistant_venv) homeassistant@raspberrypi:/srv
 ```
 
-## 第四步 安裝HomeAssistant
+# 第四步 安裝HomeAssistant
 用homeassistant的身份登入，
 ```
 sudo su -s /bin/bash homeassistant
@@ -100,7 +100,7 @@ hass
 ```
 CTRL-C 可跳出。
 
-## 第五步 將 HomeAssistant 安裝成服務
+# 第五步 將 HomeAssistant 安裝成服務
 [原文](https://home-assistant.io/docs/autostart/systemd/)
 
 將 HomeAssistant 安裝成服務步驟如下：
@@ -146,7 +146,7 @@ systemctl enable home-assistant@pi
 exit
 ```
 
-## 第六步 測試
+# 第六步 測試
 - 啟動服務：
 ```
 sudo systemctl start home-assistant@pi
@@ -180,20 +180,20 @@ sudo su -s /bin/bash homeassistant
 pip3 install --upgrade homeassistant
 ```
 
-## 第七步
+# 第七步
 開始玩 HomeAssistant!
 
 ```
 http://pi的IP:8123/
 ```
 
-## References
+# References
  - [Setup Home Assistant on Raspberry Pi by misperry in raspberry-pi](http://www.instructables.com/id/Setup-Home-Assistant-on-Raspberry-Pi/)
  - [Manual installation on a Raspberry Pi](https://home-assistant.io/docs/installation/raspberry-pi/)
  - [https://home-assistant.io/docs/installation/virtualenv/](https://home-assistant.io/docs/installation/virtualenv/)
  - [Autostarting with systemd](https://home-assistant.io/getting-started/autostart-systemd/)
 
-## 後記
+# 後記
 發現已有中文玩家: [Home Assistant 中文文档](https://home-assistant.cc)
 
 - 小米: [Home Assistant + 树莓派：强大的智能家居系统 · 小米篇](https://sspai.com/post/40113)
