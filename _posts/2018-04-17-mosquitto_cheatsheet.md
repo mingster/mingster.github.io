@@ -22,13 +22,13 @@ author:
 
 # 第二步 安裝 mosquitto
 
-1. 安裝：
+## 安裝：
 
   ```
   sudo apt-get install mosquitto mosquitto-clients
   ```
 
-2. 移除舊init
+## 移除舊init
 
   ```
   sudo systemctl stop mosquitto
@@ -36,7 +36,7 @@ author:
   sudo rm /etc/init.d/mosquitto
   ```
 
-3. 安裝systemd
+## 安裝systemd
 
   ```
   sudo vi /etc/systemd/system/mosquitto.service
@@ -59,27 +59,27 @@ author:
   WantedBy=multi-user.target
   ```
 
-4. 服務設定
+## 服務設定
 
 	```
 	sudo systemctl daemon-reload
 	sudo systemctl enable mosquitto
 	```
 
-5. 啟動服務
+## 啟動服務
 
 	```
 	sudo systemctl start mosquitto.service
 	```
 
-6. mosquitto帳密
+## mosquitto帳密
 
 	```
 	sudo mosquitto_passwd -c /etc/mosquitto/accesslist.txt pi
 	```
 	這會設置pi 這個使用者
 
-7. mosquitto設定檔
+## mosquitto設定檔
 
 	編輯mosquitto設定檔：
 
@@ -88,16 +88,16 @@ author:
 	```
 
 	然後這些內容：
-	
+
 	```
 	pid_file /var/run/mosquitto.pid
-	
+
 	listener 1883
-	
+
 	persistence true
 	persistence_location /var/lib/mosquitto/
 	persistence_file mosquitto.db
-	
+
 	log_dest syslog
 	log_dest stdout
 	log_dest topic
@@ -106,23 +106,22 @@ author:
 	log_type notice
 	log_type information
 	log_timestamp true
-	
+
 	log_dest file /var/log/mosquitto/mosquitto.log
-	
+
 	connection_messages true
 	allow_anonymous false
-	
+
 	password_file /etc/mosquitto/accesslist.txt
 	#include_dir /etc/mosquitto/conf.d
 	```
-	
-8. 重啟服務
+
+## 重啟服務
 
 	```
 	sudo systemctl stop mosquitto
 	sudo systemctl start mosquitto
 	```
-
 
 # 第三步 設置Home Assistant
 與HA聯接，只要新增以下幾行到 configuration.yaml
@@ -167,8 +166,6 @@ mosquitto_pub -h localhost -t "sensor/temperature" -m 22.5  -u username -P passw
 
 ## HA服務測試
 HA若有成功設置mqtt，會有 mqtt.publish 的服務可呼叫。
-
-
 
 
 # References

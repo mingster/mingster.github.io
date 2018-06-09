@@ -91,5 +91,6 @@ section.main .homepage-archive { float: right }
 }
 /* tag_box & category_box end */
 
-.post ul { list-style: square; margin-left: 20px;}
-.post ol { list-style: decimal; margin-left: 20px;}
+article .post ul { list-style: square; margin-left: 20px;}
+article .post ol { list-style: decimal; margin-left: 20px;}
+.hljs { font-family: "Source Code Pro", Menlo, Monaco, "Courier New", monospace;}
