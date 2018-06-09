@@ -90,3 +90,6 @@ section.main .homepage-archive { float: right }
     color: #FFF;
 }
 /* tag_box & category_box end */
+
+.post ul { list-style: square; margin-left: 20px;}
+.post ol { list-style: decimal; margin-left: 20px;}
