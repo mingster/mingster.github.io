@@ -17,18 +17,41 @@ author:
 
 # Tennis
 
-## Racquet: HEAD Radical
+## Racquet #1: HEAD Radical
 
-* Length:	27" 69cm
+* Length:	27" 690mm
 * Head Size:	107 square inches	690 square cm
 * Weight:	12.1 ounces	343 grams
-* Balance Point:	12.75 inches 32cm 6pts Head Light
+* Balance Point:	12.75" 32cm 6pts Head Light
 * Construction:	21 mm Straight Beam
 * Composition	:	Graphite
 * String Pattern:	18 Mains / 19 Crosses
 
+* 2018-09-14	Luxilon 4G soft 40lb
+* 2018-09-14	Tecnifibre子母線 48lb
+
 * same racquet: [Agassi Limited Edition Racquet](https://www.tennis-warehouse.com/Reviews/AGRAD/AGRADReview.html)
 
+## Racquet #2: HEAD Radical OS 25 LTD Racquet
+
+* 型號：237028
+* 切面厚度：21mm
+* 拍面：107平方英吋
+* 重量(未穿線)：320g
+* 平衡(未穿線)：315mm
+* 長度：685mm
+* 線床密度：18/19
+* 握把尺寸：2號握把(4 1/4英吋)
+
+## Racquet #3: Wilson Pro Staff 97 CV 2019
+
+* Length: 27in/68.58cm
+* Head Size: 97in/626cm
+* Weight:	315 grams
+* Balance: 31cm/10 pts HL (Unstrung)
+* String Pattern: 18 Mains / 19 Crosses
+* 2018-09-18	Luxilon Alu power rough
+ 
 ## String
 
 * 2018-09-14	Luxilon 4G soft 40lb
