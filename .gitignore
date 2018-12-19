@@ -15,7 +15,6 @@ node_modules
 
 .DS_Store
 .jekyll-metadata
-_site
 #_posts/*.draft.*
 *.db
 package-lock.json

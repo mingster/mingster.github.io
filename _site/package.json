@@ -1,0 +1,25 @@
+{
+  "name": "mingster.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bowser": "1.7.3",
+    "font-awesome": "^4.7.0",
+    "video.js": "latest",
+    "videojs-airplay": "latest",
+    "videojs-contrib-hls": "latest",
+    "videojs-errors": "latest",
+    "videojs-responsive-layout": "latest",
+    "videojs-youtube": "latest"
+  },
+  "devDependencies": {
+    "gh-pages": "1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
