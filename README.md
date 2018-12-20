@@ -52,6 +52,9 @@ bundle exec jekyll build && bundle exec jekyll serve --incremental
 The generated site will be available at [http://localhost:4000](http://localhost:4000). You can stop the
 server with <kbd>Ctrl</kbd>-<kbd>C</kbd>.
 
+The generated "static" website is under "_site" directory. So don't edit the generated folder. 
+
+
 #### 4. Make your changes and push them
 
 Now you're ready to make your changes! Be sure to test the changes locally using
