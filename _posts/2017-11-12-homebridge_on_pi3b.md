@@ -49,7 +49,7 @@ rm -rf /usr/lib/node_modules/home*
 ## 第二步 安裝HomeBridge所需軟體
 進入homebridge身份：
 ```
-sudo su -s /bin/bash homeassistant
+sudo su -s /bin/bash homebridge
 ```
 
 1. 安裝相關軟體：
@@ -95,10 +95,6 @@ sudo node-gyp BUILDTYPE=Release rebuild
 sudo npm install -g homebridge-homeassistant
 ```
 
-要更新，可以：
-```
-sudo npm upgrade -g homebridge-homeassistant
-```
 
 ## 第四步 HomeBridge 設定
 
@@ -218,6 +214,13 @@ sudo systemctl status homebridge
 ```
 
 都裝好了，就可以開始[將設備接入](https://sspai.com/post/40075)。
+
+
+## 第七步 更新
+要更新，可以：
+```
+sudo npm upgrade -g homebridge-homeassistant
+```
 
 ## References
 - [HomeBridge on Raspberry-Pi](https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi)

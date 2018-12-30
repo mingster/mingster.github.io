@@ -172,7 +172,7 @@ sudo systemctl status home-assistant@pi -l
 sudo journalctl -f -u home-assistant@pi
 ```
 
-- 更新
+# 第七步 更新
 
 ```
 '先進入到 homeassistant 身份
@@ -180,7 +180,7 @@ sudo su -s /bin/bash homeassistant
 pip3 install --upgrade homeassistant
 ```
 
-# 第七步
+
 開始玩 HomeAssistant!
 
 ```
