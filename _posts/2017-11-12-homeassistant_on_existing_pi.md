@@ -46,11 +46,13 @@ sudo passwd  homeassistant
 ```
 
 # 第三步 安裝HomeAssistant所需軟體
+
 ```
 sudo apt-get install python3 python3-venv python3-pip
 ```
 
 HomeAssistant 是用python的virtual environment:
+
 ```
 cd /srv
 sudo mkdir homeassistant
@@ -88,8 +90,9 @@ sudo su -s /bin/bash homeassistant
 ```
 
 然後安裝：
+
 ```
-cd /srv/homeassistant
+cd /srv/homeassistant;
 pip3 install homeassistant
 ```
 安裝需要等一下。
@@ -180,21 +183,61 @@ sudo su -s /bin/bash homeassistant
 pip3 install --upgrade homeassistant
 ```
 
+## update python
+1. download source from [official site](https://www.python.org/downloads/)
+2. Install the required build-tools (some might already be installed on your system).
+	
+	```
+	sudo apt-get update -y
+	sudo apt-get install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev -y
+	```
+3. Install and compile the Python source
+	
+	```
+	tar xf Python-3.x.x.tar.xz
+	cd Python-3.x.x
+	./configure; make -j 4; sudo make altinstall
+	```
 
-開始玩 HomeAssistant!
+4. Reinstall HA
 
-```
-http://pi的IP:8123/
-```
+	```
+	cd /srv/homeassistant
+sudo rm homeassistant_venv/
+	```
+	
+	update python3 alias to correct version
+	
+	```
+	sudo su -s /bin/bash homeassistant
+	
+	sudo vi ~/.bash_aliases
+	```
+	
+	test:
+	```
+	python3
+	```
+	check the version shown.
+
+5. Reinstall HA (follow 第三步)
+
+6. Redo the modules
+
+	```
+	sudo su -s /bin/bash homeassistant
+	
+	pip install hass-nabucasa==0.3
+	pip install PyNaCl==1.3.0
+	pip install plexwebsocket==0.0.6
+	pip install pyatv==0.3.13
+	```
 
 # References
  - [Setup Home Assistant on Raspberry Pi by misperry in raspberry-pi](http://www.instructables.com/id/Setup-Home-Assistant-on-Raspberry-Pi/)
  - [Manual installation on a Raspberry Pi](https://home-assistant.io/docs/installation/raspberry-pi/)
  - [https://home-assistant.io/docs/installation/virtualenv/](https://home-assistant.io/docs/installation/virtualenv/)
  - [Autostarting with systemd](https://home-assistant.io/getting-started/autostart-systemd/)
-
-# 後記
-發現已有中文玩家: [Home Assistant 中文文档](https://home-assistant.cc)
-
-- 小米: [Home Assistant + 树莓派：强大的智能家居系统 · 小米篇](https://sspai.com/post/40113)
-- [利用 HomeAssistant +树莓派+ Amazon Echo 的智能家居实践](http://kittenyang.com/homeassistant_practice_03/)
+ - 發現已有中文玩家: [Home Assistant 中文文档](https://home-assistant.cc)
+ - 小米: [Home Assistant + 树莓派：强大的智能家居系统 · 小米篇](https://sspai.com/post/40113)
+ - [利用 HomeAssistant +树莓派+ Amazon Echo 的智能家居实践](http://kittenyang.com/homeassistant_practice_03/)
