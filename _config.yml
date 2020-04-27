@@ -10,7 +10,8 @@ encoding: utf-8
 incremental: true
 lsi: true
 
-url: 'https://localhost:4000'
+url: https://mingster.github.io
+#url: 'https://localhost:4000'
 baseurl: ''
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 # permalink: /:categories/:year/:month/:day/:title
@@ -31,7 +32,6 @@ safe: false
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-url: https://mingster.github.io
 title: mingster.com
 tagline:
 description:
