@@ -8,14 +8,7 @@ status: publish
 categories:
 - HomeAutomation
 tags: HomeBridge, Raspberry Pi
-
-meta:
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 
 HomeBridge是基於nodejs server的應用，它模擬iOS HomeKit，成為一個我們可以『控制』的網關。
@@ -146,18 +139,18 @@ homebridge -D
 	# Defaults / Configuration options for homebridge
 	# The following settings tells homebridge where to find the config.json file and where to persist the data (i.e. pairing and others)
 	HOMEBRIDGE_OPTS=-U /var/homebridge
-	
-	# If you uncomment the following line, homebridge will log more 
+
+	# If you uncomment the following line, homebridge will log more
 	# You can display this via systemd's journalctl: journalctl -f -u homebridge
 	# DEBUG=*
 	```
 2. 新增服務script: ```sudo vi /etc/systemd/system/homebridge.service```
 
 	貼上以下：
-		
+
 	```
 	[Unit]
-Description=Node.js HomeKit Server 
+Description=Node.js HomeKit Server
 After=syslog.target network-online.target
 [Service]
 Type=simple

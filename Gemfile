@@ -14,4 +14,4 @@ gem 'rouge'
 gem 'github-pages', group: :jekyll_plugins
 
 # to start development server, do this:
-# bundle exec jekyll build && bundle exec jekyll serve --incremental
+# bundle exec jekyll build && bundle exec jekyll serve --incremental --lsi

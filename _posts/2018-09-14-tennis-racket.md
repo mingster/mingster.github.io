@@ -9,10 +9,7 @@ categories:
 - Tennis
 tags: Tennis
 meta:
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
+author: mingster
 ---
 
 # Tennis
@@ -51,11 +48,11 @@ author:
 * Balance: 31cm/10 pts HL (Unstrung)
 * String Pattern: 18 Mains / 19 Crosses
 * 2018-09-18	Luxilon Alu power rough
- 
+
 ## String
 
 * 2018-09-14	Luxilon 4G soft 40lb
-* 組合一 : 直:Kevlar 17 (48P) 橫: Alu Power Rough (45P) 
+* 組合一 : 直:Kevlar 17 (48P) 橫: Alu Power Rough (45P)
 
 
 ### Luxilon 4G
@@ -78,4 +75,3 @@ author:
 材    質：聚酯纖維+尼龍纖維
 商品貨號： WRZ937300
 線    徑：1.27毫米
-

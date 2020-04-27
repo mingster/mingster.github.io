@@ -25,9 +25,9 @@ author:
 <table border="0" cellpadding="0" cellspacing="0" summary="Three column table">
 <tbody>
 <tr>
-<td align="left" bgcolor="white" height="5" valign="top" width="10"><img alt="" border="0" height="5" src="{{ site.JB.IMAGE_PATH }}/tableend_left_5px.gif" width="10" /></td>
-<td align="left" bgcolor="white" colspan="3" height="5" valign="top"><img alt="" border="0" height="5" src="{{ site.JB.IMAGE_PATH }}/table_mid_5.gif" width="100%" /></td>
-<td align="left" bgcolor="white" height="5" valign="top" width="10"><img alt="" border="0" height="5" src="{{ site.JB.IMAGE_PATH }}/tableend_right_5px.gif" width="10" /></td>
+<td align="left" bgcolor="white" height="5" valign="top" width="10"><img alt="" border="0" height="5" src="/img/tableend_left_5px.gif" width="10" /></td>
+<td align="left" bgcolor="white" colspan="3" height="5" valign="top"><img alt="" border="0" height="5" src="/img/table_mid_5.gif" width="100%" /></td>
+<td align="left" bgcolor="white" height="5" valign="top" width="10"><img alt="" border="0" height="5" src="/img/tableend_right_5px.gif" width="10" /></td>
 </tr>
 <tr>
 <th align="left" bgcolor="white" valign="top" width="10"></th>

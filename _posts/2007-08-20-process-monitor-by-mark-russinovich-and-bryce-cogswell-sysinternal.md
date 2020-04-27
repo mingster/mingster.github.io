@@ -25,7 +25,7 @@ author:
 ---
 <p>SysInternal is been around since DOS date. And yet still active and hard core as they always are.</p>
 <p>Their recent production: <strong>Process Monitor</strong>, I'm adding it into my must have toolbox - it allows you to watch windows processes and track 'em Comprehensively.</p>
-<p><a href="http://mingster.files.wordpress.com/2007/08/procmon-main.gif"><img style="display:block;cursor:hand;text-align:center;margin:0 auto 10px;" alt="" src="{{ site.JB.IMAGE_PATH }}/procmon-main1.gif" border="0" /></a>
+<p><a href="http://mingster.files.wordpress.com/2007/08/procmon-main.gif"><img style="display:block;cursor:hand;text-align:center;margin:0 auto 10px;" alt="" src="/img/procmon-main1.gif" border="0" /></a>
 <div>Check it out at Microsoft site: <a href="http://www.microsoft.com/technet/sysinternals/utilities/processmonitor.mspx">http://www.microsoft.com/technet/sysinternals/utilities/processmonitor.mspx</a></div>
 <div></div>
 <div></div>

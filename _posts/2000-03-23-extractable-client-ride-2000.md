@@ -23,4 +23,4 @@ author:
   first_name: ''
   last_name: ''
 ---
-<p><a href="http://photos1.blogger.com/blogger/1812/495/1024/DCP_0209.jpg"><img style="clear:all;float:left;cursor:hand;margin:0 10px 10px 0;" alt="" src="{{ site.JB.IMAGE_PATH }}/DCP_0209.jpg" border="0" /></a></p>
+<p><a href="/img/DCP_0209.jpg"><img style="clear:all;float:left;cursor:hand;margin:0 10px 10px 0;" alt="" src="/img/DCP_0209.jpg" border="0" /></a></p>

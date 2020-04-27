@@ -52,7 +52,7 @@ bundle exec jekyll build && bundle exec jekyll serve --incremental
 The generated site will be available at [http://localhost:4000](http://localhost:4000). You can stop the
 server with <kbd>Ctrl</kbd>-<kbd>C</kbd>.
 
-The generated "static" website is under "_site" directory. So don't edit the generated folder. 
+The generated "static" website is under "_site" directory. So don't edit the generated folder.
 
 
 #### 4. Make your changes and push them
@@ -64,6 +64,11 @@ request**](https://help.github.com/articles/using-pull-requests/). For a nice
 wrap-up on how to open a good pull request have a look at the [Elixir
 contributing
 guide](https://github.com/elixir-lang/elixir/#contributing).
+
+#### 5. Upgrade if needed
+```
+sudo gem update jekyll
+```
 
 ## References
  - [Install Jekyll on Mac](https://securityrat.github.io/mydoc_install_jekyll_on_mac.html)

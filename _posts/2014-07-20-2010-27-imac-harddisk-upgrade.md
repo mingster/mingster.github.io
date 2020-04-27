@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2010 27" iMac 換硬碟
+title: 2010 27吋iMac換硬碟
 date: 2014-07-20 03:07:23.000000000 +08:00
 type: post
 published: true
@@ -17,12 +17,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1456501986;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:69;}i:1;a:1:{s:2:"id";i:174;}i:2;a:1:{s:2:"id";i:149;}}}}
   original_post_id: '849'
   _wp_old_slug: '849'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>如果用了幾年的電腦突然變慢，開機時間越來越久，大部分是硬碟出了問題。你若不理它，再過不久硬碟開始有聲音。過一陣子你重開機可能就開不起來，你只好送修去換個新硬碟。舊硬碟掛上去，裡面資料運氣不好就會二二六六，要花大錢才能完整救回來。</p>
 <p>所以當你嫌電腦太慢或有上述異常狀況，最好換換。裝系統的硬碟要換就要換成SSD的。換完後，這台電腦你會覺的比當初新買時還快。</p>

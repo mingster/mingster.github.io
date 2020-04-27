@@ -3,6 +3,7 @@ layout: page
 title: About mingster
 permalink: /about.html
 thumbnail:
+author: mingster
 description:
 group: listable
 shares: true

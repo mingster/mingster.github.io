@@ -53,7 +53,7 @@ author:
 <p>安裝完成以後，開啟瀏覽器，瀏覽網址 <a href="http://localhost/">http://localhost/</a> 看看有沒有出現安裝成功的網頁。</p>
 <h2><span style="font-size:85%;">2.2 安裝 Subversion</span></h2>
 <p><b>1. </b>到 <a href="http://subversion.tigris.org/">http://subversion.tigris.org/</a>下載最新版的 Subversion，你可以下載 .zip 或者打包好的自動安裝程式，我下載的是檔案svn-1.2.3-setup.exe。</p>
-<p><b>2. </b>下載後直接安裝，安裝過程都是下一步，沒什麼特別的。在此Windows安裝版增加了Apache modules的選項，必要的環境變數都幫你設定好了。<br /><img src="{{ site.JB.IMAGE_PATH }}/image001.jpg" border="0" /></p></p>
+<p><b>2. </b>下載後直接安裝，安裝過程都是下一步，沒什麼特別的。在此Windows安裝版增加了Apache modules的選項，必要的環境變數都幫你設定好了。<br /><img src="/img/image001.jpg" border="0" /></p></p>
 <p><span style="font-size:85%;">2.2.1 手動安裝Apache modules</span></p>
 <p>以下步驟敘述手動安裝Apache modules的程序（如果你下載的是 .zip 檔，就要自行設定）。
 <ol>
@@ -94,7 +94,7 @@ author:
 </tbody>
 </table>
 <p>
-<p>這時候你已經建立了一個檔案庫，你可以先在本機用瀏覽器測試一下，網址輸入<a href="http://localhost/svn/repository"><u>http://localhost/svn/repository</u></a>，看看能不能看到檔案庫的內容，正常的話應該像下圖一樣。<br /><img src="{{ site.JB.IMAGE_PATH }}/image006.jpg" border="0" /></p>
+<p>這時候你已經建立了一個檔案庫，你可以先在本機用瀏覽器測試一下，網址輸入<a href="http://localhost/svn/repository"><u>http://localhost/svn/repository</u></a>，看看能不能看到檔案庫的內容，正常的話應該像下圖一樣。<br /><img src="/img/image006.jpg" border="0" /></p>
 <p>如果以上的測試可以通過，應該就行了。如果你還想要測試一下能不能從檔案庫取出整個工作複本，可以執行下列指令（非必要）: </p>
 <p><span style="font-family:Courier New;">c: cd\temp svn co http://localhost/svn WholeRepos </span></p>
 <p>上述指令會切換到一個暫時的目錄 c:\temp，然後從檔案庫取出整個工作複本。最後一行指令是要 svn.exe 執行 check out 動作（縮寫 co），如果正確的話，應該會顯示 "Checked out revision 0." 的訊息，此時 /svn/<br />這個檔案庫底下的所有檔案目錄都已經取出，並且複製一份到c:\temp\WholeRepos 目錄下了。</p>
@@ -131,8 +131,8 @@ author:
 </table>
 <p>
 <p>命令執行無誤的話，應會看到如下的畫面：</p>
-<p><img src="{{ site.JB.IMAGE_PATH }}/image009.gif" border="0" /></p>
-<p><img src="{{ site.JB.IMAGE_PATH }}/image010.jpg" border="0" /></p>
+<p><img src="/img/image009.gif" border="0" /></p>
+<p><img src="/img/image010.jpg" border="0" /></p>
 <p>這時候 ProjectA 這個專案已經匯入檔案庫了，也就是說，其他使用者可以開始存取這個檔案庫的專案取出文件和程式碼了。你可以參考 Subversion 的官方手冊中關於 svn.exe 這個用戶端命令列工具的使用方法，多練習一下取出檔案、加入檔案、以及存入檔案等指令。萬一練習的過程中發生錯誤，或者檔案庫弄亂了，你可以把整個檔案庫的目錄砍掉，回到 2.4 節重新做一遍。</p>
 <p>以下會進一步討論檔案庫和專案目錄結構的安排方式，如果你急著想試試看用戶端如何存取 Subversion 檔案庫，可以先跳到2.6 節或第 3 節。</p>
 <h2><span style="font-size:85%;">2.5 檔案庫與專案的配置方式</span></h2>
@@ -182,7 +182,7 @@ author:
 <li>修改httpd.conf 的設定如下：<br />&lt;<span style="font-family:Courier New;">Location /svn&gt; DAV<br />svn SVNParentPath d:/svn<br />AuthType SSPI AuthName "Subversion 檔案庫"<br />Require valid-user<br />SSPIAuth On<br />SSPIAuthoritative On<br />SSPIDomain<br />SSPIOfferBasic On </span><br />其中 就是你的 Windows 網域控制器的電腦名稱（例如：WIN2KDC），注意兩邊的括號不用保留。如果你的環境沒有網域控制器，就維持原來的就行了。在我的環境下，我發現即使有網域控制器，但是這裡不去設定它，還是能夠正常的驗證使用者身分。</li>
 <li>重新啟動 Apache。</li>
 </ol>
-<p>現在開啟瀏覽器，輸入網址 <a href="http://127.0.0.1/svn/repository">http://127.0.0.1/svn/repository</a> 看看，你預期應該會看到如下的驗證畫面：<br /><img src="{{ site.JB.IMAGE_PATH }}/image013.jpg" border="0" /></p>
+<p>現在開啟瀏覽器，輸入網址 <a href="http://127.0.0.1/svn/repository">http://127.0.0.1/svn/repository</a> 看看，你預期應該會看到如下的驗證畫面：<br /><img src="/img/image013.jpg" border="0" /></p>
 <p>若沒有出現這個畫面，而是直接顯示檔案庫內容，怎麼回事？</p>
 <p>因為我們現在是使用 Windows 帳戶驗證，你目前已經登入這台機器了，而你要存取的也是本機的資源，換句話說，你的身分已經被驗證過了，所以就不會再要求你輸入帳號跟密碼，這是採用<br />SSPI 網域驗證的好處。</p>
 <p>那麼，如果你的同事 John 的電腦有加入網域，但是他平時都是登入本機，而非登入網域，在存取檔案庫時會不會要求輸入帳號密碼？答案是如果 John 登入他本機的帳號和密碼跟他在網域使用者的帳號密碼完全一樣的話，就無需再輸入密碼；相反的，如果登入本機的使用者帳號和密碼與網域使用者帳號密碼不同，第一次存取時就必須輸入密碼。</p>

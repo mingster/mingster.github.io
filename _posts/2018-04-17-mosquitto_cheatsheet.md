@@ -9,16 +9,15 @@ categories:
 - HomeAutomation
 tags: Smart Home
 meta:
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
+author: mingster
 ---
 # 第一步 更新Pi
-	```
-	sudo apt-get update
+
+  ```
+  sudo apt-get update
+
 	sudo apt-get upgrade -y
-	```
+  ```
 
 # 第二步 安裝 mosquitto
 

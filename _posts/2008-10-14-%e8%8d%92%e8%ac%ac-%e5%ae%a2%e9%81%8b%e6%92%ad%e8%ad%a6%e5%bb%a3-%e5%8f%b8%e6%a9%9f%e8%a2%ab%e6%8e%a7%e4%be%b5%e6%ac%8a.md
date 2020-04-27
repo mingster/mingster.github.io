@@ -34,7 +34,7 @@ author:
 <table width="200" border="0" cellpadding="0" cellspacing="0">
 <tbody>
 <tr>
-<td valign="middle" align="center">                                       <a href="//img.1-apple.com.tw/1-www/060328/twapple/640pix/20081014/LN02/LN02_001.jpg','News','scrollbars=yes,width=640,resizable=yes')"><img src="{{ site.JB.IMAGE_PATH }}/LN02_001.jpg" /> </a>                                      </td>
+<td valign="middle" align="center">                                       <a href="//img.1-apple.com.tw/1-www/060328/twapple/640pix/20081014/LN02/LN02_001.jpg','News','scrollbars=yes,width=640,resizable=yes')"><img src="/img/LN02_001.jpg" /> </a>                                      </td>
 </tr>
 <tr>
 <td>
@@ -61,7 +61,7 @@ author:
 <table width="200" border="0" cellpadding="0" cellspacing="0">
 <tbody>
 <tr>
-<td valign="middle" align="center">                                       <a href="//img.1-apple.com.tw/1-www/060328/twapple/640pix/20081014/LN02/LN02_002.jpg','News','scrollbars=yes,width=640,resizable=yes')"><img src="{{ site.JB.IMAGE_PATH }}/LN02_002.jpg" /> </a>                                      </td>
+<td valign="middle" align="center">                                       <a href="//img.1-apple.com.tw/1-www/060328/twapple/640pix/20081014/LN02/LN02_002.jpg','News','scrollbars=yes,width=640,resizable=yes')"><img src="/img/LN02_002.jpg" /> </a>                                      </td>
 </tr>
 <tr>
 <td>

@@ -9,12 +9,7 @@ categories:
 - HomeAutomation
 tags: Smart Home
 meta:
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 
 現是2018年初，智慧家庭的零件已經百家齊放。但普及率還僅限於高端的使用者。

@@ -21,7 +21,7 @@ author:
   first_name: ''
   last_name: ''
 ---
-<p><img hspace="2" src="{{ site.JB.IMAGE_PATH }}/5735742_b15a27439b.jpg?v=0" align="left" border="0" />Seymour R. Cray, a computer industry pioneer and the father of the supercomputer, posed with the Cray 3 supercomputer at Cray Computer Corp. company headquarters in 1994.</p>
+<p><img hspace="2" src="/img/5735742_b15a27439b.jpg?v=0" align="left" border="0" />Seymour R. Cray, a computer industry pioneer and the father of the supercomputer, posed with the Cray 3 supercomputer at Cray Computer Corp. company headquarters in 1994.</p>
 <p>對程式設計人員來說，希穆爾克雷(Seymour Cray)是一位巨人。克雷極少發表演說，1976年他在科羅拉多州的國家大氣研究中心對程式設計人員發表演說，並同意演說結束後答覆詢問。只見會後整個會場突然沈寂下來，克雷在講台上站了好幾分鐘，等待程式人員提問，但沒有人發問。等到克雷離去以後，大氣研究中心電腦部負責人責備在場的程式人員：「為什麼沒有舉手發問？」經過一陣令人不安的沈默，一位程式師終於回答：「要你對上帝說話，你敢嗎？」</p>
 <p>超級電腦的發明對於電腦的發展歷史來說，是一項重大的里程碑。本書敘述超級電腦的發明人克雷及他的工作小組，如何在電腦工業發展的初期，突破科學上的限制，與公司的官僚體系抗衡，進而奠定資訊時代的基石。</p>
 <p>Cray-1, Cray's first supercomputer. Introduced in 1976, this system had a peak performance of 133 megaflops. The first system was installed at Los Alamos National Laboratory.</p>

@@ -19,7 +19,7 @@ author:
   first_name: ''
   last_name: ''
 ---
-<p><a href="http://mingster.com/kernel/" target="blank"><img style="float:right;cursor:hand;margin:0 0 10px 10px;" alt="click to play the MacOS 8" src="{{ site.JB.IMAGE_PATH }}/macos8.gif" border="0" /></a>AJAX and Web 2.0 is the hottest technical jargon this year (2007). All the sudden everyone has to talk about community building and develop those dynamic scripting effort.
+<p><a href="http://mingster.com/kernel/" target="blank"><img style="float:right;cursor:hand;margin:0 0 10px 10px;" alt="click to play the MacOS 8" src="/img/macos8.gif" border="0" /></a>AJAX and Web 2.0 is the hottest technical jargon this year (2007). All the sudden everyone has to talk about community building and develop those dynamic scripting effort.
 <p>In fact, back at 10 years ago (1997) Desktop.com had the vision and actually build up a business for what Google app is trying to do today. Back at the time some people from the North think it's crazy and useless for fat desktop-like applications to run on the web.</p>
 <p>Well, those people might be 50% correct, desktop.com is no longer in business and you can only see it at web archive (<a href="http://web.archive.org/web/20000301124055/www.desktop.com/site/platform.html" target="_blank">the original desktop.com Web OS</a>); however the same old techiques (now can be called AJAX), isn't a joke anymore. </p>
 <p>As I bring back my old little <a href="http://mingster.com/kernel/" target="blank"><b>Mac Kernel</b></a> back to life, it is still works like a champ in FireFox and IE 7. Allow popup window for the moment and click the image above to bring some of your good old memory back... </p>

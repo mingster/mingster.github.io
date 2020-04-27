@@ -8,14 +8,8 @@ status: publish
 categories:
 - IT
 tags: Tomato, Entware, SSR
-
 meta:
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 
 這篇是將Tomato firmware 加裝SSR的筆記。

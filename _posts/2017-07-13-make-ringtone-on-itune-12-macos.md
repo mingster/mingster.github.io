@@ -9,34 +9,9 @@ categories:
 - Mac
 tags:
 - ringtone
-meta:
-  _edit_last: '40718'
-  _wpas_done_17592472: '1'
-  _publicize_done_17833415: '1'
-  publicize_twitter_user: mingster
-  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:1772;s:54:"https://twitter.com/mingster/status/885519123022843904";}}
-  publicize_path_id: 59678f9443fe423b8f09a207
-  _rest_api_published: '1'
-  _rest_api_client_id: "-1"
-  _publicize_job_id: '7058707279'
-  _publicize_done_1843: '1'
-  _wpas_done_1772: '1'
-  _wpas_skip_17446180: '1'
-  _wpas_skip_1772: '1'
-  _wpas_skip_17592472: '1'
-  _publicize_done_17685094: '1'
-  _wpas_done_17446180: '1'
-  publicize_google_plus_url: https://plus.google.com/+MingTsaigplus/posts/SYPLGs9oHJG
-  geo_public: '0'
-  _wpcom_is_markdown: '1'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
-<p><img src="{{ site.JB.IMAGE_PATH }}/medium-cover.jpg" alt="medium-cover" width="200" height="300" style="margin:10px" align="right"/>mac is so easy to use if you paid.</p>
+<p><img src="/img/medium-cover.jpg" alt="medium-cover" width="200" height="300" style="margin:10px" align="right"/>mac is so easy to use if you paid.</p>
 <p>Just now I want to make a ring tone for my own theme song originally from "<a href="https://yts.ag/movie/flash-gordon-1980" target="_blank" rel="noopener">Flash Gordon</a>" movie.  And learned that it's not easy at all.</p>
 <p>Like Apple folk, not gonna stop there, after a couple digging, here's how to do it.</p>
 

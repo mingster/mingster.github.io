@@ -19,8 +19,8 @@ author:
   first_name: ''
   last_name: ''
 ---
-<p><a href="http://mingster.files.wordpress.com/2007/08/abcd0009.jpg"><img style="display:block;cursor:hand;text-align:center;margin:0 auto 10px;" alt="" src="{{ site.JB.IMAGE_PATH }}/abcd00091.jpg" border="0" /></a>
-<div><a href="http://mingster.files.wordpress.com/2007/08/s1p-2007-08-18-01.jpg"><img style="display:block;cursor:hand;text-align:center;margin:0 auto 10px;" alt="" src="{{ site.JB.IMAGE_PATH }}/s1p-2007-08-18-011.jpg" border="0" /></a> </div>
+<p><a href="http://mingster.files.wordpress.com/2007/08/abcd0009.jpg"><img style="display:block;cursor:hand;text-align:center;margin:0 auto 10px;" alt="" src="/img/abcd00091.jpg" border="0" /></a>
+<div><a href="http://mingster.files.wordpress.com/2007/08/s1p-2007-08-18-01.jpg"><img style="display:block;cursor:hand;text-align:center;margin:0 auto 10px;" alt="" src="/img/s1p-2007-08-18-011.jpg" border="0" /></a> </div>
 <p>
 <div>
 <div><a href="http://www.cwb.gov.tw/">http://www.cwb.gov.tw/</a></div>

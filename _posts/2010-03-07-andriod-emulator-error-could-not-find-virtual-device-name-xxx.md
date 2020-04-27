@@ -26,5 +26,5 @@ author:
   last_name: ''
 ---
 <p>If you get this error, it's because your windows user home directory is changed. Fix the error by adding a environment variable named ANDROID_SDK_HOME, and set the value to, for example, d:\users\MY_USERNAME.</p>
-<p><a href="http://mingster.com/blog_content/androiderror.jpg"><img align="left" alt="Click to view" src="{{ site.JB.IMAGE_PATH }}/androiderror.jpg" width="350" /></a></p>
+<p><a href="http://mingster.com/blog_content/androiderror.jpg"><img align="left" alt="Click to view" src="/img/androiderror.jpg" width="350" /></a></p>
 <p>Reference: <a href="http://www.mail-archive.com/android-beginners@googlegroups.com/msg13718.html">http://www.mail-archive.com/android-beginners@googlegroups.com/msg13718.html</a></p>

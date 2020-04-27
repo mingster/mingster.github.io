@@ -5,8 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "bootstrap": "latest",
-    "bowser": "latest",
-    "font-awesome": "latest",
+    "bowser": "1.7.3",
+    "font-awesome": "^4.7.0",
+    "lunr": "^2.3.8",
     "video.js": "latest",
     "videojs-airplay": "latest",
     "videojs-contrib-hls": "latest",
@@ -15,7 +16,7 @@
     "videojs-youtube": "latest"
   },
   "devDependencies": {
-    "gh-pages": "latest"
+    "gh-pages": "1.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

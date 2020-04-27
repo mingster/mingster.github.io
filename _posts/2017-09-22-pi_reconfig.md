@@ -8,14 +8,7 @@ status: publish
 categories:
 - Raspberry Pi
 tags:
-
-meta:
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 
 When you iso the sd card and first boot up, the default is GB. So we need to do

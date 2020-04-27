@@ -1,5 +1,22 @@
 
 .highlight {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: #E3EDF3 1px solid;
+	width: 100%;
+	font-family: monospace, sans-serif;
+	font-size: .9rem;
+	white-space: pre;
+	overflow: auto;
+	background: #fff;
+	border-radius: 0px;
+	line-height: 1.6;
+	color: #333;
+	margin-bottom: -rem;
+	font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+  margin: 0;
+	
 	background: #fff;
     border: 0;
     padding: 0;

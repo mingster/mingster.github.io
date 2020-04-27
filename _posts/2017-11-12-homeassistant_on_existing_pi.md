@@ -11,13 +11,7 @@ categories:
 - HomeAutomation
 tags: HomeAssistant, Raspberry Pi
 image: img/HomeAssist.jpg
-meta:
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 
 當已經有Pi在運行時，HomeAssistant推薦的[整個SD卡安裝](https://home-assistant.io/getting-started/)就不太合理。
