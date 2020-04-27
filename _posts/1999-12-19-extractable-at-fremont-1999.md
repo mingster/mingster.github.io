@@ -16,4 +16,4 @@ meta:
   original_post_id: '202'
   _wp_old_slug: '202'
 ---
-<p><a href="http://photos1.blogger.com/blogger/1812/495/1024/DCP_1037.jpg"><img style="clear:all;float:left;cursor:hand;margin:0 10px 10px 0;" alt="" src="{{ site.JB.IMAGE_PATH }}/DCP_1037.jpg" border="0" /></a></p>
+<p><a href="./img/DCP_1037.jpg"><img style="clear:all;float:left;cursor:hand;margin:0 10px 10px 0;" alt="" src="{{ site.JB.IMAGE_PATH }}/DCP_1037.jpg" border="0" /></a></p>

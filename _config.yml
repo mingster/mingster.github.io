@@ -2,10 +2,11 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 # permalink: /:categories/:year/:month/:day/:title
 permalink: /blog/:year/:month/:title.html
-
-include: ['.htaccess']
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
-vendor: ["node_modules"]
+logo: 'assets/images/logo.png'
+google_analytics: 'UA-255651-1'
+disqus: 'mingster'
+include: ['_pages', '.htaccess', 'node_modules']
+exclude: ["*.sh", "LICENSE", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json"]
 
 #markdown: redcarpet
 markdown: kramdown
@@ -13,13 +14,6 @@ highlights: rouge
 lsi: false
 timezone: Asia/Taipei
 safe: false
-paginate: 8
-paginate_path: "posts/page:num"
-
-JB :
-  ASSET_PATH : /assets
-  IMAGE_PATH : /img
-# auto: true # deprecated
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
@@ -37,3 +31,41 @@ author:
   facebook: mingshentsai
   googleplus: +MingTsaigplus
   feedburner : mingster/github
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+
+# Pagination
+paginate: 6
+paginate_path: /page:num/
+
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "enabled"

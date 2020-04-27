@@ -2,13 +2,15 @@
 layout: post
 title: 在既有的Raspberry Pi上安裝Home Assistant
 date: 2018-01-13 23:19:41.000000000 +08:00
-type: post
+featured: true
+hidden: true
+rating: 4.5
 published: true
 status: publish
 categories:
 - HomeAutomation
 tags: HomeAssistant, Raspberry Pi
-
+image: img/HomeAssist.jpg
 meta:
 author:
   login: mingster
@@ -186,13 +188,13 @@ pip3 install --upgrade homeassistant
 ## update python
 1. download source from [official site](https://www.python.org/downloads/)
 2. Install the required build-tools (some might already be installed on your system).
-	
+
 	```
 	sudo apt-get update -y
 	sudo apt-get install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev -y
 	```
 3. Install and compile the Python source
-	
+
 	```
 	tar xf Python-3.x.x.tar.xz
 	cd Python-3.x.x
@@ -205,15 +207,15 @@ pip3 install --upgrade homeassistant
 	cd /srv/homeassistant
 sudo rm homeassistant_venv/
 	```
-	
+
 	update python3 alias to correct version
-	
+
 	```
 	sudo su -s /bin/bash homeassistant
-	
+
 	sudo vi ~/.bash_aliases
 	```
-	
+
 	test:
 	```
 	python3
@@ -226,7 +228,7 @@ sudo rm homeassistant_venv/
 
 	```
 	sudo su -s /bin/bash homeassistant
-	
+
 	pip install hass-nabucasa==0.3
 	pip install PyNaCl==1.3.0
 	pip install plexwebsocket==0.0.6
