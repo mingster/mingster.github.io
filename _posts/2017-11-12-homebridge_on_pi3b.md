@@ -40,10 +40,6 @@ rm -rf /usr/lib/node_modules/home*
 ```
 
 ## 第二步 安裝HomeBridge所需軟體
-進入homebridge身份：
-```
-sudo su -s /bin/bash homebridge
-```
 
 1. 安裝相關軟體：
 ```
@@ -55,6 +51,8 @@ sudo apt-get install g++
 ```
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
+
+sudo apt-get install -y npm
 ```
 
 3. 安裝Avahi包：
