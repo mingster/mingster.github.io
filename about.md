@@ -1,4 +1,4 @@
-author: mingsterlayout: page
+layout: page
 title: About mingster
 permalink: /about.html
 thumbnail:
