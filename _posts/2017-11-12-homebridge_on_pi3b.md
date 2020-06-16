@@ -21,9 +21,11 @@ HomeBridge是基於nodejs的應用，在Pi上，nodejs的版本很關鍵。不wo
 
 #***** 很重要 -- 本文只適用於 Pi 3B 的硬體 *****
 要知道你的Pi是哪個版本，可以：
+
 ```
 cat /proc/cpuinfo | grep 'Revision' | awk '{print $3}' | sed 's/^1000//'
 ```
+
 a02082, a22082, 或 a32082 才是 Pi 3.
 
 [出處](https://elinux.org/RPi_HardwareHistory)
@@ -31,9 +33,11 @@ a02082, a22082, 或 a32082 才是 Pi 3.
 硬體確認了，就可以進行以下HomeBridge的安裝。
 
 ## 第一步 清理nodejs
+
 裝了幾次HomeBridge都出錯，結論就是nodejs版本不正確，所以先清空nodejs可以保證接下來的安裝。
 
 若有其他node.js的東西在run，就不能這樣做了。
+
 ```
 sudo apt-get remove nodejs
 rm -rf /usr/lib/node_modules/home*
@@ -43,26 +47,38 @@ rm -rf /usr/lib/node_modules/home*
 
 1. 安裝相關軟體：
 ```
-sudo apt-get install git make
-sudo apt-get install g++
+sudo apt-get install git gcc g++ make python3
 ```
+
 
 2. 安裝node repository (版本很重要，不能亂換)：
+
+[https://github.com/nodesource/distributions](https://github.com/nodesource/distributions)
+
 ```
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_13.x | bash -
 sudo apt-get install -y nodejs
 
+<<<<<<< Updated upstream
 sudo apt-get install -y npm
+=======
+# upgrade npm (version 6.13.4 has issues with git dependencies)
+sudo npm install -g npm
+>>>>>>> Stashed changes
 ```
 
 3. 安裝Avahi包：
+
 ```
 sudo apt-get install libavahi-compat-libdnssd-dev
 ```
 
 4. 安裝 homebridge及相關 (--unsafe-perm 很重要，不能拿掉)：
+
+Reference: [Installing Homebridge](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Raspbian)
+
 ```
-sudo npm install -g --unsafe-perm homebridge hap-nodejs node-gyp
+sudo npm install -g --unsafe-perm homebridge homebridge-config-ui-x hap-nodejs
 ```
 
 5. 安裝 bignum
@@ -74,18 +90,40 @@ sudo npm install --unsafe-perm bignum
 安裝會有錯誤warning，可以不理他。
 
 6. 重整 mdns
+
 ```
-cd /usr/lib/node_modules/hap-nodejs/node_modules/mdns
+cd /usr/lib/node_modules/mdns
+
 sudo node-gyp BUILDTYPE=Release rebuild
 ```
 
 ## 第三步 安裝homebridge-homeassistant
 
 安裝『homebridge-homeassistant』插件，就可以把HB跟HA串起來，來實現平台聯動：
+
 ```
 sudo npm install -g homebridge-homeassistant
 ```
+## 第四步 安裝broadlink
 
+```
+sudo chmod -R 755 /usr/lib/node_modules/
+sudo chown -R pi.pi /usr/lib/node_modules/
+
+rm -rf ~/.cache/
+mkdir ~/.cache/
+sudo chmod -R 755 ~/.cache/
+
+npm install -g --unsafe-perm homebridge-broadlink-rm
+```
+
+1. Run "which node" to determine your node path.
+2. Run "sudo setcap cap_net_raw+ep /path/to/node".
+
+```
+which node
+sudo setcap cap_net_raw+ep /usr/lib/
+```
 
 ## 第四步 HomeBridge 設定
 
@@ -120,6 +158,12 @@ sudo npm install -g homebridge-homeassistant
 
 
 ## 第五步 測試
+
+進入homebridge身份：
+```
+sudo su -s /bin/bash homebridge
+```
+
 
 ```
 homebridge -D
@@ -208,9 +252,15 @@ sudo systemctl status homebridge
 
 
 ## 第七步 更新
-要更新，可以：
+要更新homebridge，可以：
 ```
+sudo npm upgrade -g homebridge
 sudo npm upgrade -g homebridge-homeassistant
+```
+
+### Node更新
+```
+sudo hb-service rebuild
 ```
 
 ## References
