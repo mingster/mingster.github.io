@@ -1,4 +1,5 @@
-author: mingsterlayout: post
+---
+layout: post
 title: Pi & 中文
 date: 2017-09-21 23:19:41.000000000 +08:00
 type: post
@@ -8,7 +9,8 @@ categories:
 - Raspberry Pi
 tags:
 author: mingster
-author: mingster
+---
+
 When you iso the sd card and first boot up, the default is GB. So we need to do
 those to fit our culture.
 

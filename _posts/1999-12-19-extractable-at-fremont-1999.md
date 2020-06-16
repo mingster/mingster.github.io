@@ -1,4 +1,5 @@
-author: mingstertitle: Extractable At Fremont, 1999
+---
+title: Extractable At Fremont, 1999
 date: 1999-12-19 00:19:00.000000000 +08:00
 layout: post
 published: true
@@ -15,4 +16,5 @@ meta:
   _blogger_self: https://www.blogger.com/feeds/7772966/posts/default/113794677769086244
   original_post_id: '202'
   _wp_old_slug: '202'
-author: mingster<p><a href="/img/DCP_1037.jpg"><img style="clear:all;float:left;cursor:hand;margin:0 10px 10px 0;" alt="" src="/img/DCP_1037.jpg" /></a></p>
+---
+<p><a href="/img/DCP_1037.jpg"><img style="clear:all;float:left;cursor:hand;margin:0 10px 10px 0;" alt="" src="/img/DCP_1037.jpg" /></a></p>

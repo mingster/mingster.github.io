@@ -1,4 +1,5 @@
-author: mingsterlayout: post
+---
+layout: post
 title: 在既有的Raspberry Pi上安裝Home Assistant
 date: 2018-01-13 23:19:41.000000000 +08:00
 featured: true
@@ -11,7 +12,8 @@ categories:
 tags: HomeAssistant, Raspberry Pi
 image: img/HomeAssist.jpg
 author: mingster
-author: mingster
+---
+
 當已經有Pi在運行時，HomeAssistant推薦的[整個SD卡安裝](https://home-assistant.io/getting-started/)就不太合理。
 這篇是將 Raspberry Pi 加裝 HomeAssistant 的筆記。
 

@@ -1,4 +1,5 @@
-author: mingsterlayout: post
+---
+layout: post
 title: Git on your own server
 date: 2011-08-27 11:00:00.000000000 +08:00
 type: post
@@ -8,7 +9,8 @@ categories:
 - IT
 tags: [git]
 author: mingster
-author: mingster
+---
+
 # Git on your own server
 
 1. First, you create a git user account and a .ssh directory for the daemon user.

@@ -1,4 +1,5 @@
-author: mingsterlayout: post
+---
+layout: post
 title: Smart Home Spec / 智慧家庭的規格 2018
 date: 2018-01-21 23:19:41.000000000 +08:00
 type: post
@@ -9,7 +10,8 @@ categories:
 tags: Smart Home
 meta:
 author: mingster
-author: mingster
+---
+
 現是2018年初，智慧家庭的零件已經百家齊放。但普及率還僅限於高端的使用者。
 
 玩過一堆小米套件、Sonoff、Broadlink、Home Assistant、Home Bridge後，應該寫ㄧ寫規格來釐清未來要如何繼續架設。

@@ -1,4 +1,5 @@
-author: mingsterlayout: post
+---
+layout: post
 title: Tennis
 date: 2018-09-14 18:19:41.000000000 +08:00
 type: post
@@ -9,7 +10,8 @@ categories:
 tags: Tennis
 meta:
 author: mingster
-author: mingster
+---
+
 # Tennis
 
 ## Racquet #1: HEAD Radical
