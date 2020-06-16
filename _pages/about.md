@@ -1,8 +1,10 @@
-author: mingsterlayout: page
+---
+layout: page
 title: Mediumish Template for Jekyll
 permalink: /about
 comments: true
-author: mingster
+---
+
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 

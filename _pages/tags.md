@@ -1,4 +1,5 @@
-author: mingsterlayout: tags
+---
+layout: tags
 title: Tags
 permalink: /tags
 ---

@@ -1,4 +1,5 @@
-author: mingsterlayout: categories
+---
+layout: categories
 title: Categories
 permalink: /categories
 ---

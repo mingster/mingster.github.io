@@ -1,3 +1,4 @@
+---
 layout: page
 title: About mingster
 permalink: /about.html
@@ -10,3 +11,4 @@ sitemap:
   priority: 1
   changefreq: weekly
   lastmod: 2014-07-05
+---
