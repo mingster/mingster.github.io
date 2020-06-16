@@ -905,3 +905,6 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+.h-300 {
+    height: 300px;
+}
