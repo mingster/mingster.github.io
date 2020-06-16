@@ -13,12 +13,7 @@ meta:
   blogger_author: Ming Tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '5035626156036583193'
   _wpcom_is_markdown: '1'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>常常懶的煮syphon，就是為了那個很難洗乾靜的濾布。</p>
 <p>受到台中<a href="https://www.facebook.com/%E9%BB%9D%E8%84%88%E5%92%96%E5%95%A1-162520000821845/" target="_blank" rel="noopener">黝脈咖啡</a>年輕老闆的感召，我也來玩玩復古的：</p>

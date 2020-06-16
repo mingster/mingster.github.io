@@ -17,12 +17,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455318164;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:563;}i:1;a:1:{s:2:"id";i:223;}i:2;a:1:{s:2:"id";i:166;}}}}
   original_post_id: '160'
   _wp_old_slug: '160'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Recently I set up a virtual server to use as a development machine. It runs on CentOS 5 and hosts several <a target="_blank" href="http://subversion.tigris.org/" title="Subversion" rel="external">Subversion</a> repositories with associated <a target="_blank" href="http://trac.edgewall.org/" title="Trac" rel="external">Trac</a> projects.</p>
 <p>There are many guides and plenty of help on the net to help you setup such a system. However, when I tried to do it I came across a few problems and I hope this post may help at least a few people trying to do the same as me. I am not going to rewrite the great tutorials out there, I will just point you to them and note what things I did differently.</p>

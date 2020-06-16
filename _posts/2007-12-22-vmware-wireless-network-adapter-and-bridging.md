@@ -17,12 +17,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455253402;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:98;}i:1;a:1:{s:2:"id";i:253;}i:2;a:1:{s:2:"id";i:167;}}}}
   original_post_id: '483'
   _wp_old_slug: '483'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>If you're using VMware Server on Windows Vista with a Wireless network adapter, you might have problems using native VMware bridged networking. NAT networking works ok to give your guest OS internet access but isn't so good if your guest is a server.</p>
 <p>A good alternative is to create a windows MAC bridge between the VMware "virtual" network adapter and your wireless adapter.</p>

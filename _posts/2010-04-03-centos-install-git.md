@@ -16,12 +16,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455941672;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:260;}i:1;a:1:{s:2:"id";i:256;}i:2;a:1:{s:2:"id";i:229;}}}}
   original_post_id: '235'
   _wp_old_slug: '235'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>1. Download and install EPEL if you don't have it yet:<br /><code>rpm -Uvh http://download.fedora.redhat.com/pub/epel/5/i386/epel-release-5-3.noarch.rpm<br /></code></p>
 <p>2. Install git via yum<br /><code>yum --enablerepo=epel install git</code></p>

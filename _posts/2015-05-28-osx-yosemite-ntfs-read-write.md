@@ -17,12 +17,7 @@ meta:
   interface_sidebarlayout: default
   original_post_id: '968'
   _wp_old_slug: '968'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Upgrade to Yosemite will break NTFS R&amp;W. Here's how to redo it:</p>
 <h1>Requirement</h1>

@@ -18,11 +18,6 @@ meta:
   blogger_permalink: "/2010/03/mastering-vi-editor.html"
   original_post_id: '235'
   _wp_old_slug: '235'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Good basic - <a href="http://www.eng.hawaii.edu/Tutor/vi.html">http://www.eng.hawaii.edu/Tutor/vi.html</a><br />Download PDF version <a href="http://www.eng.hawaii.edu/Tutor/vi.pdf">here</a></p>

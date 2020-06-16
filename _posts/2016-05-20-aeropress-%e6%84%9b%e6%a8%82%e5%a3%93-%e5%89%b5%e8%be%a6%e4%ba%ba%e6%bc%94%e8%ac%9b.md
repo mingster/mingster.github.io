@@ -12,12 +12,7 @@ meta:
   blogger_blog: mingster.blogspot.com
   blogger_author: Ming Tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '2262235582166336471'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <div class="separator" style="clear:both;text-align:center;">[youtube=https://www.youtube.com/watch?v=iidmqCWCxsg&amp;w=800&amp;h=450]</div>
 <p>重點：

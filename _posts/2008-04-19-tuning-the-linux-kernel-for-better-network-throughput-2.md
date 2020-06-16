@@ -16,12 +16,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1453637155;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:164;}i:1;a:1:{s:2:"id";i:156;}i:2;a:1:{s:2:"id";i:167;}}}}
   original_post_id: '160'
   _wp_old_slug: '160'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>If your linux server needs to have better network throughput, try this out.<br />From /etc/sysctl.conf:
 <div style="font-family:courier new;">net.ipv4.tcp_window_scaling = 1<br />net.ipv4.tcp_syncookies = 1<br />net.ipv4.tcp_rmem = 4096 87380 16777216<br />net.ipv4.tcp_wmem = 4096 65536 16777216<br />net.core.rmem_max = 16777216<br />net.core.wmem_max = 16777216</div>

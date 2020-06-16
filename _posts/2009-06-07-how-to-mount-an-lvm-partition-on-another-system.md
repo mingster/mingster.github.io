@@ -11,12 +11,7 @@ tags: []
 meta:
   blogger_blog: mingstert.blogspot.com
   blogger_permalink: "/2009/06/how-to-mount-lvm-partition-on-another.html"
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>I ran into a Fedora box recently which after rebooting was unable to mount the root file system. Here's what I did to get this going:</p>
 <p>First I booted off the Fedora CD and typed "linux rescue" at the prompt in order to boot into rescue mode. When asked if I would like to enable the network interfaces or mount the file systems, I said no to both.</p>

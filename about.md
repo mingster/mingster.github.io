@@ -1,5 +1,4 @@
----
-layout: page
+author: mingsterlayout: page
 title: About mingster
 permalink: /about.html
 thumbnail:
@@ -12,4 +11,4 @@ sitemap:
   priority: 1
   changefreq: weekly
   lastmod: 2014-07-05
----
+author: mingster

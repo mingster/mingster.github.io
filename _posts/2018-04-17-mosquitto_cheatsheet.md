@@ -1,5 +1,4 @@
----
-layout: post
+author: mingsterlayout: post
 title: Mosquitto on pi cheatsheet / Mosquitto的安裝
 date: 2018-04-17 18:19:41.000000000 +08:00
 type: post
@@ -10,8 +9,7 @@ categories:
 tags: Smart Home
 meta:
 author: mingster
----
-# 第一步 更新Pi
+author: mingster# 第一步 更新Pi
 
   ```
   sudo apt-get update

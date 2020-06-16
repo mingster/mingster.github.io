@@ -18,12 +18,7 @@ meta:
   _blogger_self: https://www.blogger.com/feeds/7772966/posts/default/112297139003160939
   original_post_id: '54'
   _wp_old_slug: '54'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Version control is the art of managing changes to information. It has long been a critical tool for programmers, who typically spend their time making small changes to software and then undoing those changes the next day. But the usefulness of version control software extends far beyond the bounds of the software development world. Anywhere you can find people using computers to manage information that changes often, there is room for version control. And that's where Subversion comes into play.</p>
 <p>Subversion uses WebDAV to access the repository and as such every file is accessible using standard http addresses.</p>

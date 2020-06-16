@@ -20,12 +20,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1436923253;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:258;}i:1;a:1:{s:2:"id";i:233;}i:2;a:1:{s:2:"id";i:353;}}}}
   original_post_id: '232'
   _wp_old_slug: '232'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>In our recent upgrade from 5.0 to 5.1.47, the new version behaves differently and it screw up character set when user submit info from our web app powered by .NET. </p>
 <p>After digging around for a afternoon, this is how to fix it:<br /><code><br />vi /etc/my.cnf<br /></code></p>

@@ -19,12 +19,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1456052205;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:256;}i:1;a:1:{s:2:"id";i:177;}i:2;a:1:{s:2:"id";i:167;}}}}
   original_post_id: '175'
   _wp_old_slug: '175'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>The PECL uploadprogress modules allows a user to see a upload progress bar.<br />This is a great UI that makes uploading in action and hence good user experience.</p>
 <p>To intall uploadprogress module:</p>

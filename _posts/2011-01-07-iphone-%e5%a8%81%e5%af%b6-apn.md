@@ -15,12 +15,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455261039;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:445;}i:1;a:1:{s:2:"id";i:58;}i:2;a:1:{s:2:"id";i:229;}}}}
   original_post_id: '227'
   _wp_old_slug: '227'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>威寶APN設定<br />吃到飽APN: internet<br />日租APN: vibo<br />username / password 皆空白</p>
 <p>設好後internet tethering才會work.</p>

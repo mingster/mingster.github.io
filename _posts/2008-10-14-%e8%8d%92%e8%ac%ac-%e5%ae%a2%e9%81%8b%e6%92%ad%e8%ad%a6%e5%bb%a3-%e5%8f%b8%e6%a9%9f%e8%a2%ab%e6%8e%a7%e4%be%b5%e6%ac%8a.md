@@ -12,12 +12,7 @@ meta:
   blogger_1_permalink: "/2008/10/blog-post.html"
   blogger_blog: mingstertsai.blogspot.com
   blogger_author: mingster
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>荒謬 客運播警廣 司機被控侵權<br />「聽路況犯法嗎」 網友聲援：不要聽音樂協會的歌<br />2008年10月14日蘋果日報
 <p>【鄭敏鈴、朱俊彥╱台中報導】公車司機在車上聽警廣廣播，竟被控違反《著作權法》。台中客運<span><span><span><span><span style="border-bottom:2px dashed rgb(0,153,0);text-decoration:underline;padding-bottom:1px;color:#0000e0;">公司</span></span></span></span></span>今年八月底接到台灣音樂著作權人聯合總會寄發的存證信函，指控該公司駕駛呂貴生在車上擴音收聽警廣，違反《著作權法》，不排除提告求償；呂貴生昨喊冤說：「我在車上聽警廣路況，才能掌握交通訊息，根本不是聽音樂，怎麼算是侵權行為？」</p>

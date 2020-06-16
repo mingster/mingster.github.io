@@ -21,12 +21,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455380075;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:50;}i:1;a:1:{s:2:"id";i:218;}i:2;a:1:{s:2:"id";i:179;}}}}
   original_post_id: '175'
   _wp_old_slug: '175'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Below is the way to mount iso image file in REHL system:</p>
 <p>Before you start to mount your iso image, you need to ensure the folder /mnt/isoimage is available, if /mnt/isoimage is not available just create one using command below:-</p>

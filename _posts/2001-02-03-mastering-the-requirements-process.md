@@ -16,12 +16,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1445868578;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:345;}i:1;a:1:{s:2:"id";i:7;}i:2;a:1:{s:2:"id";i:16;}}}}
   original_post_id: '202'
   _wp_old_slug: '202'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><span style="font-family:verdana,arial,helvetica;font-size:-1px;">by <a href="http://www.amazon.com/exec/obidos/search-handle-url/index=books&amp;field-author=Suzanne%20Robertson/103-7952845-2093423"><u><span style="color:#ff8c00;">Suzanne Robertson</span></u></a>, <a href="http://www.amazon.com/exec/obidos/search-handle-url/index=books&amp;field-author=James%20Robertson/103-7952845-2093423"><u><span style="color:#ff8c00;">James Robertson</span></u></a></span> (Hardcover)<br />Addison-Wesley Professional; 1st edition (August 12, 1999)</p>
 <p><strong><span style="font-size:100%;color:#cc6600;">Editorial Reviews<br /></span></strong>

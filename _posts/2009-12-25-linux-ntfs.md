@@ -18,12 +18,7 @@ meta:
   _jetpack_related_posts_cache: a:0:{}
   original_post_id: '235'
   _wp_old_slug: '235'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>from <a href="http://www.linux-mag.com/id/5523">http://www.linux-mag.com/id/5523</a><br />Several tools exist that support NTFS in Linux:</p>
 <ul>

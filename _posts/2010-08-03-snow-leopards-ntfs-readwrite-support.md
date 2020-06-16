@@ -12,12 +12,7 @@ meta:
   blogger_blog: mingster.blogspot.com
   blogger_author: Ming Tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '478152015238848705'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><a href="http://tool-box.info/blog/archives/1193-Snow-Leopards-NTFS-readwrite-support.html">http://tool-box.info/blog/archives/1193-Snow-Leopards-NTFS-readwrite-support.html</a></p>
 <p>This still stands for release version of Snow Leopard. It also works for USB disk.</p>

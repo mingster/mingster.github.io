@@ -18,12 +18,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455263402;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:218;}i:1;a:1:{s:2:"id";i:257;}i:2;a:1:{s:2:"id";i:198;}}}}
   original_post_id: '235'
   _wp_old_slug: '235'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>If your bootcamp windows is having very poor volume output on 2009 unibody MacBook Pro, here's the solution: <a href="http://www.stuffedcow.net/macbook_audio">http://www.stuffedcow.net/macbook_audio</a>. Thank you, Henry.</p>
 <p>I follow the instruction below, plus a reboot, and fixed the problem:

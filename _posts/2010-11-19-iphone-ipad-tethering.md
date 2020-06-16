@@ -15,11 +15,6 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1453534587;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:187;}i:1;a:1:{s:2:"id";i:196;}i:2;a:1:{s:2:"id";i:227;}}}}
   original_post_id: '229'
   _wp_old_slug: '229'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>1. JB the iPhone - redsn0w<br />2. Open Cydia, add the source - http://www.sinfuliphonerepo.com<br />3. Install MyWi Cracked<br />4. Open MyWi, set it up so iPhone become a wifi router.<br />5. wifi iPAD over.</p>

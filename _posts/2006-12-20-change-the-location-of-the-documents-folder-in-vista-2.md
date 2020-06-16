@@ -12,12 +12,7 @@ tags: []
 meta:
   blogger_blog: mingstert.blogspot.com
   blogger_permalink: "/2006/12/change-location-of-documents-folder-in.html"
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>by <a title="Posts by Diana Huggins" href="http://www.lockergnome.com/nexus/windows/author/diana-huggins/">Diana Huggins</a> on December 8, 2006 at 12:40 pm · <a href="http://www.lockergnome.com/nexus/windows/2006/12/08/change-the-location-of-the-documents-folder-in-vista/#commentary">Comments</a></p>
 <p>The all familiar My Documents folder in Windows XP has been renamed the Documents folder in Vista. Vista creates Documents folder for each user that logs onto the computer and stores it in the appropriate profile folder. The default location for this folder is c:\Users\\Documents (assuming of course that you have installed Vista on your C: drive). You can store the Documents folder on another drive or in another folder. For example, if you have more free space on another drive, you can move it.</p>

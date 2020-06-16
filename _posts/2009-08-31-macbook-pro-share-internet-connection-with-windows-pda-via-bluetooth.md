@@ -21,12 +21,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455193043;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:245;}i:1;a:1:{s:2:"id";i:150;}i:2;a:1:{s:2:"id";i:161;}}}}
   original_post_id: '256'
   _wp_old_slug: '256'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>To share 3G connection from PDA to MacBook, here's the steps:</p>
 <p>1. Turn on Bluetooth on both devices (MBP and PDA)<br />2. Pair up (if you're not yet done it)<br />3. Start the internet sharing program on PDA<br />4. On MBP, click on the bluetooth icon on the menu bar (assuming you have it on the menu bar), under your PDA device, select "Connect".<br />5. Happy browsing.</p>

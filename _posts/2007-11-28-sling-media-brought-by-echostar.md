@@ -15,12 +15,7 @@ meta:
   _edit_last: '40718'
   _wpas_skip_yup: '1'
   _wpas_skip_twitter: '1'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><a href="http://www.slingbox.com/get/pr-echostar-slingmedia.html">http://www.slingbox.com/get/pr-echostar-slingmedia.html</a></p>
 <p>EchoStar Announces Agreement to Acquire Sling Media, Inc.</p>

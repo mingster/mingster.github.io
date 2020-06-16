@@ -15,12 +15,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1453537005;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:18;}i:1;a:1:{s:2:"id";i:265;}i:2;a:1:{s:2:"id";i:85;}}}}
   original_post_id: '224'
   _wp_old_slug: '224'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <table border="0" cellpadding="0" cellspacing="0" summary="Three column table">
 <tbody>

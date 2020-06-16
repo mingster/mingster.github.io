@@ -66,12 +66,7 @@ meta:
   _oembed_d37bafa11367ef2c807bc104570f96f3: "{{unknown}}"
   _oembed_dc3ef8670e293321ca52ebfed2a31baf: "{{unknown}}"
   _oembed_baa44ebf1a5d6298e9930bfcb2985383: "{{unknown}}"
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>PHP 5.3 is not supported on current Drupal (6.14), and CentOS's PHP version is still on 5.1.9. So the drupal installation needs a little bit of work.</p>
 <p>1. Install MySQL<br />

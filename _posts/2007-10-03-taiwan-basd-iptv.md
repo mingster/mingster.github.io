@@ -6,18 +6,13 @@ type: post
 published: true
 status: publish
 categories:
-- IPTV Player
+- IPTV
 tags: []
 meta:
   blogger_1_permalink: "/2007/10/taiwan-basd-iptv.html"
   blogger_blog: mingstertsai.blogspot.com
   blogger_author: mingster
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Dragon IPTV<br /><a href="http://www.dragoniptv.com/">http://www.dragoniptv.com/</a></p>
 <p>HiNet<br /><a href="http://hichannel.hinet.net/">http://hichannel.hinet.net/</a></p>

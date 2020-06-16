@@ -16,12 +16,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1456178795;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:563;}i:1;a:1:{s:2:"id";i:249;}i:2;a:1:{s:2:"id";i:225;}}}}
   original_post_id: '353'
   _wp_old_slug: '353'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>The .BIN &amp; .CUE CD image format was made popular by the CDRWin software. Afterwards many programs have started supporting or partially supporting it, including: Nero, BlindWrite, CloneCD, FireBurner. The .CUE file contains the track layout information, while the .BIN file holds the actual data.</p>
 <p>ISO is also a CD image format, but is sometimes used for 'ISO9660 format' (standard, recognized by all applications) and sometimes for unique Easy CD ISO format.</p>

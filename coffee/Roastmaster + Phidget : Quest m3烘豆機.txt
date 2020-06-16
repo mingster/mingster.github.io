@@ -1,6 +1,5 @@
 Roastmaster + Phidgets / Quest m3s 烘豆機
---------------------------------------------------------
-PhidgetTemperatureSensor 4-輸入 溫度感應器 $3500
+-----------------------------------------------------author: mingsterPhidgetTemperatureSensor 4-輸入 溫度感應器 $3500
 http://www.idmstore.com/product_info.php?cPath=18_30&products_id=173
 
 1048 的壓克力外殼 $450
@@ -11,8 +10,7 @@ K-型 熱電偶轉換器 x 2 = $600
 http://www.idmstore.com/product_info.php?cPath=18_30&products_id=177
 
 1048 User Guide
---------------------------------------------------------
-http://www.phidgets.com/docs/1048_User_Guide
+-----------------------------------------------------author: mingsterhttp://www.phidgets.com/docs/1048_User_Guide
 
 Roastmaster - Phidget setup
 https://rainfroginc.com/documentation/setting-up-phidgets
@@ -21,8 +19,7 @@ https://rainfroginc.com/documentation/setting-up-phidgets
 
 
 豆豆vendors
---------------------------------------------------------
-
+-----------------------------------------------------author: mingster
 榮豆 http://goods.ruten.com.tw/item/show?21404016680406
 
 巴菲特咖啡生豆公司 台中市清水區大街路105號 0939 -354914
@@ -51,8 +48,7 @@ Sweet Maria
 Auction
 http://auction.stoneworks.com
 http://www.gfhauction.org
---------------------------------------------------------
-
+-----------------------------------------------------author: mingster
 Quest m3s 玩家版烘豆機
 
 http://goods.ruten.com.tw/item/show?21629146841778 $38000
@@ -67,8 +63,7 @@ http://goods.ruten.com.tw/item/show?21112174256248
 
 
 Bookmarks
---------------------------------------------------------
-https://sites.google.com/site/yuntiancoffee/home
+-----------------------------------------------------author: mingsterhttps://sites.google.com/site/yuntiancoffee/home
 
 http://www.coffeebug.org
 
@@ -84,8 +79,7 @@ air: full
 
 
 烘焙曲線 roast profiling
---------------------------------------------------------
-http://www.perfectdailygrind.com/2016/07/define-roast-profile-4-stages/
+-----------------------------------------------------author: mingsterhttp://www.perfectdailygrind.com/2016/07/define-roast-profile-4-stages/
 
 http://www.home-barista.com/home-roasting/quest-n-for-efficiency-and-consistency-t20172.html
 

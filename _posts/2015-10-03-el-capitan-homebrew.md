@@ -18,12 +18,7 @@ meta:
   interface_sidebarlayout: default
   original_post_id: '974'
   _wp_old_slug: '974'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>El Capitan just released. And surely we need to take care the upgrade for Homebrew. Check <a href="https://github.com/mingster/dotfiles">this</a> out if you're not familiar with it.</p>
 <p>Here's the upgrade steps:</p>

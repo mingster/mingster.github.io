@@ -21,12 +21,7 @@ meta:
   interface_sidebarlayout: default
   original_post_id: '945'
   _wp_old_slug: '945'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>一加手機的國際版很難買到，因此買大陸版的(型號A001，預設是ColorOS 1.2)回來再改。其實露天的賣家有提供免費的改機服務，但我就想自己玩玩。</p>
 <p>爬了中外各大網站，大家都說很簡單，<a href="https://forums.oneplus.net/threads/oneplus-cm11s-for.40687/" target="_blank">什麼免PC</a>，直接用手機去<a href="https://cyngn.com/products/oneplusone/" target="_blank">CM</a>下載，按住volume下鍵 + 電源鍵，直接用Recovery更新，我的就不work。最後還是用開發者的方法，使用Android SDK，直接flash到CM11s。</p>

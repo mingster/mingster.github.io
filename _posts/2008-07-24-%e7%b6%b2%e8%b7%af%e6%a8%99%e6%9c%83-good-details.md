@@ -14,12 +14,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1445985466;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:302;}i:1;a:1:{s:2:"id";i:176;}i:2;a:1:{s:2:"id";i:107;}}}}
   original_post_id: '170'
   _wp_old_slug: '170'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>http://mag.udn.com/mag/newsstand/storypage.jsp?f_MAIN_ID=253&amp;f_SUB_ID=1312&amp;f_ART_ID=136624</p>
 <p>網路標會 穩賺？那可不一定！<br />‧理財周刊 2008/07/16<br />標會是民眾理財方式之一，隨著時代與科技進步，現在不但上網就可以跟會，被倒會還有銀行會負責。不過，網路標會一定好嗎？看完本文再作決定。<br />【撰文／徐介凡】</p>

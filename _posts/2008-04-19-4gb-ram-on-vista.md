@@ -14,12 +14,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455486986;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:98;}i:1;a:1:{s:2:"id";i:156;}i:2;a:1:{s:2:"id";i:198;}}}}
   original_post_id: '160'
   _wp_old_slug: '160'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>All 32-bit Operating Systems can only physically address 4 GB of RAM, due to the math involved (2<sup>32</sup> = 4,294,967,296).  Depending on your hardware, Vista may only see 3GB or 3.5GB of the total RAM installed, because there are some devices that are memory mapped.  The most common hardware of this type of device is a video card, which can use up to 512MB of memory for mapping.</p>
 <p><strong></strong>You can tweak Vista's core to add another 4-bits of addressing capability, but you must have a 64-bit capable CPU (pretty much any processor made within the past two years like Core 2 Duo or Athlon 64).  Even though the math works out to address way more than 4GB (2<sup>36</sup> = 68,719,476,736), the operating system still has a cap (Windows Server can address anywhere from 8GB to 128GB depending on the flavor).</p>

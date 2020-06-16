@@ -14,12 +14,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455438897;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:167;}i:1;a:1:{s:2:"id";i:225;}i:2;a:1:{s:2:"id";i:237;}}}}
   original_post_id: '175'
   _wp_old_slug: '175'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Synchronize the clocks is standard now-da-day.  If you don't have NTP for some reason, here's how you set it up in CentOS.</p>
 <p>First Install the NTP Package on your server as root.<br /><code><br />  # yum install ntp<br />  Loading “fastestmirror” plugin<br />  Loading mirror speeds from cached hostfile<br />  * base: mirror.steadfast.net<br />  * updates: mirrors.liquidweb.com<br />  * addons: pubmirrors.reflected.net<br />  * extras: pubmirrors.reflected.net<br />  Setting up Install Process<br />  Parsing package install arguments<br />  Resolving Dependencies<br />  –&gt; Running transaction check<br />  —&gt; Package ntp.i386 0:4.2.2p1-8.el5.centos.1 set to be updated<br />  –&gt; Finished Dependency Resolution</p>

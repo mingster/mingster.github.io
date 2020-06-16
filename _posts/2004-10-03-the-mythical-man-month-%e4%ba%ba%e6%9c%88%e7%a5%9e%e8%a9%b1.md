@@ -16,12 +16,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1446205606;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:7;}i:1;a:1:{s:2:"id";i:345;}i:2;a:1:{s:2:"id";i:8;}}}}
   original_post_id: '202'
   _wp_old_slug: '202'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><span style="font-family:verdana,arial,helvetica;">by Frederick P. Brooks</span> (Paperback)<br />Addison-Wesley Professional; 1st edition (August 2, 1995) </p>
 <p><strong><span style="color:rgb(204,102,0);font-size:100%;">Editorial Reviews</span></strong>

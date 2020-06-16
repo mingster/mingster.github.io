@@ -15,12 +15,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1453409484;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:15;}i:1;a:1:{s:2:"id";i:103;}i:2;a:1:{s:2:"id";i:96;}}}}
   original_post_id: '202'
   _wp_old_slug: '202'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>As early as July of 1999 I was pontificating on email lists about the virtues of style sheets. Some things never change. </p>
 <p>What <em>has</em> changed is how I think about CSS, and the underlying structure of (X)HTML to which it is applied. For example, I find that most pages on the web contain a menu of links in a navigation area. These are often marked up as a string of links, often in separate DIVs or paragraphs. Structurally, however, they are a list of links, and should be marked up as such. </p>

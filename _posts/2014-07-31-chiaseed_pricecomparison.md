@@ -19,12 +19,7 @@ meta:
   interface_sidebarlayout: default
   original_post_id: '916'
   _wp_old_slug: '916'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>資料來源：</p>
 <ul>

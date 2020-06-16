@@ -12,12 +12,7 @@ tags: []
 meta:
   blogger_blog: mingstert.blogspot.com
   blogger_permalink: "/2007/09/silverlight-11.html"
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <div align="center"></div>
 <p>微軟日前正式<a href="http://weblogs.asp.net/scottgu/archive/2007/09/04/silverlight-1-0-released-and-silverlight-for-linux-announced.aspx" target="_blank">發表Silverlight 1.0</a>，並且展示了很多利用Silverlight 1.0技術的商業網站，例如<a href="http://mlb.mlb.com/media/video.jsp" target="_blank">MLB網站的影片</a>，和微軟的<a href="http://halo3.msn.com/videos.aspx" target="_blank">Halo 3預覽網站</a>（<a href="http://halo3.msn.com/videosHD.aspx" target="_blank">HD版</a>）、<a href="http://www.tafiti.com/" target="_blank">Tafiti.com</a>、<a href="http://election.msn.com/podium08.aspx" target="_blank">MSN Podium '08</a>。微軟沒有忘記必須讓<a href="http://www.silverlight.net/" target="_blank">Silverlight</a>跨平台、跨網頁瀏覽器，因此Silverlight的<a href="http://www.microsoft.com/silverlight/downloads.aspx" target="_blank">runtime不僅有Windows和Mac版本</a>，也會有Linux版，而<a href="http://www.go-mono.com/" target="_blank">Mono專案</a>團隊將會負責實作開放源碼版的Silverlight 1.0和1.1；開放源碼版本的Silverlight的專案代號是<a href="http://www.mono-project.com/Moonlight" target="_blank">Moonlight</a>。Mono是由Novell贊助的Linux版.NET平台，有趣的是專案代號Moonlight。如何有趣？一是銀光、一是月光；再者，把Mono的最後兩個字母調換就變成Moon了不是嗎？</p>

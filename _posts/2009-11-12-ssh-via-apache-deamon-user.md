@@ -21,12 +21,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1438571294;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:167;}i:1;a:1:{s:2:"id";i:563;}i:2;a:1:{s:2:"id";i:238;}}}}
   original_post_id: '235'
   _wp_old_slug: '235'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Scenario: You have a web script (php, ruby, python, or so) that need to ssh over a remote machine to do stuff.  How you do set up ssh key for the apache deamon user?</p>
 <p>After some dig out, here's the steps, mostly taken from (<a href="http://www.boredworkers.com/2009/08/24/script-tips-ssh-key-for-apache/">Boredworkers.com</a>):</p>

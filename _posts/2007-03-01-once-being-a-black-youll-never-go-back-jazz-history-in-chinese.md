@@ -12,12 +12,7 @@ tags: []
 meta:
   blogger_blog: mingstert.blogspot.com
   blogger_permalink: "/2007/03/being-black-you-never-go-back-jazz.html"
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>orginial posted @ <a href="http://ad.nccu.edu.tw/hhsun/wisconsin/frame3.htm">http://ad.nccu.edu.tw/hhsun/wisconsin/frame3.htm</a> by Wisconsin</p>
 <p>長久以來，爵士音樂被稱之為美國藝術的瑰寶，身兼作曲和樂評工作的 Virgil Thomson 曾經形容爵士樂是「自歐洲十六世紀的宗教改革運動以來，最震懾人心的民間（自發產生的）音樂。」</p>

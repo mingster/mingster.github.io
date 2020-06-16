@@ -17,12 +17,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1445201255;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:147;}i:1;a:1:{s:2:"id";i:84;}i:2;a:1:{s:2:"id";i:15;}}}}
   original_post_id: '54'
   _wp_old_slug: '54'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Visual development has been a standard process for many professional web application development team. Since 1995, techniques and tools have been developed and been improved.</p>
 <p>We're in the process of taking the basic building blocks to the next level. Ajax style features will certainly be the part of the mix.</p>

@@ -14,12 +14,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455212801;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:175;}i:1;a:1:{s:2:"id";i:520;}i:2;a:1:{s:2:"id";i:242;}}}}
   original_post_id: '202'
   _wp_old_slug: '202'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p class=""><a href="http://www.4developers.com/xmgr" target="_blank">ActiveX Manager</a> is a utility software for ActiveX control registered on your local computer. I found it helpful when I dig around to find Sharepoint's upload control.</p>
 <p>Below is a sample report generated for my box, which runs Windows XP Pro SP2, all up-to-date MS updates, Office 2003, VS.NET 2003 and 2005, SQL2003 and 2005, et al.</p>

@@ -16,12 +16,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1453387095;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:32;}i:1;a:1:{s:2:"id";i:8;}i:2;a:1:{s:2:"id";i:16;}}}}
   original_post_id: '202'
   _wp_old_slug: '202'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><strong><span style="font-size:100%;">Kotler on Marketing : How to Create, Win, and Dominate Markets<br /></span></strong>by <a href="http://www.amazon.com/exec/obidos/search-handle-url/index=books&amp;field-author-exact=Philip%20Kotler&amp;rank=-relevance%2C%2Bavailability%2C-daterank/103-2319014-6360612" target="_blank">Philip Kotler</a></p>
 <p>Kotler is the maestro in marketing. In fact, he is one of first fews who gave the "new profession" a clear defintion and objectives.</p>

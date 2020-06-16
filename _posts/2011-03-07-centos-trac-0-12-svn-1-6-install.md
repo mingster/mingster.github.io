@@ -15,11 +15,6 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1436249590;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:167;}i:1;a:1:{s:2:"id";i:168;}i:2;a:1:{s:2:"id";i:353;}}}}
   original_post_id: '223'
   _wp_old_slug: '223'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>good reference here:<br /><a href="http://flakrat.blogspot.com/2010/06/installing-subversion-16-and-trac-012.html">http://flakrat.blogspot.com/2010/06/installing-subversion-16-and-trac-012.html</a></p>

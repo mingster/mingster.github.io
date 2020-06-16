@@ -15,12 +15,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1453412177;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:14;}i:1;a:1:{s:2:"id";i:7;}i:2;a:1:{s:2:"id";i:345;}}}}
   original_post_id: '202'
   _wp_old_slug: '202'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><strong><span style="font-size:100%;">Effective Java Programming Language Guide<br /></span></strong>by <a href="http://www.amazon.com/exec/obidos/search-handle-url/index=books&amp;field-author-exact=Joshua%20Bloch&amp;rank=-relevance%2C%2Bavailability%2C-daterank/103-2319014-6360612">Joshua Bloch</a></p>
 <p>I got this book after programming Java for about 3 years....I can tell you that I've already learned more about Java by reading this book than any other book (or actual programming).</p>

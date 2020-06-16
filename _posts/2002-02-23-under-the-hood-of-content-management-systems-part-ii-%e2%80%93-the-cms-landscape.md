@@ -36,12 +36,7 @@ meta:
   _oembed_01875c36a406b4d215f902c88439ab20: "{{unknown}}"
   _oembed_81b1f6017671eb6d495e989d0713c0cf: "{{unknown}}"
   _oembed_ffb3457b3c5fb3b2cdb360bf9e520e5b: "{{unknown}}"
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Choosing the right Content Management System (CMS) can significantly improve the way an organization manages and shares information internally and externally. This sharing of information, implemented correctly, can lead to critical improvements in sales, support, partnering, hiring, marketing, and investor relations. </p>
 <p>

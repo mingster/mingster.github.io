@@ -15,12 +15,7 @@ meta:
   blogger_blog: mingstert.blogspot.com
   original_post_id: '235'
   _wp_old_slug: '235'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>fn-F11 will print the entire screen. </p>
 <p>alt/option-fn-F11<br />Adding the alt/option key targets just the active window.</p>

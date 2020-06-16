@@ -16,12 +16,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1444329521;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:107;}i:1;a:1:{s:2:"id";i:61;}i:2;a:1:{s:2:"id";i:516;}}}}
   original_post_id: '147'
   _wp_old_slug: '147'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>多年來，談到蘋果電腦，人們想到的第一個名字，及唯一的名字，總是 Steve Jobs，所有光芒就集中在他身上，沒有待過bay area 或看過 <a href="http://www.amazon.com/gp/product/B0009NSCS0?ie=UTF8&amp;tag=mingster-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0009NSCS0">Pirates of Silicon Valley</a>這部電影的，可能不知道，就像 Microsoft 的 Bill Gates 跟 Paul Allen，Apple 還有一位創辦人 Steve Wozniak。</p>
 <p>Woz 是一位典型的 geek engineer。工程師總是不善交際，不善言詞的，多年來他退隱江山，在業界外專職從事教育，即便是我待在valley 這麼久，也是看過這部半記錄片才瞭解內情的。</p>

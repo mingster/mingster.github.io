@@ -14,12 +14,7 @@ meta:
   blogger_permalink: "/2007/01/microsoft-office-outlook-2007.html"
   _oembed_df6a7782f8c7dc0317a38f8f5a8293f9: "{{unknown}}"
   _oembed_22529f4dcac8a1f7752618403011416f: "{{unknown}}"
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <div class="Section1">
 <p class="MsoNormal"><span lang="EN-US"><a href="http://office.microsoft.com/zh-tw/outlook/HA101549971028.aspx"><span style="font-family:trebuchet ms;">http://office.microsoft.com/zh-tw/outlook/HA101549971028.aspx</span></a><br /><a href="http://www.every8d.com/ms/register/index-1.aspx"><span style="font-family:trebuchet ms;">http://www.every8d.com/ms/register/index-1.aspx</span></a></span></p>

@@ -19,12 +19,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1447707064;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:179;}i:1;a:1:{s:2:"id";i:98;}i:2;a:1:{s:2:"id";i:563;}}}}
   original_post_id: '175'
   _wp_old_slug: '175'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>I've put together old hardware pieces at home for a download &amp; file sharing box. It got 4 old disks (30G, 250G, 500G, 80G) together.  Knowing that disks will out of its life sooner or later, I rsync important stuff to the mac next to it. Couple weeks ago, shit finally happen.</p>
 <p>The broken disk is the 30G, so most of stuff are still in the other disks. To recover, I put into a new disk, re-install CentOS, so the box is bootable again. Now I need to re-activate and mount the old disks.</p>

@@ -17,12 +17,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1453388170;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:7;}i:1;a:1:{s:2:"id";i:10;}i:2;a:1:{s:2:"id";i:353;}}}}
   original_post_id: '202'
   _wp_old_slug: '202'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p style="font-family:trebuchet ms;">Check out this xp textbook classic from Ron Jeffies, our kongfu man got it in action...</p>
 <p style="font-family:trebuchet ms;">Extreme Programming is a discipline of software development based on values of simplicity, communication, feedback, and courage. It works by bringing the whole team together in the presence of simple practices, with enough feedback to enable the team to see where they are and to tune the practices to their unique situation.</p>

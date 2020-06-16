@@ -1,5 +1,4 @@
----
-layout: post
+author: mingsterlayout: post
 title: 蕃茄(Tomato) firmware + Entware/SSR
 date: 2017-11-12 23:19:41.000000000 +08:00
 type: post
@@ -10,8 +9,7 @@ categories:
 tags: Tomato, Entware, SSR
 meta:
 author: mingster
----
-
+author: mingster
 這篇是將Tomato firmware 加裝SSR的筆記。
 
 - 選用 router: Netgear R7000

@@ -11,12 +11,7 @@ tags: []
 meta:
   blogger_blog: mingstert.blogspot.com
   blogger_permalink: "/2008/03/vbscript-outlook.html"
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>If you get VBScript.DLL error when open up Outlook (v2000, 2003, up to 2007), here's how to fix it:</p>
 <p>1. Start menu -&gt; Office -&gt; Language Tool<br />2. Change the language to match with your OS. For example, English-&gt;EN; Chinese-&gt;TW</p>

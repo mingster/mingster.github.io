@@ -14,12 +14,7 @@ meta:
   blogger_author: ming tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '7755760576105060215'
   _wpcom_is_markdown: '1'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>update: 2017/07/05<br />
 After update macos to high sierra, phigets driver needs to be reinstalled.<br />

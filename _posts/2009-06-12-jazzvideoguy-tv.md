@@ -13,11 +13,6 @@ meta:
   blogger_blog: mingster.blogspot.com
   blogger_author: mingster
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '8561043967237843398'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>[youtube https://www.youtube.com/watch?v=NYY2uxMyQa0&amp;hl=zh_TW&amp;fs=1&amp;border=1]</p>

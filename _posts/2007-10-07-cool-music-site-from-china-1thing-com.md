@@ -13,12 +13,7 @@ meta:
   blogger_blog: mingster.blogspot.com
   blogger_author: Ming Tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '2684652443682912818'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Every once awhile, as I read or watch, there's associated music pop up in my head. Often time I don't remember the name of the music, just piece of lyrc or rhythm. Thanks to Google and the Net, this time I'm able to locate it within 2 quick searches.</p>
 <p>The music is a HK TV song and it's more then 10 years old. If you're in my age and know the song, I'm sure it bring back a lot of memory. There're a lot of stories to say about it, but anyway, I found the song in 30 seconds in this cool site from China.</p>

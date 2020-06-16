@@ -12,12 +12,7 @@ meta:
   blogger_author: mingster
   blogger_1_permalink: "/2008/03/pchomep2pjoost.html"
   blogger_blog: mingstertsai.blogspot.com
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>文/趙郁竹 2008-03-28 ITHome</p>
 <p>Joost和現有YouTube等影音平台的不同之處在於走P2P架構，使用者看完影片後會將資料留在電腦中，再將資料分享給其他觀看者，以此方式分擔流量。並在影片中嵌入影音廣告為收入來源。</p>

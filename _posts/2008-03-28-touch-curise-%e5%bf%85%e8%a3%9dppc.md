@@ -16,12 +16,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455201506;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:77;}i:1;a:1:{s:2:"id";i:474;}i:2;a:1:{s:2:"id";i:18;}}}}
   original_post_id: '160'
   _wp_old_slug: '160'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>其他如Tytn II 也可以裝。請自行Google 檔名就下的到了</p>
 <p>PHM Registry Editor<br />必裝</p>

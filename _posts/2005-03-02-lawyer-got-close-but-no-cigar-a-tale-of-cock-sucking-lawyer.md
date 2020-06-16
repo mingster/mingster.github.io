@@ -14,12 +14,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1453387636;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:304;}i:1;a:1:{s:2:"id";i:32;}i:2;a:1:{s:2:"id";i:40;}}}}
   original_post_id: '353'
   _wp_old_slug: '353'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>A Charlotte NC lawyer purchased a box of very rare and expensive cigars then insured them against fire among other things. Within a month having smoked his entire stockpile of these great cigars and without yet having made even his first premium payment on the policy, the lawyer filed a claim against the insurance company. In his claim, the lawyer stated the cigars were lost "in a series of small fires."</p>
 <p>The insurance company refused to pay, citing the obvious reason, that the man had consumed the cigars in the normal fashion. The lawyer sued and won! In delivering the ruling the judge agreed with the insurance company that the claim was frivolous, however; the judge stated that the lawyer held a policy from the company in which it had warranted that the cigars were insurable and also guaranteed that it would insure them against fire, without defining what is considered to be "unacceptable fire," and was obligated to pay the claim. Rather than endure a lengthy and costly appeal process, the insurance company accepted the ruling and paid $15,000 to the lawyer for his loss of the rare cigars lost in the "fires."</p>

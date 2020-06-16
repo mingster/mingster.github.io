@@ -14,12 +14,7 @@ meta:
   blogger_blog: mingster.blogspot.com
   blogger_author: Ming Tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '7456269312294472106'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>PDF download: <a href="http://mingster.com/blog_content/Subversion_for_Windows_Installation.pdf">Subversion for Windows 安装指南</a></p>
 <p>this post is an updated version from Huanlin Tsai's revision 1.41 (<a href="http://huanlin.dyndns.org:8080/techshare/articles/2004061303/svn_install.htm">http://huanlin.dyndns.org:8080/techshare/articles/2004061303/svn_install.htm</a>)</p>

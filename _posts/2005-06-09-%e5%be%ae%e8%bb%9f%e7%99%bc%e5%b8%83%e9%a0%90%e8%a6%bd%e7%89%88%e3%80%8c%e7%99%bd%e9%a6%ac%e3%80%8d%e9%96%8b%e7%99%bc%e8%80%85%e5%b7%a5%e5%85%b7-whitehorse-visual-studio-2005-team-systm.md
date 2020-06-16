@@ -15,12 +15,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1456283284;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:84;}i:1;a:1:{s:2:"id";i:265;}i:2;a:1:{s:2:"id";i:85;}}}}
   original_post_id: '54'
   _wp_old_slug: '54'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>微軟公司26日發布預覽版的新開發者工具，目的在協助企業用戶加速建置客製化的網路應用程式。</p>
 <p>軟體巨人發布「社群技術預覽」版模組化工具(modeling tools)，昔日代稱「白馬」( Whitehorse)，日後會納入微軟為企業應用程式開發者設計的Visual Studio 2005 Team System。</p>

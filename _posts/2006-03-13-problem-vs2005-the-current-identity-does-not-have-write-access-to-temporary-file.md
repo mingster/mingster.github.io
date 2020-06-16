@@ -18,12 +18,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455194882;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:232;}i:1;a:1:{s:2:"id";i:21;}i:2;a:1:{s:2:"id";i:179;}}}}
   original_post_id: '54'
   _wp_old_slug: '54'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>I finally powered up again with my newly purchased&nbsp;dual-core laptop, which also enables me to&nbsp;refresh software installations that I've been wanting to do for a long time.&nbsp; As I'm putting things back together, I kept running into this error with my projects:</p>
 <p><font face="Courier New">The current identity (xxx\ASPNET) does not have write access to 'C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files'. </p>

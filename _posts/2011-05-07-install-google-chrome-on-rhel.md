@@ -15,12 +15,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1446500694;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:225;}i:1;a:1:{s:2:"id";i:167;}i:2;a:1:{s:2:"id";i:236;}}}}
   original_post_id: '221'
   _wp_old_slug: '221'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>This howto explains howto install Google Chrome Web browser on <b>Fedora 14</b>, <b>Fedora 13</b>, <b>Fedora 12</b> and <b>Red Hat 6 (RHEL 6)</b>. Best way to install and keep up-to-date with Google Chrome browser is use Google’s own YUM repository. <br />
 <h2>1. Enable Google YUM repository</h2>

@@ -13,12 +13,7 @@ meta:
   blogger_blog: mingster.blogspot.com
   blogger_author: Ming Tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '7636756022771578545'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Living and working in bay area for so long and I'm always being a homeboy + geek engineer just like others until I've this Taiwanese musician girl friend as company. She's sure a party girl and bring a lot of different looks in my life.</p>
 <p>Recently she requested me to go to this live Jazz pub in the city. She and her musician buddies are hanging out there every Monday night. It's pretty cool - the small circle of friends and friends of friends would take terms to go on to the stage, singing or Improvised with their own instrument, each for about 5 to 10 minutes.</p>

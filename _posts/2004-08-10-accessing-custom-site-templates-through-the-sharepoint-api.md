@@ -17,12 +17,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1453387326;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:167;}i:1;a:1:{s:2:"id";i:345;}i:2;a:1:{s:2:"id";i:253;}}}}
   original_post_id: '202'
   _wp_old_slug: '202'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Using custom site templates in Sharepoint is a really powerful feature. You can customize your WSS site through frontpage or the web UI and save the site as a template. By default the template is stored in the top-level site template gallery of the site you customized.</p>
 <p>This template can be exported as an ".stp" file and imported on other top-level websites. But you can also place the template in two other locations. The three locations for site templates are:<br />Top-Level (WSS) Site Template Gallery Sharepoint Portal Server Template Gallery Sharepoint Virtual Server TemplatesTo enter the template into the Portal gallery go to <span style="font-family:courier new;color:#993399;">Portal &gt; Site Settings &gt; Manage</span> security and additional settings &gt; Manage site template gallery and upload your ".stp" file (read on to find out why this is useless).</p>

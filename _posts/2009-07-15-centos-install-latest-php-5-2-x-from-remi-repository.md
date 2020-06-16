@@ -13,12 +13,7 @@ meta:
   blogger_permalink: "/2009/07/centos-install-latest-php-52x-from-remi.html"
   blogger_blog: mingstert.blogspot.com
   blogger_author: mingsterhttp://www.blogger.com/profile/10981076410240209932noreply@blogger.com
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>A few app requires PHP 5.2.x but major repositories is yet support anything higher than 5.1.6 at this time. Recompile PHP is a pain also.</p>
 <p><a href="http://blog.famillecollet.com/post/2005/10/02/8-telechargement-installation-et-yum">Remi</a> maintains a repository that can save your 1 day or 2 if you have such need.</p>

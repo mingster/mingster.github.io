@@ -14,12 +14,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1446639187;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:31;}i:1;a:1:{s:2:"id";i:167;}i:2;a:1:{s:2:"id";i:15;}}}}
   original_post_id: '54'
   _wp_old_slug: '54'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>By Stephen Whitford, Intrinsic Media, December 2006</p>
 <p>As MMS (Multimedia Messaging Service) starts to gain momentum in the market, one has to wonder whether it will overtake SMS as the dominant messaging tool for cellphone users.</p>

@@ -17,12 +17,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1453525754;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:265;}i:1;a:1:{s:2:"id";i:280;}i:2;a:1:{s:2:"id";i:84;}}}}
   original_post_id: '235'
   _wp_old_slug: '235'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Bloomberg報導，日本電子大廠 Panasonic (6752-JP) 高層表示，由於成本過高，公司生產的網路電視決定不採用 Google (GOOG-US) Android 作業系統。</p>
 <p>積極推廣 Android 作為網路電視平台的 Google，嘗試與 Panasonic 合作卻遇挫。</p>

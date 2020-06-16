@@ -16,12 +16,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1447569069;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:142;}i:1;a:1:{s:2:"id";i:44;}i:2;a:1:{s:2:"id";i:100;}}}}
   original_post_id: '54'
   _wp_old_slug: '54'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><a href="http://blog.darkthread.net/blogs/darkthreadtw/archive/2007/06/30/developers-are-you-underpaid-or-overpaid.aspx">http://blog.darkthread.net/blogs/darkthreadtw/archive/2007/06/30/developers-are-you-underpaid-or-overpaid.aspx</a></p>
 <p>Developers, Are You Underpaid Or Overpaid?<br /><a href="http://haacked.com/">Phil Haack</a>寫了一篇探討開發人員產能差異的<a href="http://haacked.com/archive/2007/06/25/understanding-productivity-differences-between-developers.aspx">好文章</a>。可能是因為自己瘋狂熱愛Coding，一直以來對許多客戶、專案經理、公司主管貶低開發人員價值的錯誤認知頗不以為然，於是，這類的文章讀來格外心有戚戚焉。</p>

@@ -14,12 +14,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1443318388;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:15;}i:1;a:1:{s:2:"id";i:164;}i:2;a:1:{s:2:"id";i:232;}}}}
   original_post_id: '54'
   _wp_old_slug: '54'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>I'm using Vista in Transitional Chinese edition. It's cool to see MS releases a better and more "Mac-like" shell. For TC user, the new font "正黑體" is way better, especially the English text doesn’t look like dirty laundries out of dryer anymore. In any case, human resists changes in nature, I'm sure a lot of people will need time to get used to the new things.</p>
 <p>As a professional user, I always try to maximum usability, especially on a 15'4 laptop -- space is limited here. With Vista's default theme, the usable area has shrink a lot. One of the main reason I found out, is that the default font size is changed from 8 to 9pt, which take away at least 20% of the usable area compared to the older WinXP shell.</p>

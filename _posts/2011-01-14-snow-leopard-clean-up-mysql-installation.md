@@ -15,12 +15,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455362652;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:256;}i:1;a:1:{s:2:"id";i:449;}i:2;a:1:{s:2:"id";i:254;}}}}
   original_post_id: '226'
   _wp_old_slug: '226'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>For whatever reason you need to reinstall/ clean MySQL. Here are the spots:</p>
 <p><code>sudo rm -rf /usr/local/mysql*<br />sudo rm -rf /Library/StartupItems/MySQLCOM<br />sudo rm -rf /Library/PreferencePanes/My*<br />rm -rf ~/Library/PreferencePanes/My*<br />sudo rm -rf /Library/Receipts/mysql*<br />sudo rm -rf /Library/Receipts/MySQLStartupItem.pkg/<br />sudo rm -rf /var/db/receipts/com.mysql.mysql*<br />sudo rm -rf /var/db/receipts/com.mysql.mysqlstartup*<br /></code></p>

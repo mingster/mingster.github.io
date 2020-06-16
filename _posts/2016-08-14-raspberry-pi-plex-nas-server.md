@@ -12,12 +12,7 @@ meta:
   blogger_blog: mingster.blogspot.com
   blogger_author: ming tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '3932897623372229631'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>update: So far the Raspberry Pi 3 is not powerful enough for me.  It takes several minutes for a movie to start streaming a mp4 file to ATV in the same LAN.  It just not good enough, yet.</p>
 <p>My mac is getting old, can't work on it as CPU go up to 100% while family is watching.</p>

@@ -16,12 +16,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455611651;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:198;}i:1;a:1:{s:2:"id";i:98;}i:2;a:1:{s:2:"id";i:234;}}}}
   original_post_id: '175'
   _wp_old_slug: '175'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>1. Check what is the new hard disk device name with "fdisk -l", it should be something like /dev/sda. You can easily identify which is the new drive by running "mount" and finding the drive that exists in "fdisk -l" but is not mounted.<br /><code>mount; fdisk -l</code></p>
 <p>2. Create a partition on the new drive, (the sample code below assume the disk is /dev/sdd)<br /><code>fdisk /dev/sdd</code></p>

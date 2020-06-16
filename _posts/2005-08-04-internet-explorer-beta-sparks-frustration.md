@@ -11,12 +11,7 @@ tags: []
 meta:
   blogger_blog: mingstert.blogspot.com
   blogger_permalink: "/2005/08/internet-explorer-beta-sparks.html"
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p class="mobile-post">When Microsoft announced <a href="http://blogs.msdn.com/ie/archive/2005/07/27/444004.aspx" target="_new">the release of Internet Explorer 7 beta</a> last week, a week earlier than previously expected, developers were quick to express frustration that this was to be a closed beta, open only to paying Microsoft Developer Network (MSDN) subscribers.</p>
 <p class="mobile-post">Though Microsoft never indicated which (if any) of its IE7 betas would be made public, many had assumed from the "open and honest" direction the company appeared to be going in as it approached this release that it would be. After all, why release a closed beta of what is effectively (if not actually) a free product? </p>

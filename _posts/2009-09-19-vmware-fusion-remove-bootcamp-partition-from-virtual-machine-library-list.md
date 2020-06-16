@@ -19,12 +19,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1453388130;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:98;}i:1;a:1:{s:2:"id";i:156;}i:2;a:1:{s:2:"id";i:198;}}}}
   original_post_id: '251'
   _wp_old_slug: '251'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>The boot camp VM is broken because missing files.  How do you redo it all?</p>
 <p>It's extremely annoying that one cannot remove the Boot Camp partition entry on the Virtual Machine Library without going through some hoops and jumps...</p>

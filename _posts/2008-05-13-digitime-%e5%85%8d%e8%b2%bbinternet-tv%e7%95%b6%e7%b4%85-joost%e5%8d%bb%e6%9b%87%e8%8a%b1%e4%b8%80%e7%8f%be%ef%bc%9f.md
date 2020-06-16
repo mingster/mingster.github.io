@@ -15,12 +15,7 @@ meta:
   _wpas_skip_twitter: '1'
   _wpas_skip_yup: '1'
   _edit_last: '40718'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>林俊吉／DIGITIMES 2008/05/13</p>
 <p>由Skype的2位創辦人Niklas Zennström 與Janus Friis所創立、以P2P串流技術提供線上免費電視服務的Joost，在2007年風光揭開神祕面紗、在網路界掀起一股搶鮮試用熱潮，當時還被譽為「Next Big Things」之一，到了2008年，卻接連傳出用戶增長不如預期、拿不到優質內容授權、CTO去職投敵營懷抱、資金消耗過快、營運規模縮減等狀況不佳的壞消息。</p>

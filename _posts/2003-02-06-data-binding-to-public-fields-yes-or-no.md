@@ -15,12 +15,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1446031856;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:253;}i:1;a:1:{s:2:"id";i:121;}i:2;a:1:{s:2:"id";i:31;}}}}
   original_post_id: '202'
   _wp_old_slug: '202'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>To bind or not to bind to fields? This seems to be a source of constant debate, with folks in both camps. I get a mail roughly every six months in one form or another on this one. Today was that day.</p>
 <p>I happen to be in the camp that disagrees that we should support binding to fields, because public fields are not a recommended practice. While they maybe convenient for quick and dirty code, they do not version. Using properties instead allows you to change the access logic, and data storage behind the covers, as well as add validation logic when a value is assigned. Furthermore, accessing properties feels pretty much the same, and do not have any performance overhead. Thankfully we have an FxCop rule to call out public fields as errors. Another reason, why I happen to in the disagree camp is overall consistency within the framework. For example, the property grid does not display fields.</p>

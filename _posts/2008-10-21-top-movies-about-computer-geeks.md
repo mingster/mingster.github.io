@@ -11,12 +11,7 @@ tags: []
 meta:
   blogger_blog: mingstert.blogspot.com
   blogger_permalink: "/2008/10/top-movies-about-computer-geeks.html"
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><span style="font-weight:bold;">Pirates of Silicon Valley (1999)</span><br />This film is the semi-humorous documentary about the men who made the world of technology what it is today, their struggles during college, the founding of their companies, and the ingenious actions they took to build up the global corporate empires of Apple Computer Corporation and Microsoft Inc.</p>
 <p>Written by Flotis, biographical look at the men who founded Apple and Microsoft and a look at the early days of the companies. Noah Wyle and Joey Slotnick portray Apple founders Steve Job and Steve Wozniak.  Anthony Michael Hall and John DiMaggio play Microsoft's Bill Gates and Steve Ballmer. The film attempts to compare the two firm's operations and differences in the founder's operations.</p>

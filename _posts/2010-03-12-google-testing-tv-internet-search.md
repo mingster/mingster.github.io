@@ -20,12 +20,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1447828274;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:353;}i:1;a:1:{s:2:"id";i:221;}i:2;a:1:{s:2:"id";i:449;}}}}
   original_post_id: '235'
   _wp_old_slug: '235'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>The experiment could determine whether TV viewers would favor Web-like searches over the use of remote control searches.</p>
 <p>By W. David Gardner<br />InformationWeek<br />March 10, 2010 11:00 PM</p>

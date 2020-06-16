@@ -18,12 +18,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1453388543;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:84;}i:1;a:1:{s:2:"id";i:280;}i:2;a:1:{s:2:"id";i:62;}}}}
   original_post_id: '256'
   _wp_old_slug: '256'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>轉貼，源自：http://www.zdnet.com.tw/enterprise/technology/0,2000085680,20137151-1,00.htm<br />賴飛鵬 2009/04/13 05:00:00</p>
 <p>雖然Gartner與IDC等研究單位都預估今(09)年智慧型手機市場的成長率將下滑，如IDC將2009年全球智慧型手機的成長預估從原先的8.6%調降為3.4%，但相較於PC市場的成長趨緩，以及近幾年很少在PC端看到殺手級應用等市場現況，有愈來愈多的軟體開發商（ISV）開始關注智慧型手機市場。</p>

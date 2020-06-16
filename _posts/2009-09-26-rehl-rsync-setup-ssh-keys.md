@@ -12,12 +12,7 @@ meta:
   blogger_blog: mingster.blogspot.com
   blogger_author: Ming Tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '3474391653180365568'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Have you ever wanted to know how to easily synchronize the data between multiple servers automatically?</p>
 <p>rsync is the anwser. And here's some note. We will use rsync, ssh key authentication, and a cron job.</p>

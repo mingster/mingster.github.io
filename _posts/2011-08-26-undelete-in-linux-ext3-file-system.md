@@ -15,12 +15,7 @@ meta:
   blogger_blog: mingstert.blogspot.com
   original_post_id: '216'
   _wp_old_slug: '216'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>I accidentally wide out my 200 and some gigabytes of mp3 (again) by rsync'ing between bad disk. Luckily I found this undelete program and recover most of them.</p>
 <p><a href="http://extundelete.sourceforge.net/">http://extundelete.sourceforge.net</a></p>

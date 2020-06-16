@@ -15,12 +15,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1446677097;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:44;}i:1;a:1:{s:2:"id";i:338;}i:2;a:1:{s:2:"id";i:350;}}}}
   original_post_id: '54'
   _wp_old_slug: '54'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>This is good intro in Chinese about XP programming. Finally there's more talk in Taiwan about iton a major IT publication.</p>
 <p>If you interested in xp, also check out <a href="http://mingstert.blogspot.com/2007/09/what-is-extreme-programming.html">my older post</a>. You should also know about <a href="http://mingstert.blogspot.com/2007/09/introduction-of-aglie-development.html">Aglie Programming</a>.<br /><span class="text12" style="color:rgb(111,111,111);">文/<a href="http://www.ithome.com.tw/">李延華</a> (記者) 2007-09-02<br /></span><br />極限編程：訴求擁抱改變、注重溝通與測試，適合小團隊開發的敏捷開發方法論<br />在軟體開發領域談到「XP」，可不是指Windows XP，而是eXtreme Programming（極限編程）。</p>

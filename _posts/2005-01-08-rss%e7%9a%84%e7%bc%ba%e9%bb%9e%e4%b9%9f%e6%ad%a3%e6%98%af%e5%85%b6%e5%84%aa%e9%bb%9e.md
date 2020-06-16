@@ -15,12 +15,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455390864;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:77;}i:1;a:1:{s:2:"id";i:83;}i:2;a:1:{s:2:"id";i:29;}}}}
   original_post_id: '202'
   _wp_old_slug: '202'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><span><a href="http://taiwan.cnet.com/enterprise/technology/0,2000062852,20095473,00.htm" target="_blank">http://taiwan.cnet.com/enterprise/technology/0,2000062852,20095473,00.htm</a><br /><!--short header graphic end--><!--short header graphic end--><!--short header graphic end--><!-- story headline start -->
 <p>David Berlind‧唐慧文　　2005/01/07</p>

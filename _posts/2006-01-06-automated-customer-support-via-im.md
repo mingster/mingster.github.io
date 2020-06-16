@@ -16,12 +16,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1437705121;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:10;}i:1;a:1:{s:2:"id";i:103;}i:2;a:1:{s:2:"id";i:31;}}}}
   original_post_id: '54'
   _wp_old_slug: '54'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Here's the conversation between me and the bot:</p>
 <p><span style="color:#c0c0c0;">mingster says:</span><br />what's your name?<br /><span style="color:#ffa500;"><br />Encarta® Instant Answers says:<br /></span>Welcome, mingster! My name is Encarta Instant Answers. I am a smart computer who can bring you the Encarta info you want right in your IM window!<br />Here are some questions you can ask me:<br />* What is the capital of Canada?<br />* Where was Abraham Lincoln born?<br />* How many calories are there in an orange?</p>

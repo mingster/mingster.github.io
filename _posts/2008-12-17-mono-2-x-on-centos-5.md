@@ -12,12 +12,7 @@ meta:
   blogger_blog: mingster.blogspot.com
   blogger_author: Ming Tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '2461678172310924803'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Mono no longer packages for Red Hat distribution but still provide sources. Here we will grab the source code, and install manually on a Cent OS 5.2 box.</p>
 <p>First off, make sure you have all the development tools installed:</p>

@@ -16,12 +16,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1441535046;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:7;}i:1;a:1:{s:2:"id";i:345;}i:2;a:1:{s:2:"id";i:17;}}}}
   original_post_id: '202'
   _wp_old_slug: '202'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><b><span style="color:#ff0000;">MUST HAVE!</span></b></p>
 <p><strong><span style="font-size:100%;">The Object Primer<br /></span></strong>by <a href="http://www.amazon.com/exec/obidos/search-handle-url/index=books&amp;field-author-exact=Scott%20W.%20Ambler&amp;rank=-relevance%2C%2Bavailability%2C-daterank/103-2319014-6360612">Scott W. Ambler</a></p>

@@ -12,12 +12,7 @@ tags: []
 meta:
   blogger_blog: mingstert.blogspot.com
   blogger_permalink: "/2001/09/drag-drop-sorting-in-place-edit-using.html"
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><a href="http://mingster.com/kernel/" target="blank"><img style="float:right;cursor:hand;margin:0 0 10px 10px;" alt="click to play the MacOS 8" src="/img/macos8.gif" border="0" /></a>AJAX and Web 2.0 is the hottest technical jargon this year (2007). All the sudden everyone has to talk about community building and develop those dynamic scripting effort.
 <p>In fact, back at 10 years ago (1997) Desktop.com had the vision and actually build up a business for what Google app is trying to do today. Back at the time some people from the North think it's crazy and useless for fat desktop-like applications to run on the web.</p>

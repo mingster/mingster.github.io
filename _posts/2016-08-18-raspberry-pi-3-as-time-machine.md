@@ -12,12 +12,7 @@ meta:
   blogger_blog: mingster.blogspot.com
   blogger_author: ming tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '5420622587709311765'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>The Raspberry Pi 3 + external 4TB drive setup, originally I tried to set it up as Plex server. And the CPU is just not powerful enough.</p>
 <p>I decided to convert it to a NAS for Time machine purpose.</p>

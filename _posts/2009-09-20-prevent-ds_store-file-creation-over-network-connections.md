@@ -19,12 +19,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455213404;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:253;}i:1;a:1:{s:2:"id";i:373;}i:2;a:1:{s:2:"id";i:75;}}}}
   original_post_id: '251'
   _wp_old_slug: '251'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>1. Open the Terminal application from the Utilities folder which is nested in the Applications folder</p>
 <p>2. In the newly opened terminal type:<br /><code><br />defaults write com.apple.desktopservices DSDontWriteNetworkStores true<br /></code><br />3. Restart the computer for the change to take effect</p>

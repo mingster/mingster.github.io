@@ -16,12 +16,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1442217752;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:103;}i:1;a:1:{s:2:"id";i:232;}i:2;a:1:{s:2:"id";i:156;}}}}
   original_post_id: '256'
   _wp_old_slug: '256'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>To turn off Internet Explorer Enhanced Security Configuration, you can remove the IEHarden registry entry from the user account profile. To do this, follow these steps:
 <div>

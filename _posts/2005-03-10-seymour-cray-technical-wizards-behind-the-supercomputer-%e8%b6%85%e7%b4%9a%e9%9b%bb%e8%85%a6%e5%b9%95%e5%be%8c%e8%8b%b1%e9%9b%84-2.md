@@ -14,12 +14,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455260913;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:62;}i:1;a:1:{s:2:"id";i:265;}i:2;a:1:{s:2:"id";i:300;}}}}
   original_post_id: '54'
   _wp_old_slug: '54'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><img hspace="2" src="/img/5735742_b15a27439b.jpg?v=0" align="left" border="0" />Seymour R. Cray, a computer industry pioneer and the father of the supercomputer, posed with the Cray 3 supercomputer at Cray Computer Corp. company headquarters in 1994.</p>
 <p>對程式設計人員來說，希穆爾克雷(Seymour Cray)是一位巨人。克雷極少發表演說，1976年他在科羅拉多州的國家大氣研究中心對程式設計人員發表演說，並同意演說結束後答覆詢問。只見會後整個會場突然沈寂下來，克雷在講台上站了好幾分鐘，等待程式人員提問，但沒有人發問。等到克雷離去以後，大氣研究中心電腦部負責人責備在場的程式人員：「為什麼沒有舉手發問？」經過一陣令人不安的沈默，一位程式師終於回答：「要你對上帝說話，你敢嗎？」</p>

@@ -12,12 +12,7 @@ meta:
   blogger_blog: mingster.blogspot.com
   blogger_author: Ming Tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '888581683501339444'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>If you upgrade to Lion from Snow Leopard + Win7 bootcamp, you might find that you can't download new bootcamp 4.0 from Bootcamp Assistant.  The way I go around it is by downloading it from Apple's CDN:
 <ol>

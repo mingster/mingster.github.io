@@ -16,12 +16,7 @@ meta:
   _edit_last: '40718'
   tagazine-media: a:7:{s:7:"primary";s:0:"";s:6:"images";a:0:{}s:6:"videos";a:0:{}s:11:"image_count";s:1:"0";s:6:"author";s:5:"40718";s:7:"blog_id";s:5:"41166";s:9:"mod_stamp";s:19:"2010-07-26
     08:30:33";}
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>In a Team development environment where parallel development and testing goes we find a requirement of getting most recent build to test as well as some specific build to give the QA to do testing on. This post describes what all are needed to set up an automated source code integration and build system for an environment where we use Visual Studio for development, source control (SVN in our case) for source depot, and doc/ tracking system (trac in our case).</p>
 <p>Why do we need a continuous source code integration and build system? well, this helps the QA team by allowing then to not spend more time in syncing the source and doing a build everytimes or even working on a relatively older build.  This works as a perfect backup for your Source Control and also the deployment server. This also allows to align the builds numbers to be same as your assembly\file version and also to the source control label there by making a particular build to be a complete unit in itself in terms of readiness for deployment or using the same for development.</p>

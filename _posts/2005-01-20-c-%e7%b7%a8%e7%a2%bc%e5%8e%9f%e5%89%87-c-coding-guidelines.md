@@ -17,12 +17,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455708809;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:338;}i:1;a:1:{s:2:"id";i:142;}i:2;a:1:{s:2:"id";i:18;}}}}
   original_post_id: '202'
   _wp_old_slug: '202'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>誰都會寫程式碼！幾個月的編程經驗可以讓你寫出「可運行的應用程式」。但在開發團隊的運行模式下，以最有效率的方式編碼、能被小組成員順暢承接的程式碼就必需要下更多的功夫！</p>
 <p>要知道，大多數程式設計師在寫「可運行程式碼」，而不是「高效率程式碼」。寫高效程式碼是一項藝術，必須靠紀律及學習來實踐。建立一個高效率、有默契的開發團隊更需有一定的規範及標準流程。</p>

@@ -13,12 +13,7 @@ meta:
   blogger_blog: mingster.blogspot.com
   blogger_author: Ming Tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '5443138990063853180'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><strong><span style="font-size:100%;">Good to Great: Why Some Companies Make the Leap... and Others Don't<br /></span></strong>by <a href="http://www.amazon.com/exec/obidos/search-handle-url/index=books&amp;field-author-exact=Jim%20Collins&amp;rank=-relevance%2C%2Bavailability%2C-daterank/103-2319014-6360612">Jim Collins</a><a href="http://rcm.amazon.com/e/cm?t=mingster-20&#038;o=1&#038;p=8&#038;l=as1&#038;asins=0066620996&#038;fc1=FFFFCC&#038;IS2=1&#038;lt1=_blank&#038;lc1=FFCC00&#038;bc1=000000&#038;bg1=000000&#038;f=ifr">http://rcm.amazon.com/e/cm?t=mingster-20&#038;o=1&#038;p=8&#038;l=as1&#038;asins=0066620996&#038;fc1=FFFFCC&#038;IS2=1&#038;lt1=_blank&#038;lc1=FFCC00&#038;bc1=000000&#038;bg1=000000&#038;f=ifr</a></p>
 <p>Good to Great is a great business management book.  The book is actual a 2nd part of Professor Collin's research report.  In his early research's observation (also booked as "Build to Last"), the "Built to Last" companies he choose had always been great (for reasons, of course).  In this book, he further analyze for those good companies (but not yet great) what's missing.</p>

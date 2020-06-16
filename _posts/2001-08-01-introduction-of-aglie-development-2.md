@@ -13,12 +13,7 @@ meta:
   blogger_blog: mingster.blogspot.com
   blogger_author: Ming Tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '2199915388038761115'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><span style="font-weight:bold;font-size:100%;"><span style="font-family:trebuchet ms;">Introduction</span></span><br />I want to provide thorough information for the everyday coder - without the "I want to sell you something so I have to look extra smart" obfuscation layer. These are my personal views, acquired by analyzing my own development "challenges", browsing the web, discussing it at CP and elsewhere, and trying it myself. It won't be a "brief introduction", so here's an overview in case you want to skip something:<span style="font-family:trebuchet ms;font-size:100%;"></p>
 <ul>

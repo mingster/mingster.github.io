@@ -15,12 +15,7 @@ meta:
   _wpas_skip_yup: '1'
   _wpas_skip_twitter: '1'
   _edit_last: '40718'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Joost超順暢 網路影音High起來！《PChome八月號》撰文＝蔡逸民<br /><a href="http://tech.chinatimes.com/2007Cti/2007Cti-News/Inc/2007cti-news-Tech-inc/Tech-Content/0,4703,17170103+172007081001520,00.html">http://tech.chinatimes.com/2007Cti/2007Cti-News/Inc/2007cti-news-Tech-inc/Tech-Content/0,4703,17170103+172007081001520,00.html</a>#</p>
 <p>誰說<a class="cidkligk" title="搜尋這個關鍵字的相關內容" href="http://www.contentinside.net/redirkey.aspx?wid=1&amp;kw=%u7DB2%u8DEF" target="_blank">網路</a><a class="cidkligk" title="搜尋這個關鍵字的相關內容" href="http://www.contentinside.net/redirkey.aspx?wid=1&amp;kw=%u96FB%u8996" target="_blank">電視</a>一定等於畫質差，由Skype創辦人<a class="cidkligk" title="搜尋這個關鍵字的相關內容" href="http://www.contentinside.net/redirkey.aspx?wid=1&amp;kw=%u958B%u767C" target="_blank">開發</a>的新一代<a class="cidkligk" title="搜尋這個關鍵字的相關內容" href="http://www.contentinside.net/redirkey.aspx?wid=1&amp;kw=%u7DB2%u8DEF" target="_blank">網路</a>電視Joost即將以高畫質超順暢的播放品質，粉碎你對網路<a class="cidkligk" title="搜尋這個關鍵字的相關內容" href="http://www.contentinside.net/redirkey.aspx?wid=1&amp;kw=%u96FB%u8996" target="_blank">電視</a>的刻板印象。不相信？那就來試試吧！</p>

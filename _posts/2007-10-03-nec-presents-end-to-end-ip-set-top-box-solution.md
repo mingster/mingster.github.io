@@ -15,12 +15,7 @@ meta:
   _edit_last: '40718'
   _wpas_skip_yup: '1'
   _wpas_skip_twitter: '1'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>2006/12/5</p>
 <p>Triple play is focused on one of NGN killer application which integrates TV telephony, VOD/IPTV and web service over common platform of NGN. At ITU Telecom 2006, NEC presents end-to-end solution from IP-Set Top Box to contents delivery platform based on collaboration of our business domain, network, IT and broadcasting. Demonstration shows TV telephony, high definition VoD/IPTV and its combination in conjunction with Multimedia Service Access Node, supporting ADSL, VDSL and G-PON.</p>

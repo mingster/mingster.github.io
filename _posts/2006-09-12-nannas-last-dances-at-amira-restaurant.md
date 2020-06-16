@@ -11,12 +11,7 @@ tags: []
 meta:
   blogger_blog: mingstert.blogspot.com
   blogger_permalink: "/2006/09/nannas-last-dances-at-amira-restaurant.html"
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>Although I'm not in bay area anymore, but I'm sorry to hear that Amira is closing -<br /><a href="http://deserteyesbellydance.tribe.net/thread/5b471f42-ea60-4418-8519-c3898f80cbd3#cbbd2be4-2514-42e4-834d-53ac94087520" target="_blank">Nanna's Last Dances at Amira Restaurant</a>.<br />
 <table>

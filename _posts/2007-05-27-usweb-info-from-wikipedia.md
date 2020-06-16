@@ -15,12 +15,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1447359331;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:16;}i:1;a:1:{s:2:"id";i:32;}i:2;a:1:{s:2:"id";i:40;}}}}
   original_post_id: '147'
   _wp_old_slug: '147'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>I can't fall to sleep tonight and think of the good old days. The original USWeb company bio is even on Wikipedia, and here it is:
 <p><b>USWeb</b> is an <a title="Internet marketing" href="http://en.wikipedia.org/wiki/Internet_marketing">Internet marketing</a> company based in <a title="Aliso Viejo, California" href="http://en.wikipedia.org/wiki/Aliso_Viejo%2C_California">Aliso Viejo, California</a>. Originally founded as a <a title="Web design" href="http://en.wikipedia.org/wiki/Web_design">Web design</a> company, it expanded during the <a title="Dot-com boom" href="http://en.wikipedia.org/wiki/Dot-com_boom">dot-com boom</a> into consulting and marketing. After several mergers with other companies, its parent company went bankrupt, and USWeb emerged as a separate entity whose focus has now shifted more toward <a title="Search engine optimization" href="http://en.wikipedia.org/wiki/Search_engine_optimization">search engine optimization</a>.</p>

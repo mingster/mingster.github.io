@@ -12,12 +12,7 @@ meta:
   blogger_blog: mingster.blogspot.com
   blogger_author: ming tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '5936549539066941208'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>If ssh dsa key is used for password-less access to other boxes, it won't work in MacOS Sierra anymore.  It's because:</p>
 <p><i>The problem is that DSA keys are obsolete after OpenSSH 7.0, which the new system seems to use. I generated a new RSA key and things worked again. Also, in the process I found out that the authorized_keys2 file has been actually deprecated for a long time! So I advice everybody to use authorized_keys instead, which works both with protocols 1 and 2. That way Apple's original sshd_config will work as is. </i></p>

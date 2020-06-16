@@ -1,5 +1,4 @@
----
-layout: post
+author: mingsterlayout: post
 title: 安裝 HomeBridge On Raspberry Pi 3b
 date: 2018-01-13 23:19:41.000000000 +08:00
 type: post
@@ -9,8 +8,7 @@ categories:
 - HomeAutomation
 tags: HomeBridge, Raspberry Pi
 author: mingster
----
-
+author: mingster
 HomeBridge是基於nodejs server的應用，它模擬iOS HomeKit，成為一個我們可以『控制』的網關。
 
 我們需要HomeBridge來搭入Apple設備，這樣就可以使用siri/iPhone/iPad 來控制小米、Home Assistant、或其他HomeBridge有plug-in的platform了。

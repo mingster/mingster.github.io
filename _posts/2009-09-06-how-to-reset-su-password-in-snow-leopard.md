@@ -18,11 +18,6 @@ meta:
   blogger_permalink: "/2009/09/how-to-reset-su-password-in-snow.html"
   original_post_id: '251'
   _wp_old_slug: '251'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p>In 10.5.x or <span class="blsp-spelling-corrected" id="SPELLING_ERROR_0">earlier</span> version of <span class="blsp-spelling-error" id="SPELLING_ERROR_1">OSX</span>, you use Directory Utility to enable root user and reset its password. In Snow Leopard, the utility is removed under the Application/Utility folder.  So what do you do?<br /><code><br /><span class="blsp-spelling-error" id="SPELLING_ERROR_2">sudo</span> <span class="blsp-spelling-error" id="SPELLING_ERROR_3">passwd</span><br /></code><br />Alternately, you can navigate to /System/Library/<span class="blsp-spelling-error" id="SPELLING_ERROR_4">CoreServices</span>/Directory Utility.app to do it in the old way.</p>

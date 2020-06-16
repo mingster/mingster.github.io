@@ -1,5 +1,4 @@
----
-layout: post
+author: mingsterlayout: post
 title: WatchNOW.tv 線上影音網站今上線
 date: 2007-10-03 03:49:00.000000000 +08:00
 type: post
@@ -12,14 +11,8 @@ meta:
   blogger_author: mingster
   blogger_1_permalink: "/2007/10/watchnowtv.html"
   blogger_blog: mingstertsai.blogspot.com
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
----
-<p>WatchNOW.tv 線上影音網站今上線<br />文/趙郁竹 2007-10-02</p>
+author: mingster
+author: mingster<p>WatchNOW.tv 線上影音網站今上線<br />文/趙郁竹 2007-10-02</p>
 <p>中華聯合數位映像總經理連崑崙表示，除了本身擁有較多影片版權，另外也透過異業合作的方式以豐富內容，將資源整合。</p>
 <p>中華聯合數位映像推出宣稱是全台擁有最多版權線上影音內容的網站，提供隨選（On demand）服務，並可在3G手機、PDA、數位機上盒等媒介跨平台收看。</p>
 <p>這個名為WatchNOW.tv 的網站目前已上現的有電影頻道，但在年底前會陸續推出戲劇、財經、綜藝等頻道。中華聯合數位映像總經理連崑崙表示，除了本身擁有較多影片版權，另外也透過異業合作的方式以豐富內容，將資源整合。目前已和東森ET Today、民視、So-net、CHTV等媒體合作，另外還和多家電影公司、國際片商也有合作計畫。</p>

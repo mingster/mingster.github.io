@@ -13,12 +13,7 @@ meta:
   blogger_blog: mingster.blogspot.com
   blogger_author: Ming Tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '110975856829920220'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><span style="font-family:verdana, arial, helvetica;">by <u>Alistair Cockburn</u></span> (Paperback) <a href="http://rcm.amazon.com/e/cm?t=mingster-20&#038;o=1&#038;p=8&#038;l=as1&#038;asins=0201702258&#038;amp;amp;amp;amp;fc1=000000&#038;=1&#038;lc1=0000ff&#038;bc1=000000&#038;lt1=_blank&#038;IS2=1&#038;amp;amp;amp;amp;f=ifr&#038;bg1=ffffff&#038;f=ifr">http://rcm.amazon.com/e/cm?t=mingster-20&#038;o=1&#038;p=8&#038;l=as1&#038;asins=0201702258&#038;amp;amp;amp;amp;fc1=000000&#038;=1&#038;lc1=0000ff&#038;bc1=000000&#038;lt1=_blank&#038;IS2=1&#038;amp;amp;amp;amp;f=ifr&#038;bg1=ffffff&#038;f=ifr</a><br />Addison-Wesley Pub Co; 1st edition (January 15, 2000) </p>
 <p><strong><span style="font-size:100%;color:#cc6600;">Editorial Reviews<br /></span></strong><br /><strong>Amazon.com</strong>Alistair Cockburn's <i>Writing Effective Use Cases</i> is an approachable, informative, and very intelligent treatment of an essential topic of software design. "Use cases" describe how "actors" interact with computer systems and are essential to software-modeling requirements. For anyone who designs software, this title offers some real insight into writing use cases that are clear and correct and lead to better and less costly software.

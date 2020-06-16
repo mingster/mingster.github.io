@@ -1,5 +1,4 @@
----
-layout: post
+author: mingsterlayout: post
 title: Extractable At San Mateo Suite 209, 12/1999
 date: 1999-12-19 00:20:00.000000000 +08:00
 type: post
@@ -16,11 +15,5 @@ meta:
   _blogger_self: https://www.blogger.com/feeds/7772966/posts/default/113794687046947865
   original_post_id: '202'
   _wp_old_slug: '202'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
----
-<p><a href="/img/DCP_0008.jpg"><img style="clear:all;float:left;cursor:hand;margin:0 10px 10px 0;" alt="" src="/img/DCP_0008.jpg" /></a></p>
+author: mingster
+author: mingster<p><a href="/img/DCP_0008.jpg"><img style="clear:all;float:left;cursor:hand;margin:0 10px 10px 0;" alt="" src="/img/DCP_0008.jpg" /></a></p>

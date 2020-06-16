@@ -17,12 +17,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455188359;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:166;}i:1;a:1:{s:2:"id";i:254;}i:2;a:1:{s:2:"id";i:317;}}}}
   original_post_id: '235'
   _wp_old_slug: '235'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><a href="http://www.netsarang.com/products/xsh_detail.html" target="_blank">XShell</a> from NetSarang is a great SSH client that we use. Even one awhile, you might wanna back up all the saved profiles.</p>
 <p>The profiles are actually located at: %user_profile%\%username%\AppData\Roaming\NetSarang\Xshell. For example, C:\Users\johnny\AppData\Roaming\NetSarang\Xshell.</p>

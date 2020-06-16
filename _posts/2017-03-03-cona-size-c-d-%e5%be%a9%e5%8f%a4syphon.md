@@ -13,12 +13,7 @@ meta:
   blogger_author: Ming Tsai
   blogger_eb3191f8b77bf2ac10a5fe54aebee9ae_permalink: '3114138084153843106'
   _wpcom_is_markdown: '1'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <div class="separator" style="clear:both;text-align:left;">這是新玩具，Cona牌Syphon壺。1910年代開始就有，這次買的是近新品：</div>
 <div class="separator" style="clear:both;text-align:center;"><a style="margin-left:1em;margin-right:1em;text-align:center;" href="https://mingster.files.wordpress.com/2017/03/4db36-img_1901.jpg"><img src="/img/4db36-img_1901.jpg?w=225" width="480" height="640" border="0" /></a></div>

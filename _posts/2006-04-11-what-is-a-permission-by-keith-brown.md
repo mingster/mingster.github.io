@@ -15,12 +15,7 @@ meta:
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1455083257;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:167;}i:1;a:1:{s:2:"id";i:232;}i:2;a:1:{s:2:"id";i:14;}}}}
   original_post_id: '54'
   _wp_old_slug: '54'
-author:
-  login: mingster
-  email: mingster.tsai@gmail.com
-  display_name: mingster
-  first_name: ''
-  last_name: ''
+author: mingster
 ---
 <p><a href="http://www.pluralsight.com/wiki/default.aspx/Keith.GuideBook.WhatIsAPermission">http://www.pluralsight.com/wiki/default.aspx/Keith.GuideBook.WhatIsAPermission</a></p>
 <p>
