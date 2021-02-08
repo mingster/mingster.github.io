@@ -39,38 +39,47 @@ a02082, a22082, 或 a32082 才是 Pi 3.
 若有其他node.js的東西在run，就不能這樣做了。
 
 ```
-sudo apt-get remove nodejs
-rm -rf /usr/lib/node_modules/home*
+sudo apt-get -y remove nodejs;
+
+sudo rm -rf /usr/lib/node_modules/; rm -rf ~/node_modules/
 ```
 
 ## 第二步 安裝HomeBridge所需軟體
 
 1. 安裝相關軟體：
 ```
-sudo apt-get install git gcc g++ make python3
+sudo apt-get install git gcc g++ make python3 net-tools
 ```
 
 
-2. 安裝node repository (版本很重要，不能亂換)：
-
-[https://github.com/nodesource/distributions](https://github.com/nodesource/distributions)
+2. 安裝 nodejs (版本很重要，不能亂換)：
 
 ```
-curl -sL https://deb.nodesource.com/setup_13.x | bash -
+cd ~/
+
+# setup repo
+curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+
+# install Node.js
 sudo apt-get install -y nodejs
 
-<<<<<<< Updated upstream
-sudo apt-get install -y npm
-=======
+# test node is working
+node -v
+
 # upgrade npm (version 6.13.4 has issues with git dependencies)
 sudo npm install -g npm
->>>>>>> Stashed changes
+
+
+sudo npm install -g node-gyp
 ```
+
+this get you node 14.15.2
+
 
 3. 安裝Avahi包：
 
 ```
-sudo apt-get install libavahi-compat-libdnssd-dev
+sudo apt-get install -y libavahi-compat-libdnssd-dev
 ```
 
 4. 安裝 homebridge及相關 (--unsafe-perm 很重要，不能拿掉)：
@@ -78,21 +87,22 @@ sudo apt-get install libavahi-compat-libdnssd-dev
 Reference: [Installing Homebridge](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Raspbian)
 
 ```
-sudo npm install -g --unsafe-perm homebridge homebridge-config-ui-x hap-nodejs
+sudo npm install -g --unsafe-perm homebridge homebridge-config-ui-x
 ```
 
 5. 安裝 bignum
 
 ```
-cd /usr/lib/node_modules/homebridge/
+cd /usr/lib/node_modules/homebridge/; 
 sudo npm install --unsafe-perm bignum
 ```
 安裝會有錯誤warning，可以不理他。
 
-6. 重整 mdns
+6. 安裝並重整 mdns
 
 ```
-cd /usr/lib/node_modules/mdns
+cd /usr/lib/node_modules/homebridge/; 
+sudo npm install --unsafe-perm mdns
 
 sudo node-gyp BUILDTYPE=Release rebuild
 ```
@@ -104,17 +114,18 @@ sudo node-gyp BUILDTYPE=Release rebuild
 ```
 sudo npm install -g homebridge-homeassistant
 ```
-## 第四步 安裝broadlink
+
+## 第四步 安裝broadlink plug-in
+
+[homebridge-broadlink-rm-pro](https://broadlink.kiwicam.nz/#homebridge-broadlink-rm)
 
 ```
-sudo chmod -R 755 /usr/lib/node_modules/
-sudo chown -R pi.pi /usr/lib/node_modules/
+sudo chmod -R 755 /usr/lib/node_modules/;
+sudo chown -R pi.pi /usr/lib/node_modules/;
 
-rm -rf ~/.cache/
-mkdir ~/.cache/
-sudo chmod -R 755 ~/.cache/
+rm -rf ~/.cache/; mkdir ~/.cache/; sudo chmod -R 755 ~/.cache/;
 
-npm install -g --unsafe-perm homebridge-broadlink-rm
+sudo npm install -g homebridge-broadlink-rm-pro
 ```
 
 1. Run "which node" to determine your node path.
@@ -158,12 +169,6 @@ sudo setcap cap_net_raw+ep /usr/lib/
 
 
 ## 第五步 測試
-
-進入homebridge身份：
-```
-sudo su -s /bin/bash homebridge
-```
-
 
 ```
 homebridge -D
@@ -210,6 +215,8 @@ WantedBy=multi-user.target
 
 	```
 	sudo useradd --system homebridge
+	
+	sudo passwd homebridge
 	```
 
 4. 設定檔位置：
@@ -226,42 +233,55 @@ WantedBy=multi-user.target
 	```
 
 ## 第六步 測試服務
+
+```
+homebridge -U /var/homebridge
+```
+
+重整服務：
 ```
 sudo systemctl daemon-reload
 ```
 
-打開：
-
+啟用：
 ```
 sudo systemctl enable homebridge
 ```
 
 啟動：
-
 ```
 sudo systemctl start homebridge
 ```
 
 狀態：
-
 ```
 sudo systemctl status homebridge
+```
+
+
+進入homebridge身份：
+```
+sudo su -s /bin/bash homebridge
 ```
 
 都裝好了，就可以開始[將設備接入](https://sspai.com/post/40075)。
 
 
+
 ## 第七步 更新
 要更新homebridge，可以：
-```
-sudo npm upgrade -g homebridge
-sudo npm upgrade -g homebridge-homeassistant
-```
+
+
+	sudo npm upgrade -g homebridge
+	
+	sudo npm upgrade -g homebridge-homeassistant
+
 
 ### Node更新
 ```
 sudo hb-service rebuild
 ```
+
 
 ## References
 - [HomeBridge on Raspberry-Pi](https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi)
