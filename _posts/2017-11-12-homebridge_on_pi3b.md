@@ -284,7 +284,8 @@ sudo hb-service rebuild
 
 
 ## References
-- [HomeBridge on Raspberry-Pi](https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi)
+- [How to Extract All Your Custom IR Hex Codes from a Broadlink RM Mini 3 for Homebridge](https://alwayswithyouwhatcannotbedone.wordpress.com/2020/09/28/how-to-extract-all-your-custom-ir-hex-codes-from-a-broadlink-rm-mini-3-for-homebridge/)
+- [HomeBridge on Raspberry-Pi](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Raspbian)
 - [Setup Homebridge to Start on Bootup](https://timleland.com/setup-homebridge-to-start-on-bootup/)
 - [homebridge-mi-aqara](https://github.com/YinHangCode/homebridge-mi-aqara)
 - [https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi](https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi)
