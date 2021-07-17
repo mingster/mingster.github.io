@@ -20,8 +20,9 @@ permalink: /:title/
 logo: 'assets/images/logo.png'
 google_analytics: 'UA-255651-1'
 disqus: 'mingster'
-include: ['_pages', '.htaccess', 'node_modules']
-exclude: ["*.sh", "LICENSE", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json"]
+include: ['_pages', '.htaccess']
+exclude: ["*.sh", "LICENSE", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json", "node_modules"]
+keep_files: ["node_modules"]
 
 #markdown: redcarpet
 markdown: kramdown
