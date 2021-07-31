@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body {
+  position: relative;
+}
+
 /*
 Template Name: Mediumish
 Copyright: Sal, WowThemes.net, https://www.wowthemes.net
@@ -26,7 +32,7 @@ code, pre {
     border: #E3EDF3 1px solid;
     width: 100%;
     padding: 7px;
-    font-family: monospace, sans-serif;
+    font-family: 'Source Sans Pro', monospace, sans-serif;
     font-size: .9rem;
     white-space: pre;
     overflow: auto;
@@ -229,6 +235,7 @@ section.recent-posts {
 span.post-name,
 span.post-date,
 span.author-meta {
+  font-family: 'Source Sans Pro'
     display: inline-block;
 }
 

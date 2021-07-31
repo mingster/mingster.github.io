@@ -4,20 +4,21 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "3.4.1",
+    "bootstrap": "5.0.2",
+    "highlight.js": "11.1.0",
     "bowser": "1.9.4",
-    "font-awesome": "^4.7.0",
-    "lunr": "^2.3.8",
+    "font-awesome": "4.7.0",
+    "lunr": "2.3.9",
     "video.js": "7.14.0",
-    "@silvermine/videojs-airplay": "^1.0.2",
-    "@videojs/http-streaming": "^2.9.1",
+    "@silvermine/videojs-airplay": "1.1.0",
+    "@videojs/http-streaming": "2.9.3",
     "videojs-errors": "4.5.0",
     "videojs-flash": "2.2.1",
     "videojs-font": "3.2.0",
-    "videojs-persistvolume": "latest",
+    "videojs-persistvolume": "0.2.0",
     "videojs-responsive-layout": "1.1.1",
     "videojs-youtube": "2.6.1",
-    "videojs-landscape-fullscreen": "^11.1.0"
+    "videojs-landscape-fullscreen": "11.1.0"
   },
   "devDependencies": {
     "gh-pages": "1.2.0"
