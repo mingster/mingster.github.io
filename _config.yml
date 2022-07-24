@@ -1,10 +1,13 @@
 # https://jekyllrb.com/docs/configuration/options/
 #
-
 #https://github.com/jekyll/jekyll/issues/3478
 webrick:
   headers:
     Access-Control-Allow-Origin: "*"
+
+webserver_headers:
+  "Access-Control-Allow-Origin": "*"
+  "Server": "*"
 
 encoding: utf-8
 incremental: true

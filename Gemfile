@@ -15,3 +15,5 @@ gem 'github-pages', group: :jekyll_plugins
 
 # to start development server, do this:
 # bundle exec jekyll build && bundle exec jekyll serve --incremental --lsi
+
+gem "webrick", "~> 1.7"

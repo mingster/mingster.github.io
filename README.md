@@ -9,21 +9,10 @@ It is automatically transformed by [Jekyll](https://github.com/mojombo/jekyll) i
 #### 1. Install Ruby
 Ruby and RubyGems are usually installed by default on Macs. If you are using the version from mac default, permission issues will occur.
 
-You are good if you get responses that look like this:
-```bash
-which ruby
-/usr/local/bin/ruby
-```
-and
-```bash
-which gem
-/usr/local/bin/gem
-```
+[Jekyll on macOS](https://jekyllrb.com/docs/installation/macos/)
 
-If not, install Ruby through Homebrew
-```bash
-brew install ruby
-```
+
+
 
 #### 2. Install Bundler to manage dependencies
 
@@ -37,6 +26,8 @@ gem install bundler
 Once you have installed it, `cd` into the local clone of your fork and run:
 
 ```bash
+bundle add webrick
+
 bundle install
 ```
 This will read the GemFile to download and install the necessary dependencies.
