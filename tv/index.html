@@ -1,94 +1,103 @@
 ---
 layout: video
 ---
-<section class="recent-posts">
-	<div class="row listrecent">
-		<div class="col-lg-4 col-md-6 mb-30px card-group">
-			<div class="card h-300">
-				<div class="maxthumb">
-					<iframe src="https://www.youtube-nocookie.com/embed/KDRwIRKP5tY?mute=1&playsinline=1" width="100%" height="300" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-6 mb-30px card-group">
-			<div class="card h-300">
-				<div class="maxthumb">
-					<iframe src="https://www.youtube-nocookie.com/embed/R2iMq5LKXco?mute=1&playsinline=1" width="100%" height="300" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-6 mb-30px card-group">
-			<div class="card h-300">
-				<div class="maxthumb">
-					<iframe src="https://www.youtube-nocookie.com/embed/XxJKnDLYZz4?mute=1&playsinline=1" width="100%" height="300" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
 
-		<div class="col-lg-4 col-md-6 mb-30px card-group">
-			<div class="card h-300">
-				<div class="maxthumb">
-					<iframe src="https://www.youtube-nocookie.com/embed/pJ0VgJloR9E?mute=1&playsinline=1" width="100%" height="300" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-6 mb-30px card-group">
-			<div class="card h-100">
-				<div class="maxthumb">
-					<iframe src="https://www.youtube-nocookie.com/embed/lu_BJKxqGnk?mute=1&playsinline=1" width="100%" height="300" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-6 mb-30px card-group">
-			<div class="card h-100">
-				<div class="maxthumb">
-					<iframe src="https://www.youtube-nocookie.com/embed/JAzRXylm3M0?mute=1&playsinline=1" width="100%" height="300" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-lg-4 col-md-6 mb-30px card-group">
-			<div class="card h-100">
-				<div class="maxthumb">
-					<iframe src="https://www.youtube.com/embed/NHTD_g1LYOM?mute=1&playsinline=1" width="100%" height="300" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-6 mb-30px card-group">
-			<div class="card h-100">
-				<div class="maxthumb">
-					<iframe src="https://www.youtube.com/embed/IMNMyJM7HRo?mute=1&playsinline=1" width="100%" height="300" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-6 mb-30px card-group">
-			<div class="card h-100">
-				<div class="maxthumb">
-					<iframe src="https://www.youtube.com/embed/oBtdmnT-lCc?mute=1&playsinline=1" width="100%" height="300" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-lg-4 col-md-6 mb-30px card-group">
-			<div class="card h-100">
-				<div class="maxthumb">
-					<iframe src="https://www.youtube-nocookie.com/embed/vCDDYb_M2B4?mute=1&playsinline=1" width="100%" height="300" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-6 mb-30px card-group">
-			<div class="card h-100">
-				<div class="maxthumb">
-					<iframe src="https://www.youtube-nocookie.com/embed/jIgEaTWp0-k?mute=1&playsinline=1" width="100%" height="300" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-6 mb-30px card-group">
-			<div class="card h-100">
-				<div class="maxthumb">
-					<iframe src="https://www.youtube-nocookie.com/embed/nOdFX58A6e0?mute=1&playsinline=1" width="100%" height="300" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
+<div id="playerPage">
+	<div id="neededComponents" class="alert alert-danger" style="display: none"></div>
+	<video id="mediaplayer" class="video-js vjs-default-skin vjs-fluid" crossorigin="anonymous"
+		data-setup='{ "techOrder": ["youtube","html5","flash"], "controls": true, "autoplay": true, "preload": "auto" }'>
+		<source src="https://youtu.be/xL0ch83RAK8" type="video/youtube" />
+	</video>
+</div>
+<div id="channels"></div>
+<div id="freeCh">
+	<div class="chLinkd col-md-4">
+		<a id="ctinews" class="ctinews" href="javascript:void(0);">中天新聞</a>
 	</div>
-</section>
+	<div class="chLinkd col-md-4">
+		<a id="daai" class="daai" href="javascript:void(0);">大愛</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+	document.getElementById("neededComponents").style.display = "none";
+	var player = videojs(
+		"mediaplayer",
+		{
+			controlBar: {
+				volumeMenuButton: {
+					inline: false,
+				},
+			},
+			registerPlugin: {
+				responsiveLayout: {},
+				persistvolume: {
+					namespace: "twtv",
+				},
+			},
+		},
+		function () {
+			var player = this;
+			player.airPlay();
+		}
+	);
+
+	player.responsiveLayout();
+	player.landscapeFullscreen();
+	player.on("play", function (e) {
+		document.getElementById("neededComponents").style.display = "none";
+	}),
+		player.on("error", function (e) {
+			console.log(e);
+			e.stopImmediatePropagation();
+			var error = player.error();
+			console.log("error!", error.code, error.type, error.message);
+		});
+</script>
+<script type="text/javascript">
+	let url =
+		"http://stbtest.5ik.tv/json/GetLiveScreen/?sid=13182cc5-0379-4087-8c3c-32b20a7f305e";
+
+	var chDiv = document.getElementById("channels");
+	fetch(url)
+		.then((res) => res.json())
+		.then((data) => {
+			//console.log("Checkout this JSON! ", data);
+			for (const ch of data) {
+				let div = document.createElement("div");
+				div.className = "chLinkd col-md-4";
+
+				let contentId = document.createElement("span");
+				contentId.className = "nowPlayingChNum";
+				contentId.innerText = ch.contentId + " ";
+
+				let link = document.createElement("a");
+				link.addEventListener("click", function () { player.src({ src: ch.url, type: "application/x-mpegURL" }); });
+				link.className = "nowPlayingChTitle";
+				link.text = contentId.innerHTML + ch.title;
+
+				div.appendChild(link);
+
+				chDiv.appendChild(div);
+
+				//console.log(div.innerHTML);
+			}
+		})
+		.catch((err) => {
+			throw err;
+		});
+
+	var player = videojs.players.mediaplayer;
+
+	var url_cti = "https://youtu.be/_QbRXRnHMVY";
+	var ctinews = document.querySelector(".ctinews");
+	ctinews.addEventListener("click", function () {
+		player.src({ src: url_cti, type: "video/youtube" });
+	});
+
+	var url_daai = "https://youtu.be/oV_i3Hsl_zg";
+	var daai = document.querySelector(".daai");
+	daai.addEventListener("click", function () {
+		player.src({ src: url_daai, type: "video/youtube" });
+	});
+</script>

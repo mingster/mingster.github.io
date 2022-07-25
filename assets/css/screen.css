@@ -1,7 +1,66 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(//fonts.googleapis.com/earlyaccess/nicomoji.css);
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/* Japanese Kana U+3040-U+30FF */
+@font-face {
+    font-family: "custom_h";
+    src: 'Nico Moji', local("Meiryo"), local("Klee"), local("Hiragino Kaku Gothic Pro"), local("Mojikyo");
+    unicode-range: U+41-5A, U+61-7A, U+C0-FF;
+}
+
+@font-face {
+    font-family: "custom_t";
+    src: 'Nico Moji', local("Meiryo"), local("Klee"), local("Hiragino Mincho Pro"), local("MS PMincho"), local("Gothic Pro"), local("Helvetica"), local("Tahoma");
+    unicode-range: U+41-5A, U+61-7A, U+C0-FF;
+}
+
+/* Latin, Latin1, Latin Ext-A, Latin Ext-B */
+@font-face {
+    font-family: "custom_h";
+    src: local("Helvetica Neue"), local("Century Schoolbook"), local("Lucida Grande"), local("Arial"), local("Times");
+    unicode-range: U+00-024F;
+}
+
+@font-face {
+    font-family: "custom_t";
+    src: local("Lucida Grande"), local("Gothic Pro"), local("Helvetica"), local("Verdana"), local("Lucida Sans Unicode");
+    unicode-range: U+00-024F;
+}
+
+/* CJK Unified Ideographs U+4E00-U+9FFF */
+@font-face {
+    font-family: "custom_h";
+    src: local("Source Han Sans"), 'Noto Sans TC', local("Microsoft JhengHei"), local("PingFang TC"), local("PingFang SC"), local("SimHei"), local("sans-serif");
+    unicode-range: U+4E00-9FFF;
+}
+
+@font-face {
+    font-family: "custom_t";
+    src: 'Noto Sans TC', local("Gothic Pro"), local("Microsoft JhengHei"), local("Microsoft YaHei"), local("StSongti TC"), local("StSongti SC"), local("Meiryo"), local("Helvetica"), local("serif");
+    unicode-range: U+4E00-9FFF;
+}
+
+.font-hei {
+    font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+}
+
+.font-kai {
+    font-family: Baskerville, Georgia, "Liberation Serif", "Kaiti SC", STKaiti, "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", KaiTi, KaiTi_GB2312, DFKai-SB, "TW\-Kai", serif;
+}
+
+.font-song {
+    font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
+}
+
+.font-fang-song {
+    font-family: Baskerville, "Times New Roman", "Liberation Serif", STFangsong, FangSong, FangSong_GB2312, "CWTEX\-F", serif;
+}
 
 body {
-  position: relative;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 }
 
 /*
@@ -10,9 +69,16 @@ Copyright: Sal, WowThemes.net, https://www.wowthemes.net
 License: https://www.wowthemes.net/freebies-license/
 */
 @media screen and (min-width:1500px) {
-    html { font-size:18px; } /* Increase the font size on higher resolutions */
-    .container {max-width:80%;}
+    html {
+        font-size: 18px;
+    }
+
+    /* Increase the font size on higher resolutions */
+    .container {
+        max-width: 80%;
+    }
 }
+
 .mainheading {
     padding: 1rem 0rem;
 }
@@ -26,7 +92,9 @@ a:hover {
     color: #038252;
     text-decoration: none;
 }
-code, pre {
+
+code,
+pre {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: #E3EDF3 1px solid;
@@ -43,11 +111,13 @@ code, pre {
     margin-bottom: -rem;
 }
 
-code, pre, samp {
-  font-family: 'Source Code Pro', monospace;
-  font-size: 14px;
-  margin: 0;
-  padding: 5px;
+code,
+pre,
+samp {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px;
 }
 
 .mediumnavigation {
@@ -235,8 +305,8 @@ section.recent-posts {
 span.post-name,
 span.post-date,
 span.author-meta {
-  font-family: 'Source Sans Pro'
-    display: inline-block;
+    font-family: 'Source Sans Pro'
+        display: inline-block;
 }
 
 span.post-date,
@@ -912,6 +982,7 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+
 .h-300 {
     height: 300px;
 }

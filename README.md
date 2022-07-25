@@ -26,8 +26,6 @@ gem install bundler
 Once you have installed it, `cd` into the local clone of your fork and run:
 
 ```bash
-bundle add webrick
-
 bundle install
 ```
 This will read the GemFile to download and install the necessary dependencies.
@@ -45,6 +43,11 @@ server with <kbd>Ctrl</kbd>-<kbd>C</kbd>.
 
 The generated "static" website is under "_site" directory. So don't edit the generated folder.
 
+** If there's build problem on the mac, run
+
+```
+bundle add webrick
+```
 
 #### 4. Make your changes and push them
 
@@ -58,7 +61,7 @@ guide](https://github.com/elixir-lang/elixir/#contributing).
 
 #### 5. Upgrade if needed
 ```
-sudo gem update jekyll
+gem update jekyll
 ```
 
 ## References

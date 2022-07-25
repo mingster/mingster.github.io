@@ -1,32 +1,113 @@
-<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
-
-<script src="/assets/node_modules/videojs-responsive-layout/dist/videojs-responsive-layout.min.js"></script>
+<script src="/assets/node_modules/video.js/dist/video.min.js"></script>
 <script src="/assets/node_modules/videojs-errors/dist/videojs-errors.min.js"></script>
 <script src="/assets/node_modules/videojs-flash/dist/videojs-flash.min.js"></script>
+<script src="/assets/node_modules/videojs-landscape-fullscreen/dist/videojs-landscape-fullscreen.min.js"></script>
+<script src="/assets/node_modules/videojs-persistvolume/videojs.persistvolume.js"></script>
+<script src="/assets/node_modules/videojs-responsive-layout/dist/videojs-responsive-layout.min.js"></script>
 <script src="/assets/node_modules/videojs-youtube/dist/Youtube.min.js"></script>
 <script src="/assets/node_modules/@silvermine/videojs-airplay/dist/silvermine-videojs-airplay.js"></script>
-<script src="/assets/node_modules/videojs-landscape-fullscreen/dist/videojs-landscape-fullscreen.min.js"></script>
 
-<link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
-<link href="/assets/node_modules/videojs-errors/dist/videojs-errors.css" rel="stylesheet"/>
-<link href="/assets/node_modules/@silvermine/videojs-airplay/dist/silvermine-videojs-airplay.css" rel="stylesheet"/>
+<link href="/assets/node_modules/video.js/dist/video-js.min.css" rel="stylesheet" />
+<link href="/assets/node_modules/videojs-errors/dist/videojs-errors.css" rel="stylesheet" />
+<link href="/assets/node_modules/@silvermine/videojs-airplay/dist/silvermine-videojs-airplay.css" rel="stylesheet" />
 <style>
-body {background-color: #000;}
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 100%;
-}
-#playerPage {
+  body {
+    background-color: #000;
+  }
+
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+
+  #playerPage {
     width: 100%;
     background-color: #111;
     margin-left: auto;
     margin-right: auto;
-}
-#mediaplayer {
+  }
+
+  #mediaplayer {
     display: block;
-}
+  }
+
+  .clips {
+    width: 100%;
+    float: left;
+  }
+
+  .chLinkd {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #333;
+    border-top: 1px solid #666;
+    color: #fff;
+    height: 20px;
+    padding: 1px;
+    margin: 1px;
+    width: 82px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    font: 13px/1.2 custom_t;
+  }
+
+  .chLinkd a {
+    color: #999;
+    text-decoration: none;
+  }
+
+  .chLinkd a:link,
+  .chLinkd a:visited {
+    color: #999;
+  }
+
+  .chLinkd a:hover,
+  .chLinkd a:active {
+    color: #fff799;
+  }
+
+  .chLinkd a:focus {
+    color: #fff799;
+    background-color: #222;
+    text-decoration: none;
+  }
+
+  .chLinkd2 {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #222;
+    border-top: 1px solid #666;
+    color: #fff;
+    height: 20px;
+    padding: 1px;
+    margin: 1px;
+    width: 82px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    font: 13px/1.2 custom_t;
+  }
+
+  .chLinkd2 a {
+    color: #999;
+  }
+
+  .chLinkd2 a:link,
+  .chLinkd2 a:visited {
+    color: #999;
+  }
+
+  .chLinkd2 a:hover,
+  .chLinkd2 a:active {
+    color: #fff799;
+  }
+
+  .nowPlayingChNum {
+    font-size: 0.8em;
+  }
 </style>
-	{{ content }}
+{{ content }}
