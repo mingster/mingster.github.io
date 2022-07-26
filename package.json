@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "5.0.2",
+    "bootstrap": "5.2.0",
     "highlight.js": "11.1.0",
     "bowser": "1.9.4",
     "font-awesome": "4.7.0",
