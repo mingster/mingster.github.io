@@ -1,0 +1,334 @@
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(//fonts.googleapis.com/earlyaccess/nicomoji.css);
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/* Japanese Kana U+3040-U+30FF */
+@font-face {
+    font-family: "custom_h";
+    src: 'Nico Moji', local("Meiryo"), local("Klee"), local("Hiragino Kaku Gothic Pro"), local("Mojikyo");
+    unicode-range: U+41-5A, U+61-7A, U+C0-FF;
+}
+
+@font-face {
+    font-family: "custom_t";
+    src: 'Nico Moji', local("Meiryo"), local("Klee"), local("Hiragino Mincho Pro"), local("MS PMincho"), local("Gothic Pro"), local("Helvetica"), local("Tahoma");
+    unicode-range: U+41-5A, U+61-7A, U+C0-FF;
+}
+
+/* Latin, Latin1, Latin Ext-A, Latin Ext-B */
+@font-face {
+    font-family: "custom_h";
+    src: local("Helvetica Neue"), local("Century Schoolbook"), local("Lucida Grande"), local("Arial"), local("Times");
+    unicode-range: U+00-024F;
+}
+
+@font-face {
+    font-family: "custom_t";
+    src: local("Lucida Grande"), local("Gothic Pro"), local("Helvetica"), local("Verdana"), local("Lucida Sans Unicode");
+    unicode-range: U+00-024F;
+}
+
+/* CJK Unified Ideographs U+4E00-U+9FFF */
+@font-face {
+    font-family: "custom_h";
+    src: local("Source Han Sans"), 'Noto Sans TC', local("Microsoft JhengHei"), local("PingFang TC"), local("PingFang SC"), local("SimHei"), local("sans-serif");
+    unicode-range: U+4E00-9FFF;
+}
+
+@font-face {
+    font-family: "custom_t";
+    src: 'Noto Sans TC', local("Gothic Pro"), local("Microsoft JhengHei"), local("Microsoft YaHei"), local("StSongti TC"), local("StSongti SC"), local("Meiryo"), local("Helvetica"), local("serif");
+    unicode-range: U+4E00-9FFF;
+}
+
+.font-hei {
+    font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+}
+
+.font-kai {
+    font-family: Baskerville, Georgia, "Liberation Serif", "Kaiti SC", STKaiti, "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", KaiTi, KaiTi_GB2312, DFKai-SB, "TW\-Kai", serif;
+}
+
+.font-song {
+    font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
+}
+
+.font-fang-song {
+    font-family: Baskerville, "Times New Roman", "Liberation Serif", STFangsong, FangSong, FangSong_GB2312, "CWTEX\-F", serif;
+}
+
+body {
+    background-color: #000;
+    font-family: font-hei, "custom_t";
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: font-hei, "custom_t";
+}
+
+#playerPage {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mediaplayer {
+    display: block;
+}
+
+.clips {
+    width: 100%;
+    float: left;
+}
+
+.chLinkd {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #333;
+    border-top: 1px solid #666;
+    color: #fff;
+    height: 20px;
+    padding: 1px;
+    margin: 1px;
+    width: 82px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    font: 13px/1.2 custom_t;
+}
+
+.chLinkd a {
+    color: #999;
+    text-decoration: none;
+}
+
+.chLinkd a:link,
+.chLinkd a:visited {
+    color: #999;
+}
+
+.chLinkd a:hover,
+.chLinkd a:active {
+    color: #fff799;
+}
+
+.chLinkd a:focus {
+    color: #fff799;
+    background-color: #222;
+    text-decoration: none;
+}
+
+.chSelected {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #555;
+    border-top: 1px solid #666;
+    color: #fff;
+    height: 20px;
+    padding: 1px;
+    margin: 1px;
+    width: 82px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    font: 13px/1.2 custom_t;
+}
+
+.chSelected a {
+    color: #999;
+}
+
+.chSelected a:link,
+.chSelected a:visited {
+    color: #999;
+}
+
+.chSelected a:hover,
+.chSelected a:active {
+    color: #fff799;
+}
+
+.nowPlayingChNum {
+    font-size: 0.8em;
+}
+
+
+.glow-on-hover {
+    /*
+        width: 220px;
+        height: 50px;*/
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.menu-icon {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px 15px;
+    transform: scale(0.8);
+    padding: 0;
+    cursor: pointer;
+    z-index: 20
+}
+
+.menu-bar {
+    width: 50px;
+    height: 5px;
+    background: rgb(190, 190, 190);
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.menu-bar1 {
+    margin-top: 9px
+}
+
+.menu-bar2 {
+    margin-top: 23px
+}
+
+.menu-bar3 {
+    margin-top: 37px
+}
+
+.menu-icon.hover .menu-bar1 {
+    -webkit-transform: rotate(45deg) scaleX(0.7);
+    margin-top: 22px;
+}
+
+.menu-icon.hover .menu-bar2 {
+    opacity: 0
+}
+
+.menu-icon.hover .menu-bar3 {
+    -webkit-transform: rotate(-45deg) scaleX(0.7);
+    margin-top: 22px;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.menu-con {
+    -webkit-flex-grow: 1;
+    flex-basis: 0;
+    flex-grow: 1;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    position: relative;
+    top: -100%;
+    transition: all 0.5s
+}
+
+.menu-con p:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.menu-con:hover p:before {
+    background: rgba(0, 0, 0, 0.2)
+}
+
+.menu-con p {
+    height: 20px;
+    -webkit-align-self: center;
+    color: white;
+    font-size: 25px;
+    z-index: 2;
+    cursor: pointer
+}
+
+@media screen and (max-width: 600px) {
+    .menu-con {
+        min-width: 50%
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .menu-con {
+        min-width: 100%
+    }
+}

@@ -2,6 +2,50 @@
 layout: video
 ---
 
+
+<nav class="navbar navbar-expand-sm fixed-bottom navbar-dark bg-dark">
+	<div class="container-fluid">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+			aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="#"></a>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<!-- Split dropup button -->
+					<div class="btn-group dropup">
+						<button type="button" class="btn btn-secondary">頻道
+						</button>
+						<button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+							data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+							<span class="visually-hidden">Toggle Dropdown</span>
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								<div class="dropdown-item" style="max-width: 400px;" id="channels"></div>
+							</li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li>
+								<a id="ctinews" class="ctinews dropdown-item" href="#">中天新聞</a>
+							</li>
+							<li><a id="daai" class="daai dropdown-item" href="#">大愛</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="/">My Account</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
 <div id="playerPage">
 	<div id="neededComponents" class="alert alert-danger" style="display: none"></div>
 	<video id="mediaplayer" class="video-js vjs-default-skin vjs-fluid" crossorigin="anonymous"
@@ -9,95 +53,5 @@ layout: video
 		<source src="https://youtu.be/xL0ch83RAK8" type="video/youtube" />
 	</video>
 </div>
-<div id="channels"></div>
-<div id="freeCh">
-	<div class="chLinkd col-md-4">
-		<a id="ctinews" class="ctinews" href="javascript:void(0);">中天新聞</a>
-	</div>
-	<div class="chLinkd col-md-4">
-		<a id="daai" class="daai" href="javascript:void(0);">大愛</a>
-	</div>
-</div>
 
-<script type="text/javascript">
-	document.getElementById("neededComponents").style.display = "none";
-	var player = videojs(
-		"mediaplayer",
-		{
-			controlBar: {
-				volumeMenuButton: {
-					inline: false,
-				},
-			},
-			registerPlugin: {
-				responsiveLayout: {},
-				persistvolume: {
-					namespace: "twtv",
-				},
-			},
-		},
-		function () {
-			var player = this;
-			player.airPlay();
-		}
-	);
-
-	player.responsiveLayout();
-	player.landscapeFullscreen();
-	player.on("play", function (e) {
-		document.getElementById("neededComponents").style.display = "none";
-	}),
-		player.on("error", function (e) {
-			console.log(e);
-			e.stopImmediatePropagation();
-			var error = player.error();
-			console.log("error!", error.code, error.type, error.message);
-		});
-</script>
-<script type="text/javascript">
-	let url =
-		"http://stbtest.5ik.tv/json/GetLiveScreen/?sid=13182cc5-0379-4087-8c3c-32b20a7f305e";
-
-	var chDiv = document.getElementById("channels");
-	fetch(url)
-		.then((res) => res.json())
-		.then((data) => {
-			//console.log("Checkout this JSON! ", data);
-			for (const ch of data) {
-				let div = document.createElement("div");
-				div.className = "chLinkd col-md-4";
-
-				let contentId = document.createElement("span");
-				contentId.className = "nowPlayingChNum";
-				contentId.innerText = ch.contentId + " ";
-
-				let link = document.createElement("a");
-				link.addEventListener("click", function () { player.src({ src: ch.url, type: "application/x-mpegURL" }); });
-				link.className = "nowPlayingChTitle";
-				link.text = contentId.innerHTML + ch.title;
-
-				div.appendChild(link);
-
-				chDiv.appendChild(div);
-
-				//console.log(div.innerHTML);
-			}
-		})
-		.catch((err) => {
-			throw err;
-		});
-
-	var player = videojs.players.mediaplayer;
-
-	var url_cti = "https://youtu.be/_QbRXRnHMVY";
-	var ctinews = document.querySelector(".ctinews");
-	ctinews.addEventListener("click", function () {
-		player.src({ src: url_cti, type: "video/youtube" });
-	});
-
-	var url_daai = "https://youtu.be/oV_i3Hsl_zg";
-	var daai = document.querySelector(".daai");
-	daai.addEventListener("click", function () {
-		player.src({ src: url_daai, type: "video/youtube" });
-	});
-</script>
+<script type="text/javascript" src="./index.js"></script>
