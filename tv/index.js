@@ -19,7 +19,7 @@ function SignIn(arrOfObjs) {
 
 function populateContent(sid) {
     //console.log("sid: " + sid);
-    var url = "http://stbtest.5ik.tv/json/GetLiveScreen/?sid=" + sid;
+    var url = "https://stbtest.5ik.tv/json/GetLiveScreen/?sid=" + sid;
     var chDiv = document.getElementById("channels");
     fetch(url)
         .then((res) => res.json())
@@ -102,5 +102,5 @@ daai.addEventListener("click", function () {
     player.src({ src: url_daai, type: "video/youtube" });
 });
 
-getFromAPI('http://stbtest.5ik.tv/json/signin/?username=mingster.tsai@gmail.com&passwd=crack123', SignIn);
+getFromAPI('https://stbtest.5ik.tv/json/signin/?username=mingster.tsai@gmail.com&passwd=crack123', SignIn);
 
