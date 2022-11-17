@@ -84,7 +84,7 @@ kramdown:
     block:
       line_numbers: true
 
-site.google_analytics: "UA-255651-1"
+site.google_analytics: "G-VX018R1SX9"
 
 # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
 adsense: "disabled"
