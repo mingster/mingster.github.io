@@ -655,7 +655,10 @@ span.post-read-more a:hover {
     #comments {
         margin-right: 15px;
     }
-
+.jumbotron {
+    margin-bottom: 0;
+    border-radius: 0;
+}
     .jumbotron.fortags {
         margin-bottom: 0 !Important;
     }
@@ -678,11 +681,6 @@ span.post-read-more a:hover {
         display: block;
         border-right: 1px solid #ddd !Important;
         margin-bottom: 10px;
-    }
-
-    .jumbotron {
-        margin-bottom: 0;
-        border-radius: 0;
     }
 
     .listfeaturedtag .card {
