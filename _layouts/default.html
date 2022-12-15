@@ -22,13 +22,13 @@
     <link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet" />
     <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet" />
     <link href="{{ site.baseurl }}/assets/css/switch.css" rel="stylesheet" />
-</head>
-{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 
-<body class="{{layout}}" data-bs-spy="scroll" data-bs-target="#toc">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+<body class="{{layout}}" data-bs-spy="scroll" data-bs-target="#toc">    
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MG87NM4" height="0" width="0"
             style="display: none; visibility: hidden"></iframe>

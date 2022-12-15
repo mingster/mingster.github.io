@@ -11,8 +11,6 @@ tags: Raspberry Pi
 author: mingster
 ---
 
-# 安裝 ubuntu on Raspberry Pi
-
 This is cheatsheet on installing ubuntu on Raspberry Pi.
 
 ## 1. download and flash to SD card
