@@ -4,6 +4,7 @@ title: 安裝 HomeBridge On Raspberry Pi 3b
 date: 2018-01-13 23:19:41.000000000 +08:00
 type: post
 published: true
+featured: true
 status: publish
 categories:
 - HomeAutomation
