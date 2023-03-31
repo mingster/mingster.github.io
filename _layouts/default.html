@@ -28,7 +28,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
-<body class="{{layout}}" data-bs-spy="scroll" data-bs-target="#toc">    
+
+<body class="{{layout}}" data-bs-spy="scroll" data-bs-target="#toc">
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MG87NM4" height="0" width="0"
             style="display: none; visibility: hidden"></iframe>
@@ -64,7 +65,7 @@
     <nav id="top-nav" class="navbar navbar-expand-lg navbar-dark p-0 sticky-top">
         <div class="container-fluid">
             <a id="logo" title="mingster.com" class="navbar-brand col-md-3 col-lg-2 fs-6" href="{{ site.baseurl }}/"
-                target="_top" runat="server"><img id="logo_img" rsrc="{{ site.baseurl }}/{{ site.logo }}"
+                target="_top"><img id="logo_img" rsrc="{{ site.baseurl }}/{{ site.logo }}"
                     alt="{{ site.name }}" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="#navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -150,7 +151,7 @@
     <!-- Categories Jumbotron ================================================== -->
     <div class="jumbotron fortags">
         <div class="d-md-flex h-100">
-            
+
             <div class="col pt-5 align-self-center text-center">
                 {% assign categories_list = site.categories %}
                 {% if categories_list.first[0] == null %}
