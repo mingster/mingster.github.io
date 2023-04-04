@@ -22,9 +22,8 @@
     <link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet" />
     <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet" />
     <link href="{{ site.baseurl }}/assets/css/switch.css" rel="stylesheet" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
@@ -212,8 +211,6 @@
 
     </script>
 
-    <!--<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script><!--move to pst-->
-    <!--<script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>-->
     {% if site.lazyimages == "enabled" %}
     <script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
     {% endif %}
