@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "jquery": "3.6.1",
+    "jquery": "3.6.4",
     "bootstrap": "5.2.3",
-    "highlight.js": "11.1.0",
+    "highlight.js": "11.8.0",
     "bowser": "1.9.4",
     "font-awesome": "4.7.0",
     "lunr": "2.3.9",
     "normalize.css": "^8.0.1",
-    "dplayer": "^1.26.0",
+    "dplayer": "^1.27.1",
     "video.js": "7.20.3",
     "@videojs/http-streaming": "2.9.3",
     "@silvermine/videojs-airplay": "1.1.0",
@@ -24,7 +24,7 @@
     "videojs-youtube": "2.6.1"    
   },
   "devDependencies": {
-    "gh-pages": "4.0.0"
+    "gh-pages": "5.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
