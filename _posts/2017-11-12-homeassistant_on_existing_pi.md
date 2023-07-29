@@ -21,35 +21,36 @@ author: mingster
 - Raspberry Pi up and running
 
 # 第一步 更新Pi
-```
+``` bash
 sudo apt-get update
 sudo apt-get upgrade -y
 ```
+
 更新後，目前Pi的版本是：
 
-```
+``` bash
 uname -a
 Linux pi1 4.9.59-v7+ #1047 SMP Sun Oct 29 12:19:23 GMT 2017 armv7l GNU/Linux
 ```
 
 # 第二步 開HomeAssistant專屬的帳號
-```
+``` bash
 sudo useradd -rm homeassistant
 ```
 設個密碼
-```
+``` bash
 sudo passwd  homeassistant
 ```
 
 # 第三步 安裝HomeAssistant所需軟體
 
-```
+``` bash
 sudo apt-get install python3 python3-venv python3-pip
 ```
 
 HomeAssistant 是用python的virtual environment:
 
-```
+``` bash
 cd /srv
 sudo mkdir homeassistant
 sudo chown homeassistant:homeassistant homeassistant
@@ -62,39 +63,40 @@ exit
 ```
 
 ## 設置homeassistant的.bashrc，登入就進入vd
-```
+``` bash
 vi /home/homeassistant/.bashrc
 ```
+
 加進這一行：
-```
+``` bash
 source /srv/homeassistant/homeassistant_venv/bin/activate
 ```
-試試看：
 
-```
+試試看：
+``` bash
 sudo su -s /bin/bash homeassistant
 ```
 應該會看到prompt變成：
-```
+``` bash
 (homeassistant_venv) homeassistant@raspberrypi:/srv
 ```
 
 # 第四步 安裝HomeAssistant
 用homeassistant的身份登入，
-```
+``` bash
 sudo su -s /bin/bash homeassistant
 ```
 
 然後安裝：
 
-```
+``` bash
 cd /srv/homeassistant;
 pip3 install homeassistant
 ```
 安裝需要等一下。
 
 完成後可以手動測試：
-```
+``` bash
 hass
 ```
 CTRL-C 可跳出。
@@ -104,19 +106,19 @@ CTRL-C 可跳出。
 
 將 HomeAssistant 安裝成服務步驟如下：
 1. 從pi user su 為 root user
-```
+``` bash
 sudo su root
 ```
 
 2. 新增服務 script
-```
+``` bash
 cd /etc/systemd/system/
 vi home-assistant@pi.service
 ```
 
 3. 內容如下：
 
-```
+``` bash
 [Unit]
 Description=Home Assistant
 After=network.target
@@ -135,46 +137,46 @@ WantedBy=multi-user.target
 
 4. reload 新服務
 
-```
+``` bash
 systemctl --system daemon-reload
 systemctl enable home-assistant@pi
 ```
 
 5. 退出root身份
-```
+``` bash
 exit
 ```
 
 # 第六步 測試
 - 啟動服務：
-```
+``` bash
 sudo systemctl start home-assistant@pi
 ```
 
 - 停止服務：
-```
+``` bash
 sudo systemctl stop home-assistant@pi
 ```
 
 - 重啟：
-```
+``` bash
 sudo systemctl restart home-assistant@pi
 ```
 
 - 服務狀態：
-```
+``` bash
 sudo systemctl status home-assistant@pi -l
 ```
 
 - 讀log檔
-```
+``` bash
 sudo journalctl -f -u home-assistant@pi
 ```
 
 # 第七步 更新
 
-```
-'先進入到 homeassistant 身份
+``` bash
+#先進入到 homeassistant 身份
 sudo su -s /bin/bash homeassistant
 pip3 install --upgrade homeassistant
 ```
@@ -183,13 +185,13 @@ pip3 install --upgrade homeassistant
 1. download source from [official site](https://www.python.org/downloads/)
 2. Install the required build-tools (some might already be installed on your system).
 
-	```
+	``` bash
 	sudo apt-get update -y
 	sudo apt-get install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev -y
 	```
 3. Install and compile the Python source
 
-	```
+	``` bash
 	tar xf Python-3.x.x.tar.xz
 	cd Python-3.x.x
 	./configure; make -j 4; sudo make altinstall
@@ -197,21 +199,21 @@ pip3 install --upgrade homeassistant
 
 4. Reinstall HA
 
-	```
+	``` bash
 	cd /srv/homeassistant
 sudo rm homeassistant_venv/
 	```
 
 	update python3 alias to correct version
 
-	```
+	``` bash
 	sudo su -s /bin/bash homeassistant
 
 	sudo vi ~/.bash_aliases
 	```
 
 	test:
-	```
+	``` bash
 	python3
 	```
 	check the version shown.
@@ -220,7 +222,7 @@ sudo rm homeassistant_venv/
 
 6. Redo the modules
 
-	```
+	``` bash
 	sudo su -s /bin/bash homeassistant
 
 	pip install hass-nabucasa==0.3

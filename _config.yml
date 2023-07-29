@@ -29,7 +29,7 @@ keep_files: ["node_modules"]
 
 #markdown: redcarpet
 markdown: kramdown
-highlights: rouge
+#highlights: rouge
 timezone: Asia/Taipei
 safe: false
 
