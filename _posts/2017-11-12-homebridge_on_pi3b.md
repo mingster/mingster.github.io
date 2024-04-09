@@ -12,6 +12,16 @@ tags: HomeBridge, Raspberry Pi
 author: mingster
 ---
 
+## this reference is OBSOLETED
+
+check out the [official up-to-date info](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Raspbian#configuration-reference)
+
+
+
+
+
+
+<s>
 HomeBridge是基於nodejs server的應用，它模擬iOS HomeKit，成為一個我們可以『控制』的網關。
 
 我們需要HomeBridge來搭入Apple設備，這樣就可以使用siri/iPhone/iPad 來控制小米、Home Assistant、或其他HomeBridge有plug-in的platform了。
@@ -94,7 +104,7 @@ sudo npm install -g --unsafe-perm homebridge homebridge-config-ui-x
 5. 安裝 bignum
 
 ```
-cd /usr/lib/node_modules/homebridge/; 
+cd /usr/lib/node_modules/homebridge/;
 sudo npm install --unsafe-perm bignum
 ```
 安裝會有錯誤warning，可以不理他。
@@ -102,7 +112,7 @@ sudo npm install --unsafe-perm bignum
 6. 安裝並重整 mdns
 
 ```
-cd /usr/lib/node_modules/homebridge/; 
+cd /usr/lib/node_modules/homebridge/;
 sudo npm install --unsafe-perm mdns
 
 sudo node-gyp BUILDTYPE=Release rebuild
@@ -216,7 +226,7 @@ WantedBy=multi-user.target
 
 	```
 	sudo useradd --system homebridge
-	
+
 	sudo passwd homebridge
 	```
 
@@ -274,7 +284,7 @@ sudo su -s /bin/bash homebridge
 
 
 	sudo npm upgrade -g homebridge
-	
+
 	sudo npm upgrade -g homebridge-homeassistant
 
 
@@ -294,3 +304,5 @@ sudo hb-service rebuild
 - [入门智能家居，从米家到HomeKit （一）](https://sspai.com/post/39851)
 - [入门智能家居，从米家到HomeKit （一）](https://sspai.com/post/39851)
 - [入门智能家居，从 IFTTT 到 HomeKit 自动化（二）](https://sspai.com/post/39881)
+
+</s>
