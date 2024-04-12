@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Book Review: 微笑禿鷹'
+title: Book Review-微笑禿鷹
 date: 2004-11-06 13:23:00.000000000 +08:00
 type: post
 published: true

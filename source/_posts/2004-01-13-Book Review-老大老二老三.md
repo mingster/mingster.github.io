@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Book Review: 老大老二老三'
+title: Book Review-老大老二老三
 date: 2004-01-13 13:28:00.000000000 +08:00
 type: post
 published: true
