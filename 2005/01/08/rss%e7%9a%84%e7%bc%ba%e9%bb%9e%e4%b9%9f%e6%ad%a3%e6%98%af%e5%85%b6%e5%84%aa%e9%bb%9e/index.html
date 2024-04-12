@@ -1,0 +1,667 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="mingster">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="http:&#x2F;&#x2F;taiwan.cnet.com&#x2F;enterprise&#x2F;technology&#x2F;0,2000062852,20095473,00.htm David Berlind‧唐慧文　　2005&#x2F;01&#x2F;07  全球資訊網上的聯合供稿(Web syndication)技術種類繁多。一如諺語所述的情況：標準最棒的地方在於標準太多了。 若真要把RSS 1.0、RSS 2.0(其實接續的不是RSS 1.0">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RSS的缺點也正是其優點">
+<meta property="og:url" content="http://example.com/2005/01/08/rss%e7%9a%84%e7%bc%ba%e9%bb%9e%e4%b9%9f%e6%ad%a3%e6%98%af%e5%85%b6%e5%84%aa%e9%bb%9e/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="http:&#x2F;&#x2F;taiwan.cnet.com&#x2F;enterprise&#x2F;technology&#x2F;0,2000062852,20095473,00.htm David Berlind‧唐慧文　　2005&#x2F;01&#x2F;07  全球資訊網上的聯合供稿(Web syndication)技術種類繁多。一如諺語所述的情況：標準最棒的地方在於標準太多了。 若真要把RSS 1.0、RSS 2.0(其實接續的不是RSS 1.0">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2005-01-07T21:14:00.000Z">
+<meta property="article:modified_time" content="2020-06-16T03:31:12.701Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>RSS的缺點也正是其優點 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>mingster.com</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="RSS的缺點也正是其優點"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2005-01-08 05:14" pubdate>
+          January 8, 2005 am
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.9k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          33 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">RSS的缺點也正是其優點</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p><span><a href="http://taiwan.cnet.com/enterprise/technology/0,2000062852,20095473,00.htm" target="_blank">http://taiwan.cnet.com/enterprise/technology/0,2000062852,20095473,00.htm</a><br /><!--short header graphic end--><!--short header graphic end--><!--short header graphic end--><!-- story headline start -->
+<p>David Berlind‧唐慧文　　2005/01/07</p>
+<p></span></p>
+<p>全球資訊網上的聯合供稿(Web syndication)技術種類繁多。一如諺語所述的情況：標準最棒的地方在於標準太多了。
+<p>若真要把RSS 1.0、RSS 2.0(其實接續的不是RSS 1.0版，而是0.94版)、Atom和其他林林總總沾得上邊的網際網路聯合供稿技術理出個頭緒，恐怕需要做碩士論文級的研究。如果在規格的層次上就有問題、而且沒辦法解決的話(依我之見有些衝突是被新聞界誇大了)，那麼我們怎能指望第一線的應用會變得容易上手？本文將討論使用者設法把現有技術湊合著用的情形。
+<p>我碰到的一個RSS 2.0問題是，網路出版者通常使用不同的慣例，來刊登以RSS(真簡單聯合供稿)系統傳送的資訊。雖然這種彈性正是RSS 2.0最棒的優點之一，但如此一來，把多重RSS feeds標準化以便匯整呈現的負擔，就轉移到閱聽者這一端。儘管終端使用者應用程式(包括RSS閱讀器在內)通常內含人工智慧，可補救所處理檔案格式紊亂不一的問題(這也意味處理RSS的應用軟體前景相當不錯)，但我懷疑RSS會不會也證明軟體商要兌現諾言極為困難 -- 他們承諾提供為平常人開發的軟體，讓技術生手只用游標和滑鼠點選和拖曳，也能打造出複雜的、交易性(transactional)、伺服器端的應用。
+<p>畢竟，RSS是當今最能展現可延伸標示語言(XML)對普羅大眾有何用處的範例，也象徵大多數人與XML最接近的接觸。基於RSS的人氣日盛，大有可能演變成所有資料(不論結構嚴謹或鬆散)賴以採集的主要方式 -- 不論用途僅為瀏覽最新的網誌(Weblog)更新內容、檢索電子郵件(嘿，那不就終結垃圾郵件了嗎？)，或是透過複雜的工作流程傳遞交易資料。就此而論，RSS也可能被當作「點選式程式設計」(point-and-click programming)的一大試金石。
+<p>為了鼓勵透過ZDNet網誌領域進行線上協同作業，我們已建立一個內部的<a href="http://en.wikipedia.org/wiki/TWiki" target="_blank">Wiki</a>。日後或許內容會更豐富，但目前我們的Wiki首頁比較像是共享的書籤陳列室。我倒是建了一個次級網頁，展現出多重使用者系統的威力：在上面可把我所屬工作群組必須追蹤的網誌一覽無遺。我用Twiki標題外掛程式把以RSS為基礎的聯合發稿內容匯整到同一網頁，基本上該網頁相當於在網誌領域的一個角落設立入口網站，以便我們觀察我認為不該遺漏的網誌。我稱之為我們的雷達。
+<p>我加入擷取自<a href="http://radio.weblogs.com/0001011/" target="_blank">Robert Scoble</a>、<a href="http://blogs.sun.com/roller/page/jonathan" target="_blank">Jonathan Schwartz</a>、<a href="http://www.tbray.org/ongoing/" target="_blank">Tim Bray</a>、<a href="http://www.satn.org/" target="_blank">Bob Frankston</a>、<a href="http://slashdot.org/" target="_blank">Slashdot</a>、<a href="http://www.groklaw.net/" target="_blank">Groklaw</a>等網誌的內容，不久之後，ZDNet.com副總裁Stephen Howard-Sarin又在這個網頁添加了一些，取自於<a href="http://danbricklin.com/log/" target="_blank">Dan Bricklin</a>、<a href="http://weblog.infoworld.com/udell/" target="_blank">Jon Udell</a>、<a href="http://weblog.siliconvalley.com/column/dangillmor/" target="_blank">Dan Gillmor</a>、<a href="http://www.windley.com/" target="_blank">Phil Windley</a>、<a href="http://garage.docsearls.com/" target="_blank">Doc Searls</a>等人的網誌。儘管這還稱不上是「點選式伺服器端程式設計」，我認為已十分接近。
+<p>但我不滿意這個外掛程式預設的內容擷取格式，以及在網頁上呈現的方式。所以，為牽就我們的需要，我在外掛程式之外添加了一些選擇參數(optional parameters)，以確定最後顯示出來的網頁是純文字(為了效能起見)，而且只從各種內容來源擷取最新的五則標題。以圖示來呈現這類選擇參數、自動產生編碼，並且把程式碼嵌入網頁，這些正是我期待「點選式程式設計」能夠為我代勞的事，而不是凡事都得用硬碼(hard-coding)方式來做(我目前的作法)。
+<p>在Wiki普遍成為政治正確的作法之際，Howard-Sarin也在添加網誌內容時仿效我採用的格式。由於欠缺更簡單易用的工具，他只用剪貼方式把程式碼拷貝過來，然後提供不可或缺的替代品。對一群非專業程式設計者來說，能做到這種地步已經很不錯了吧？短短幾個鐘頭，我們兩人同心協力製作了一個入口網站，提供有意義的資訊，而且會隨每次網頁重新整理更新內容。現在，就等其他ZDNet使用者共襄盛舉，把他們喜愛的、不重複的網路內容丟進這個網頁即可。
+<p>可是，還有個問題。有些內容無法正常顯示，害得我耗費比原訂計畫更多的時間。比方說，Jonathan Schwartz網誌裡的每一篇內容，都以異於他人的方式呈現 -- 在他以XML為格式的內容中，每一篇不重複的網誌內容(稱為一個item) 都省略連結欄(link field)。大多數的內容，例如擷取自ZDNet的本文，都用連結欄來儲存通用資源識別碼(URI)，以直接連上個別的item(就本文為例，指的是一篇新聞報導，而不是網誌裡的一則日誌)。省略掉連結欄，Schwartz依賴GUID (全域唯一性識別碼，讀音「gwid」) 欄附帶的選項(稱為「permalink」)，來儲存常駐的連結，以連上個別的網誌文章。這麼做是有道理的，因為要跨越整個網際網路連上某則特定的內容，使用專屬的連結是你所能找到、最獨一無二的方法。或許你能想出別的辦法，但何必花這個腦筋呢？基於此理，幾乎人人都把導向自己每則內容的直接連結存在GUID裡。對許多人來說，這意味在GUID裡找到的資料，與在連結欄(若他們採用的話)裡尋得的資料，是一模一樣的。
+<p>這些很重要嗎？嗯，就我而言，我覺得很重要，因為我試著想出一種可輕易重複使用的外掛程式參數組合(用「點選式程式設計」術語會稱之為「物件」，但我要等到親眼目睹才會信以為真) ，來建置我們的入口網頁，而那套組合要能夠用同一方式對待本網頁所觀測的各個內容來源。如果某物件在「普通人用的點選式程式設計」現實世界裡只是偶爾才管用，那麼沒多久，一般人就會棄滑鼠投降。
+<p>參照TWiki文件編寫採用連結欄的範例，我開始嘗試用它來提供入口網站使用者一個可回歸原始內容出處的連結。這很合理，不是嗎？然而，一旦連結欄被省略，如同Schwartz網誌的情況，即便我在入口網頁上一一附上連結，也不過是死的連結。為了研究這個問題，我進一步探討RSS的弱點 -- 我不認為其他只為體驗網路聯合供稿威力的使用者必須探究得這麼深入。我發現，如果Schwartz的網誌把每則內容專屬的URI存進GUID的話(他是這麼做的)，那麼我就可以倚賴GUID的目錄把使用者導回內容的原始出處。就可重複利用的能力而論，我考慮把這種作法全面套用在我們監看的所有內容上。
+<p>以下這一段是RSS 2.0的規格範例，由此可說明連結與GUID未必相同，也證明我傾向採取的解決辦法是對的：
+<p>「有關&lt;guid&gt;s的一個常見的問題是與&lt;link&gt;s該怎麼區分，不就是同樣的東西嗎？沒錯，在內容系統裡是如此，但在其他的系統就不見得。在某些系統，&lt;link&gt;s是連上網誌篇章的permalink。但在別的系統，每一個&lt;item&gt;是全文的摘要，&lt;link&gt;s指向該文，而&lt;guid&gt;s則是連上該則網誌內容的permalink。不論在什麼情況下，都建議你提供guid，並儘可能讓它以permalink呈現。這麼做可避免匯整器重複擷取相同的item，儘管這些item可能因為有修改過而有所不同。」
+<p>以上是專家建議的最佳範例，無疑是大勢所趨，也隱約暴露出許多內容供應系統依循不同慣例的問題。這正是我遭遇的問題。現在，可重複利用性已被判出局，而我甚至還沒開始嘗試用滑鼠作「點選式程式設計」咧。就每一個我加進入口網頁的內容來源而言，現在我會先研究它的XML，再決定該用哪一套參數。
+<p>但GUID相對於link的問題，並不是我們面對的唯一挑戰。
+<p>有些內容供應feeds，像是Dave Winer的<a href="http://www.scripting.com/rss.xml" target="_blank">Scripting News</a>，也丟出一個變化球。Winer的網誌文章不附標題。這是個麻煩，因為要建置含20多個出處、一目瞭然的入口網站，我們決定最簡單的作法便是只顯示item的標題，然後附上導向全文的連結(使用前文提到的item連結或GUID，視哪一種比較適用而定)。但是，就Winer的XML來說，能擷取的東西有限。沒標題可選，只能擷取其他三種 -- GUID、item的發表日期(pubDate)、或是item(敘述)的全文。但item的全文長度從寥寥數字到堂堂數段不等，沒道理拿它來當作超文字連結(hyperlink)。
+<p>如同Schwartz的網誌，Winer的GUID也是連上全文的URI。換言之，能供我們用來當連結的文字只剩下發表日期。顯然Mozilla.org對無標題item的感受和我們一樣。Firefox瀏覽器採用一種稱為Live Bookmarks的功能，用來追蹤RSS feeds；該瀏覽器在碰上無標題item時，為了產生可點選的內容連結選單，也提供發表日期作為連上原文的線索。事實上，在處理規格不一的RSS應用方面，Firefox的表現一級棒，就連碰上在同一網誌裡有的item附標題、有的又不附標題的<a href="http://jrobb.mindplex.org/" target="_blank">John Robb</a>頻道時，也能機動應變。把Robb的網誌加入Firefox的Live Bookmark後，產生的選單即顯示出Firefox從每一item就地選材，有的擷取發表日期，有的擷取標題。這印證前文所言，就網路聯合供稿而論，供應端所做的選擇，其衍生的後果一概由閱聽者這端承擔。換句話說，控制權從供應者這方轉移到內容出版者這方。值得注意的是，此現象似乎與全球資訊網的走向背道而馳。(基於Internet Explorer使用者眾多，和許多網站用Firefox無法正常顯示，以後見之明來看，即可驗證供應端總是會順應需求端來作調整。)
+<p>同理，再度驗證通常軟體會代使用者做複雜的決定和演算法，Dave Winer的網站內容匯整器也作了令人讚許的貢獻，就是把各式各樣的內容慣例標準化，形成單一介面，再透過該介面把源自不同頻道的文章攙雜在一起，按照匯整器擷取的時間倒序排列。比方說12點15分時，某頻道可能顯示出五則，但其中最早刊出的一則也許不比排在它前面、出自另一頻道的文章來得新。不過，不論是哪一則，都是根據終端使用者所在地的時區來顯示發表時間。網路匯整器可不可能自動判知終端使用者的時區，我不清楚；但就Firefox和Newsgator這類美國境內執行的RSS匯整器而言，是辦得到的。看出未來的成長空間了嗎？
+<p>起初，我暗地咒罵Winer竟然不附標題。但一旦開始追蹤Winer的網誌後，我就領悟到這種抉擇自有道理。他的網誌只是意識流似的日誌。人在思考時，會先下標題嗎？不會吧。Winer不會，也無此必要。他和別人的網誌之所以可讀性高，與附標題的新聞報導與眾不同，就是因為網誌就像日記一般。這些網誌有許多篇章是想到什麼就援筆立就，若是作者必須停下來先為每一篇定個標題，可能就跟不上奔馳的思緒。這些是特例。另一人氣鼎盛的網誌，作者是微軟的Robert Scoble，就不管每則篇幅多短，都一律冠上標題。以最近談微軟執行長Steve Ballmer評論蘋果iPod的那一則為例，標題幾乎與全文等長。如果他給網誌文章下的標題少一些，或根本不定標題，或許我們更能深入了解Scoble腦子裡的想法。
+<p>為了建置一套可重複利用的參數(以便別人只需剪剪貼貼即可)，我不得不緊盯著Winer的內容，我愈是瞪著它瞧，就愈發現自己掙扎於兩種選擇之間的取捨：該用發表日期作為我們TWiki架構入口網站的連結文字呢，還是乾脆把他的全文(儲存在各個item的敘述欄內)下載並顯示在我們的入口網頁呢？畢竟，我們內容顯示的程度僅止於最新的五則，而Winer每天定期刊出五則以上，所以若是列出一串發表日期，除了告知每一則何時刊出以外，提供的資訊聊勝於無。我們真正需要的訊息，是全文的內容為何。碰到Winer這種不附標題的內容，我們唯一的選擇，就是擷取全文(端視外掛程式允許的容量而定)。
+<p>事實上，一口氣完整的擷取(包括GUID、敘述、發表日期和某來源提供的其餘材料)，逐漸看來是最適合我們入口網站的通用方法。就這麼搞定。我總算可以回頭做我日常的工作了吧？哎，還不行。
+<p>誠如Winer告訴我的，那種作法可能也行不通，因為和許多網誌不同，新聞網站通常在每篇報導的敘述欄裡提供摘要，而不是完整的全文。更糟的是，就算也把敘述抓過來，我發現TWiki的標題外掛程式無法處理超文字標示語言（HTML）格式，而網路新聞幾乎清一色都用這種格式編寫。
+<p>這個實驗計畫就像舊時卡通裡會漏水的水壩。就在你以為所有的漏洞都堵好了的時候，另一處漏水又泉湧而出。最後我只好許願，但求聰明人發明只要點選一下就可解決問題的辦法，就像軟體開發業者向來承諾的那般。只是，就現在的進步速度來看，我懷疑那可能要再苦等數年。
+<p>但本文仍算是一篇談論RSS優點的報導 -- 也附帶闡述RSS特有的彈性為什麼會讓企圖在亂中求序的人士(比方說軟體開發者)日子難過。畢竟，混亂本是網際網路的常態。</p></p></p></p></p></p></p></p></p></p></p></p></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E8%81%9E/" class="category-chain-item">產業新聞</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E8%81%9E/%E8%BB%9F%E9%AB%94%E6%96%B0%E7%9F%A5/" class="category-chain-item">軟體新知</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>RSS的缺點也正是其優點</div>
+      <div>http://example.com/2005/01/08/rss的缺點也正是其優點/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>mingster</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>January 8, 2005</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2005/01/20/%E7%AE%A1%E7%90%86%E5%BC%B7%E4%BA%BA%E9%83%AD%E5%8F%B0%E9%8A%98%E7%B6%93%E7%87%9F%E8%A7%A3%E7%A7%98-%E7%B4%B0%E7%AF%80%E2%80%A7%E6%8B%86%E8%A7%A3%E2%80%A7%E7%B0%A1%E5%8C%96%E2%80%A7%E8%B2%AB/" title="管理強人郭台銘經營解秘 --- 細節‧拆解‧簡化‧貫徹‧紀律">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">管理強人郭台銘經營解秘 --- 細節‧拆解‧簡化‧貫徹‧紀律</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2005/01/03/%E8%80%81%E9%97%86%EF%BC%8C%E4%BD%A0%E6%9C%83%E7%B5%A6%E6%88%91%E5%A4%9A%E5%B0%91%E5%B9%B4%E7%B5%82%E7%8D%8E%E9%87%91%EF%BC%9F%E5%B9%B4%E7%B5%82%E7%8D%8E%E9%87%91%EF%BC%8C%E5%A4%A7%E5%AE%B6%E7%8C%9C/" title="老闆，你會給我多少年終獎金？年終獎金，大家猜一猜">
+                        <span class="hidden-mobile">老闆，你會給我多少年終獎金？年終獎金，大家猜一猜</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>

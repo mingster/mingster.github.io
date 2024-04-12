@@ -1,0 +1,897 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/23/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>mingster.com</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text=""></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2006/01/06/automated-customer-support-via-im/" target="_self">
+          Automated customer support via IM?
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2006/01/06/automated-customer-support-via-im/" target="_self">
+        <div>
+          Here's the conversation between me and the bot: mingster says:what's your name?Encarta® Instant Answers says:Welcome, mingster! My name is Encarta Instant Answers. I am a smart computer who can bring
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2006-01-06 04:28" pubdate>
+              2006-01-06
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/dev/" class="category-chain-item">dev</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/dev/Mobile-Messaging/" class="category-chain-item">Mobile Messaging</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/development/">#development</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2006/01/06/%E7%B6%B2%E7%AB%99%E7%84%A1%E9%9A%9C%E7%A4%99%E5%BB%BA%E7%BD%AE%E5%A6%82%E4%BD%95%E9%80%B2%E8%A1%8C/" target="_self">
+          網站無障礙建置如何進行?
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2006/01/06/%E7%B6%B2%E7%AB%99%E7%84%A1%E9%9A%9C%E7%A4%99%E5%BB%BA%E7%BD%AE%E5%A6%82%E4%BD%95%E9%80%B2%E8%A1%8C/" target="_self">
+        <div>
+          源起 自美國W3C首先發表無障礙宣言以來，世界各國政府基於照顧弱勢團體的政策目標，即積極投入資源研發推廣相關技術。 在台灣，行政院研考會針對網站管理者以及設計者的需要，於九十一年六月發佈「無障礙網頁開發標準暨標章核發作業」規範，參考W3C協會的WAI組織的無障礙網頁內容標準相關規範，並參照各國在制訂無障礙網頁相關政策和推廣策略，與國內近年來在身心障礙者保護政策等相關措施，訂定「無障礙網頁開發規範」
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2006-01-06 04:17" pubdate>
+              2006-01-06
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E7%9F%A5/" class="category-chain-item">產業新知</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2006/01/01/%E5%B9%B4%E7%B5%82%E7%8D%8E%E9%87%91%E6%80%8E%E9%BA%BC%E7%99%BC%EF%BC%9F-part-4-%E9%9D%A2%E9%9D%A2%E8%A7%80/" target="_self">
+          年終獎金怎麼發？ Part 4 - 面面觀
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2006/01/01/%E5%B9%B4%E7%B5%82%E7%8D%8E%E9%87%91%E6%80%8E%E9%BA%BC%E7%99%BC%EF%BC%9F-part-4-%E9%9D%A2%E9%9D%A2%E8%A7%80/" target="_self">
+        <div>
+          發放獎金是人力資源管理中普遍運用的一種激勵手段。在亞洲，每年年終的獎金相信是每個老闆都十分頭痛的事情。獎金的發放是一個十分敏感的問題，到底如何才能周全呢？如果你讀了前三篇「年終獎金怎麼發？」相信已進入「獎勵和激勵」的世界。本篇是「年終獎金怎麼發？」的第四篇。對前述怎麼發獎金的一些技巧做進一步的討論。 首先，戰果的分配是年終獎金的本質。因此，獎金總額應與經營狀況掛鉤。發放獎金，要根據企業的實際營收逐
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2006-01-01 17:43" pubdate>
+              2006-01-01
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BC%81%E7%AE%A1/" class="category-chain-item">企管</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2006/01/01/happy-2006-2/" target="_self">
+          Happy 2006!
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2006/01/01/happy-2006-2/" target="_self">
+        <div>
+          
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2006-01-01 16:39" pubdate>
+              2006-01-01
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Taiwan/" class="category-chain-item">Taiwan</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/12/24/%E8%A3%9C%E7%BF%92%E7%8F%AD%E5%90%8D%E5%98%B4%E4%B8%89%E7%B4%9A%E8%B7%B3%EF%BC%8C%E9%9D%88%E6%B4%BB%E8%BD%89%E9%80%B2%E5%A4%A7%E8%88%9E%E5%8F%B0/" target="_self">
+          補習班名嘴三級跳，靈活轉進大舞台
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/12/24/%E8%A3%9C%E7%BF%92%E7%8F%AD%E5%90%8D%E5%98%B4%E4%B8%89%E7%B4%9A%E8%B7%B3%EF%BC%8C%E9%9D%88%E6%B4%BB%E8%BD%89%E9%80%B2%E5%A4%A7%E8%88%9E%E5%8F%B0/" target="_self">
+        <div>
+          [ 商業周刊 ] 補習班名嘴三級跳，靈活轉進大舞台黎晶晶 2002-10-24 八十八年一月，她獲選廣播電台第二受歡迎主持人，僅次於廣播老將光禹。去年十二月，她出版的第四本書，登上金石堂連鎖書店暢銷書排行榜前十名；在迪化街走一回，幾乎每個人都叫得出她的名字，她已經成為台灣減肥風潮的代言人。 她原本只是一名補習班國文老師，如今卻縱橫光鮮亮麗的演藝圈；任何大老闆在她主持的新聞評論節目中，從緋聞到私德都
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-12-24 17:11" pubdate>
+              2005-12-24
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BC%81%E7%AE%A1/" class="category-chain-item">企管</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/12/18/%E5%B9%B4%E7%B5%82%E7%8D%8E%E9%87%91%E6%80%8E%E9%BA%BC%E7%99%BC%EF%BC%9F-part-iii-%E5%B9%B4%E7%B5%82%E7%8D%8E%E9%87%91%E8%88%87%E5%8B%9E%E5%9F%BA%E6%B3%95/" target="_self">
+          年終獎金怎麼發？ Part III - 年終獎金與勞基法
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/12/18/%E5%B9%B4%E7%B5%82%E7%8D%8E%E9%87%91%E6%80%8E%E9%BA%BC%E7%99%BC%EF%BC%9F-part-iii-%E5%B9%B4%E7%B5%82%E7%8D%8E%E9%87%91%E8%88%87%E5%8B%9E%E5%9F%BA%E6%B3%95/" target="_self">
+        <div>
+          年關將屆時，總會有一波離職潮出現。上個月初，王大華決定向公司遞出辭呈，但老實說，他對離職決定很清楚，可是對於自己到底該「何時」離開卻很猶豫，因為，他還蠻在乎能否領到年終獎金。 有人跟他說，只要做到12月31日，公司就應該發給他，但也有人提醒他，勞基法好像沒有這條規定，到底他該如何下決定？ 農曆新年即將喜氣到來，這段期間上班族討論最多的話題，無非是彼此公司年終獎金或紅利發放的狀況。另一方面，一股蠢蠢
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-12-18 09:24" pubdate>
+              2005-12-18
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BC%81%E7%AE%A1/" class="category-chain-item">企管</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/12/15/c#%E7%A8%8B%E5%BC%8F%E7%A2%BC%E7%B7%A8%E5%AF%AB%E6%A8%99%E6%BA%96/" target="_self">
+          c#程式碼編寫標準
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/12/15/c#%E7%A8%8B%E5%BC%8F%E7%A2%BC%E7%B7%A8%E5%AF%AB%E6%A8%99%E6%BA%96/" target="_self">
+        <div>
+          誰都會寫程式碼！幾個月的編程經驗可以讓你寫出「可運行的應用程式」。但在開發團隊的運行模式下，以最有效率的方式編碼、能被小組成員順暢承接的程式碼就必需要下更多的功夫！ 要知道，大多數程式設計師在寫「可運行程式碼」，而不是「高效率程式碼」。寫高效程式碼是一項藝術，必須靠紀律及學習來實踐。建立一個高效率、有默契的開發團隊更需有一定的規範及標準流程。 想要讓開發出來的程式碼穩固且容易維護，除了有必要適當地
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-12-15 22:13" pubdate>
+              2005-12-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/C-%E7%B7%A8%E7%A2%BC%E5%8E%9F%E5%89%87/" class="category-chain-item">C# 編碼原則</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/12/12/%E5%B9%B4%E7%B5%82%E7%8D%8E%E9%87%91%E6%80%8E%E9%BA%BC%E7%99%BC%EF%BC%9F-part-ii-%E7%99%BC%E6%94%BE%E6%96%B9%E6%B3%95/" target="_self">
+          年終獎金怎麼發？ Part II - 發放方法
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/12/12/%E5%B9%B4%E7%B5%82%E7%8D%8E%E9%87%91%E6%80%8E%E9%BA%BC%E7%99%BC%EF%BC%9F-part-ii-%E7%99%BC%E6%94%BE%E6%96%B9%E6%B3%95/" target="_self">
+        <div>
+          上一篇講了一個年終獎金「定價策略」的小故事。本篇我們來看年終獎金的發放方法。 年終獎金發放方法百百種。誰都希望年終能拿到一個大紅包，但也並不是所有的人都會如願以償，因為資本主義本來不是公平的。為了「名正言順」，獎金的多寡是需要有遊戲規則的。遊戲規則的最後決定權，當然是由資方來定奪的。不論公平與否，有制度、留著住好員工的公司所制訂的規則是需要滿足大部分人，而讓大家皆大歡喜的。 以下是大部分公司使用的
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-12-12 13:46" pubdate>
+              2005-12-12
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BC%81%E7%AE%A1/" class="category-chain-item">企管</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/12/11/%E5%A4%A7%E9%99%B8%E5%B9%B4%E7%B5%82%E7%8D%8E%E9%87%91%E7%99%BC%E6%94%BE-%E6%95%B4%E7%90%86/" target="_self">
+          大陸年終獎金發放 整理
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/12/11/%E5%A4%A7%E9%99%B8%E5%B9%B4%E7%B5%82%E7%8D%8E%E9%87%91%E7%99%BC%E6%94%BE-%E6%95%B4%E7%90%86/" target="_self">
+        <div>
+          能不能拿到紅包，拿到多大的紅包，年中一過，年終未到，職業白領早已開始惦記起來。有人上足發條衝刺，期待業績評估表中偉大的基數會給自己帶來一個漂亮的百分比；有人戰戰兢兢，生怕每一個細小的動作都會引來上司和同事的不利評價，將導致年終紅包打折扣；有人跑在職業快車道，輕輕一衝就會紅包滿滿「錢」途無量；有人優柔寡斷，紅包和跳槽兩者權衡著，失眠著。 而企業老總也關心員工年終紅包，某民營企業老闆一手拿著顯示業績良
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-12-11 07:58" pubdate>
+              2005-12-11
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BC%81%E7%AE%A1/" class="category-chain-item">企管</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/12/10/%E5%B9%B4%E7%B5%82%E7%8D%8E%E9%87%91%E6%80%8E%E9%BA%BC%E7%99%BC%EF%BC%9F/" target="_self">
+          年終獎金怎麼發？
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/12/10/%E5%B9%B4%E7%B5%82%E7%8D%8E%E9%87%91%E6%80%8E%E9%BA%BC%E7%99%BC%EF%BC%9F/" target="_self">
+        <div>
+          發放年終獎金似乎已成為了企業生活的一部分，無論企業用何種方式來安排年終獎金，有一條原則是共同的，那就是年終獎的發放既要維護企業自身的利益，也要顧及員工的心理期望值，只有把這兩者兼顧好了，年終獎才能發得「太平」，才能起到獎勵和激勵的作用，為企業第二年的運作埋下良好的伏筆。 又是年關，當人們又在談論今年能拿到多少時，突然想起劉墉《衝破人生的冰河》裡一個關於發放紅包的故事。 故事說的是一個一直蒸蒸日上的
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-12-10 13:29" pubdate>
+              2005-12-10
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BC%81%E7%AE%A1/" class="category-chain-item">企管</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/22/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/#board">21</a><a class="page-number" href="/page/22/#board">22</a><span class="page-number current">23</span><a class="page-number" href="/page/24/#board">24</a><a class="page-number" href="/page/25/#board">25</a><span class="space">&hellip;</span><a class="page-number" href="/page/31/#board">31</a><a class="extend next" rel="next" href="/page/24/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>

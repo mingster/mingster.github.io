@@ -1,0 +1,932 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/14/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>mingster.com</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text=""></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2008/07/31/ithome-%E5%A0%B1%E5%91%8A%EF%BC%9A%E7%BE%8E%E5%9C%8B%E9%9B%BB%E8%A6%96%E7%94%A8%E6%88%B6%E9%96%B1%E8%81%BD%E8%A1%8C%E7%82%BA%E6%94%B9%E8%AE%8A-2%E6%88%90%E5%88%A9%E7%94%A8%E7%B6%B2%E8%B7%AF%E7%9C%8B/" target="_self">
+          ITHome 報告：美國電視用戶閱聽行為改變 2成利用網路看節目
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2008/07/31/ithome-%E5%A0%B1%E5%91%8A%EF%BC%9A%E7%BE%8E%E5%9C%8B%E9%9B%BB%E8%A6%96%E7%94%A8%E6%88%B6%E9%96%B1%E8%81%BD%E8%A1%8C%E7%82%BA%E6%94%B9%E8%AE%8A-2%E6%88%90%E5%88%A9%E7%94%A8%E7%B6%B2%E8%B7%AF%E7%9C%8B/" target="_self">
+        <div>
+          文/陳曉莉 (編譯) 2008-07-30 過去網路媒體還只是電視媒體之後的後補，如今卻有約1成的人將網路當成唯一的收視媒體，顯見美國閱聽人收視行為的改變。  美國Integrated Media Measurement Inc（IMMI）在近日發表一項電視節目收視報告，發現有超過20%的受訪者於今年春天透過網路收看黃金時段的電視節目，該比例在去年秋天僅有6%。 此外，在此一透過網路觀看電視節目的
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-07-31 04:12" pubdate>
+              2008-07-31
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E8%81%9E/" class="category-chain-item">產業新聞</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2008/07/23/%E7%B6%B2%E8%B7%AF%E6%A8%99%E6%9C%83-good-details/" target="_self">
+          網路標會 good details
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2008/07/23/%E7%B6%B2%E8%B7%AF%E6%A8%99%E6%9C%83-good-details/" target="_self">
+        <div>
+          http://mag.udn.com/mag/newsstand/storypage.jsp?f_MAIN_ID=253&amp;f_SUB_ID=1312&amp;f_ART_ID=136624 網路標會 穩賺？那可不一定！‧理財周刊 2008/07/16標會是民眾理財方式之一，隨著時代與科技進步，現在不但上網就可以跟會，被倒會還有銀行會負責。不過，網路標會一定好嗎？看完本文再作決定。【撰文／徐
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-07-23 17:48" pubdate>
+              2008-07-23
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%90%86%E8%B2%A1/" class="category-chain-item">理財</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2008/07/15/%E9%87%91%E4%BB%81%E5%AF%B6%E9%80%8F%E9%81%8E%E5%8F%B0%E4%BA%9E-%E6%8F%AE%E8%BB%8D%E6%97%A5%E6%9C%AC%E7%9B%B4%E6%92%AD%E8%A1%9B%E6%98%9F/" target="_self">
+          金仁寶透過台亞 揮軍日本直播衛星
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2008/07/15/%E9%87%91%E4%BB%81%E5%AF%B6%E9%80%8F%E9%81%8E%E5%8F%B0%E4%BA%9E-%E6%8F%AE%E8%BB%8D%E6%97%A5%E6%9C%AC%E7%9B%B4%E6%92%AD%E8%A1%9B%E6%98%9F/" target="_self">
+        <div>
+          工商時報 2007.12.06　金仁寶透過台亞 揮軍日本直播衛星林淑惠／台北報導 金仁寶集團準備透過台亞，與國內知名頻道商攜手，明年第一季正式跨足日本直播衛星市場，正式展開金仁寶在有線電視市場佈局。而威寶、台亞及威寶投資一五％的軟銀(Softbank)在台分公司泛亞國際，未來將扮演金仁寶在數位匯流市場全新的鐵三角陣容。 許勝雄昨(五)日也透露，明年將把仁寶的安全系統、金寶的液晶電視及統寶的面板等集
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-07-15 09:29" pubdate>
+              2008-07-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/IPTV/" class="category-chain-item">IPTV</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2008/07/03/cpro-%E7%A1%AC%E9%AB%94%EF%BC%8F%E5%85%A7%E5%AE%B9%E9%80%90%E6%AD%A5%E5%88%B0%E4%BD%8D%E3%80%80%E7%B6%B2%E8%B7%AF%E9%9B%BB%E8%A6%96%E7%B5%82%E6%96%BC%E6%88%90%E7%9C%9F/" target="_self">
+          CPRO: 硬體／內容逐步到位　網路電視終於成真
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2008/07/03/cpro-%E7%A1%AC%E9%AB%94%EF%BC%8F%E5%85%A7%E5%AE%B9%E9%80%90%E6%AD%A5%E5%88%B0%E4%BD%8D%E3%80%80%E7%B6%B2%E8%B7%AF%E9%9B%BB%E8%A6%96%E7%B5%82%E6%96%BC%E6%88%90%E7%9C%9F/" target="_self">
+        <div>
+          2007-2-2/ 資訊傳真周刊/ 撰文                          多家大型廠商現正加緊腳步，希望在今年下半年推出只要按下一個按鈕，就能連接網際網路並傳送數位內容的新型態電視。 簡單生活在此同時，一向被視為電腦業重量級廠商的 蘋果 ( Apple )、 微軟 ( Microsoft )、 惠普 ( HP ) 及其他業者，都不約而同地宣佈推出彌補 PC 或 Mac 與電視間隔
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-07-03 08:25" pubdate>
+              2008-07-03
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E8%81%9E/" class="category-chain-item">產業新聞</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2008/06/08/post-about-us-%E9%BE%8D%E7%BF%94%E7%B6%B2%E8%B7%AF%E9%9B%BB%E8%A6%96%EF%BC%8C%E7%B7%9A%E4%B8%8A%E6%94%B6%E7%9C%8B%E8%B6%85%E9%81%8E50%E5%80%8B%E5%8F%B0%E7%81%A3%E7%9B%B4%E6%92%A5%E9%A0%BB%E9%81%93/" target="_self">
+          post about us - 龍翔網路電視，線上收看超過50個台灣直播頻道！
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2008/06/08/post-about-us-%E9%BE%8D%E7%BF%94%E7%B6%B2%E8%B7%AF%E9%9B%BB%E8%A6%96%EF%BC%8C%E7%B7%9A%E4%B8%8A%E6%94%B6%E7%9C%8B%E8%B6%85%E9%81%8E50%E5%80%8B%E5%8F%B0%E7%81%A3%E7%9B%B4%E6%92%A5%E9%A0%BB%E9%81%93/" target="_self">
+        <div>
+          http://blog.xuite.net/orange.flower/blog/17538464 check us out - http://www.dragoniptv.com
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-06-08 19:27" pubdate>
+              2008-06-08
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/My-Work/" class="category-chain-item">My Work</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2008/05/13/digitime-%E5%85%8D%E8%B2%BBinternet-tv%E7%95%B6%E7%B4%85-joost%E5%8D%BB%E6%9B%87%E8%8A%B1%E4%B8%80%E7%8F%BE%EF%BC%9F/" target="_self">
+          DigiTime: 免費Internet TV當紅 Joost卻曇花一現？
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2008/05/13/digitime-%E5%85%8D%E8%B2%BBinternet-tv%E7%95%B6%E7%B4%85-joost%E5%8D%BB%E6%9B%87%E8%8A%B1%E4%B8%80%E7%8F%BE%EF%BC%9F/" target="_self">
+        <div>
+          林俊吉／DIGITIMES 2008/05/13 由Skype的2位創辦人Niklas Zennström 與Janus Friis所創立、以P2P串流技術提供線上免費電視服務的Joost，在2007年風光揭開神祕面紗、在網路界掀起一股搶鮮試用熱潮，當時還被譽為「Next Big Things」之一，到了2008年，卻接連傳出用戶增長不如預期、拿不到優質內容授權、CTO去職投敵營懷抱、資金消耗過快
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-05-13 07:01" pubdate>
+              2008-05-13
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/IPTV/" class="category-chain-item">IPTV</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2008/05/07/google-analytics-custom-tracking-api/" target="_self">
+          Google Analytics Custom Tracking API
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2008/05/07/google-analytics-custom-tracking-api/" target="_self">
+        <div>
+          is available over here:http://code.google.com/apis/analytics/docs/gaTrackingOverview.html
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-05-07 14:54" pubdate>
+              2008-05-07
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/dev/" class="category-chain-item">dev</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/development/">#development</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2008/05/06/trac-10-4-%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E7%89%88/" target="_self">
+          trac-10.4 繁體中文版
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2008/05/06/trac-10-4-%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E7%89%88/" target="_self">
+        <div>
+          trac-10.4-zh_TW Traditional Chinese translationtrac-10.4 繁體中文版 Modified from ZoomQuiet version, this version provides translation for Traditional Chinese. To download: http://trac-hacks.org/wiki/Tradi
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-05-06 13:02" pubdate>
+              2008-05-06
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/dev-enviornment/" class="category-chain-item">dev enviornment</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/dev-enviornment/IT/" class="category-chain-item">IT</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/dev-enviornment/IT/My-Work/" class="category-chain-item">My Work</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2008/05/04/setup-subversion-and-trac-on-centos-5/" target="_self">
+          Setup Subversion and Trac on CentOS 5
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2008/05/04/setup-subversion-and-trac-on-centos-5/" target="_self">
+        <div>
+          Recently I set up a virtual server to use as a development machine. It runs on CentOS 5 and hosts several Subversion repositories with associated Trac projects. There are many guides and plenty of hel
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-05-04 07:55" pubdate>
+              2008-05-04
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/dev-enviornment/" class="category-chain-item">dev enviornment</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/dev-enviornment/IT/" class="category-chain-item">IT</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/dev-enviornment/IT/SVN/" class="category-chain-item">SVN</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/dev-enviornment/IT/SVN/Tech-Note/" class="category-chain-item">Tech Note</a>
+  
+  
+
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2008/04/28/samba-setup-on-centos-5/" target="_self">
+          Samba Setup on CentOS 5
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2008/04/28/samba-setup-on-centos-5/" target="_self">
+        <div>
+          I have an existing user "amy" on my new installation of CentOS v5.1. I want a directory located at "/home/fileServer" to be shared through samba as "fileServer", that can be mounted by amy in Windows
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-04-28 07:57" pubdate>
+              2008-04-28
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/dev-enviornment/" class="category-chain-item">dev enviornment</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/dev-enviornment/IT/" class="category-chain-item">IT</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/13/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/#board">12</a><a class="page-number" href="/page/13/#board">13</a><span class="page-number current">14</span><a class="page-number" href="/page/15/#board">15</a><a class="page-number" href="/page/16/#board">16</a><span class="space">&hellip;</span><a class="page-number" href="/page/31/#board">31</a><a class="extend next" rel="next" href="/page/15/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>

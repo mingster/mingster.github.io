@@ -1,0 +1,897 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/16/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>mingster.com</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text=""></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2008/01/26/%E6%98%87%E9%99%BD%E6%94%B6%E8%B3%BC%E9%96%8B%E6%BA%90%E8%B3%87%E6%96%99%E5%BA%AB%E5%BB%A0%E5%95%86mysql/" target="_self">
+          昇陽收購開源資料庫廠商MySQL
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2008/01/26/%E6%98%87%E9%99%BD%E6%94%B6%E8%B3%BC%E9%96%8B%E6%BA%90%E8%B3%87%E6%96%99%E5%BA%AB%E5%BB%A0%E5%95%86mysql/" target="_self">
+        <div>
+          昇陽日前宣布以10億美元收購開放原始碼資料庫廠商MySQL，其中除了8億美元現金收購MySQL的未上市股票之外，還有2億美元的選擇權必須自行吸收。相較於過去幾年，昇陽在軟體市場表現低調，如今斥資收購開放原始碼廠商MySQL的策略引人注目。昇陽表示，收購MySQL並不會影響昇陽對於另一套開放原始碼資料庫PostgreSQL所提供的技術服務，未來昇陽將會持續支援PostgreSQL. http://w
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-01-26 19:21" pubdate>
+              2008-01-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E8%81%9E/" class="category-chain-item">產業新聞</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2007/12/22/vmware-wireless-network-adapter-and-bridging/" target="_self">
+          VMware, Wireless Network Adapter and Bridging
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2007/12/22/vmware-wireless-network-adapter-and-bridging/" target="_self">
+        <div>
+          If you're using VMware Server on Windows Vista with a Wireless network adapter, you might have problems using native VMware bridged networking. NAT networking works ok to give your guest OS internet a
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2007-12-22 07:59" pubdate>
+              2007-12-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/IT/" class="category-chain-item">IT</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/IT/Tech-Note/" class="category-chain-item">Tech Note</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2007/12/21/%E5%9F%BA%E9%9A%86%E5%85%A8%E5%AE%B6%E7%A6%8F%E8%8A%9D%E9%BA%BB%E6%B9%AF%E5%9C%93/" target="_self">
+          基隆全家福芝麻湯圓
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2007/12/21/%E5%9F%BA%E9%9A%86%E5%85%A8%E5%AE%B6%E7%A6%8F%E8%8A%9D%E9%BA%BB%E6%B9%AF%E5%9C%93/" target="_self">
+        <div>
+          就在基隆廟口附近的這家頗有名氣的老店曾被許多電視節目採訪過，只單賣芝麻一種口味，而內餡最大的特色為「含豬油」，因此特別香。 一盒三百元，分為上下 2 層，一層是 20 個，還可以買桂花糖蜜增添風味，一包桂花糖蜜是三十元。上下兩層共四十粒。買回來記得要冷凍。 地址是：基隆市愛四路52號。 跟一般煮湯圓一樣，在鍋裡用清水煮到浮起後就好了。在碗裡後加上一點桂花蜜，這樣就很甜了，不必再加糖。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2007-12-21 02:33" pubdate>
+              2007-12-21
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%9F%E6%B4%BBfun/" class="category-chain-item">生活fun</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2007/12/15/%E5%8F%B0%E7%81%A33-5g-%E6%96%B9%E6%A1%88%E6%AF%94%E8%BC%83%EF%BC%8Cas-of-122007/" target="_self">
+          台灣3.5G 方案比較，As of 12/2007
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2007/12/15/%E5%8F%B0%E7%81%A33-5g-%E6%96%B9%E6%A1%88%E6%AF%94%E8%BC%83%EF%BC%8Cas-of-122007/" target="_self">
+        <div>
+          Which is the best offer for 3.5G connectivity in Taiwan?  here's the situation as of Q4 2007: Considerations:  CHT current and will have the best coverage If you don't have a 3.5G phone, you will need
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2007-12-15 18:29" pubdate>
+              2007-12-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BE%BF%E5%AE%9C%E5%8F%88%E5%A4%A7%E7%A2%97/" class="category-chain-item">便宜又大碗</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2007/11/28/sling-media-brought-by-echostar/" target="_self">
+          Sling Media brought by EchoStar
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2007/11/28/sling-media-brought-by-echostar/" target="_self">
+        <div>
+          http://www.slingbox.com/get/pr-echostar-slingmedia.html EchoStar Announces Agreement to Acquire Sling Media, Inc. ENGLEWOOD, Colo. and FOSTER CITY, Calif., September 24, 2007 – EchoStar Communications
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2007-11-28 12:10" pubdate>
+              2007-11-28
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/IPTV/" class="category-chain-item">IPTV</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2007/11/06/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E9%A6%99%E6%B8%AF%E4%B8%8A%E5%B8%82-%E8%A2%AB%E8%B2%B7%E7%88%86/" target="_self">
+          阿里巴巴香港上市 被買爆
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2007/11/06/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E9%A6%99%E6%B8%AF%E4%B8%8A%E5%B8%82-%E8%A2%AB%E8%B2%B7%E7%88%86/" target="_self">
+        <div>
+          大陸最大的電子商務網站阿里巴巴，6日在香港掛牌首戰，收盤時漲了26元，收在39.5元，是掛牌價的2倍。 挾著郭台銘、思科跟Yahoo!都投資的光環，阿里巴巴創下香港交易所有史以來，唯一一家在星期二掛牌上市的公司，一開盤氣勢就不同凡響，跳空漲到30元，是掛牌價的1.5倍，收盤時漲了26元，收在39.5元，漲幅高達2倍。 讓阿里巴巴登上香港科技股的龍頭。 錯開港股大跌1500點的黑色星期一，總股本有5
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2007-11-06 16:53" pubdate>
+              2007-11-06
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E8%81%9E/" class="category-chain-item">產業新聞</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2007/11/04/ppstream-%E5%95%86%E5%91%A8%E5%A0%B1%E5%B0%8E/" target="_self">
+          PPStream 商周報導
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2007/11/04/ppstream-%E5%95%86%E5%91%A8%E5%A0%B1%E5%B0%8E/" target="_self">
+        <div>
+          PPStream總裁徐偉峰，當年為兩個小夥子辭掉ezPeer大陸總經理職位，如今搶下中央電視台、遊戲公司大廠盛大，都想要的大餅，擁有一千七百多萬用戶，成為網路電視服務的大贏家。 (文)林宏達 看見YouTube帶起的風潮，中央電視台和滿手現金的遊戲公司大廠上海盛大，都想下海分食大餅，但沒想到，中國寬頻影音流量排行第三名，竟被一家台灣人創立的小公司悄悄拿下……。 這家網路電視公司叫PPStream，
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2007-11-04 16:23" pubdate>
+              2007-11-04
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E8%81%9E/" class="category-chain-item">產業新聞</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2007/11/02/pchome-%E6%8A%95%E8%B3%87joost/" target="_self">
+          PCHOME 投資Joost
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2007/11/02/pchome-%E6%8A%95%E8%B3%87joost/" target="_self">
+        <div>
+          工商時報 何英煒／台北報導 2007.11.02　 網路上櫃公司PChome Online網路家庭因為業外轉投資因素，今年全年仍持續虧損，今年前三季每股稅後虧損達二．三三元。董事長詹宏志表示，該公司的本業如電子商務等都已經賺錢，但業外投資如網路拍賣事業及愛比科技（IPEVO）仍處於起步階段，這兩個事業單位不以快速賺錢獲利為目的。展望明年度，雖然有機會可以轉虧為盈，但該公司仍計畫要引進知名網路電視平
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2007-11-02 09:41" pubdate>
+              2007-11-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E8%81%9E/" class="category-chain-item">產業新聞</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2007/10/26/google%E9%9B%BB%E8%A6%96%E5%BB%A3%E5%91%8A-%E5%B0%87%E5%90%91%E5%B0%BC%E7%88%BE%E6%A3%AE%E8%B3%BC%E8%B2%B7%E6%94%B6%E8%A6%96%E8%B3%87%E6%96%99/" target="_self">
+          Google電視廣告 將向尼爾森購買收視資料
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2007/10/26/google%E9%9B%BB%E8%A6%96%E5%BB%A3%E5%91%8A-%E5%B0%87%E5%90%91%E5%B0%BC%E7%88%BE%E6%A3%AE%E8%B3%BC%E8%B2%B7%E6%94%B6%E8%A6%96%E8%B3%87%E6%96%99/" target="_self">
+        <div>
+          CNET 新聞專區：Elinor Mills　　2007/10/25 13:32:03 為了讓購買「Google TV Ads 」廣告的廠商能更瞭解廣告收視狀況，Google準備向尼爾森研究公司購買電視用戶資料資訊。 按照雙方週三達成的協定，Google將向尼爾森（Nielsen）支付數額不詳的費用，以獲得特定電視節目的用戶資料資訊。 尼爾森的監測設備遍佈於美國眾多的家庭，這使得公司可以檢查電視節
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2007-10-26 02:12" pubdate>
+              2007-10-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E8%81%9E/" class="category-chain-item">產業新聞</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2007/10/25/%E8%89%B2%EF%BC%8C%E6%88%92-%E5%BD%B1%E8%A9%95%E5%A4%A7%E9%9B%86%E5%90%88/" target="_self">
+          色，戒 - 影評大集合
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2007/10/25/%E8%89%B2%EF%BC%8C%E6%88%92-%E5%BD%B1%E8%A9%95%E5%A4%A7%E9%9B%86%E5%90%88/" target="_self">
+        <div>
+          張愛玲的「色戒」像是一枚織工精細的小方巾，李安的「色戒；Lust Caution」卻似一捆毛裡沈厚的天鵝絨。  電影像原著一樣，都從易先生家的麻將桌上開始。片中幾場方城之戰被拍得很有味道，效果不下於男女情慾的貼身肉搏。以陳沖為首的幾個太太都演得頗好，聲音表情十足，又帶有幾許曖昧，絲毫不受空間擠壓而失了張力。靈活的運鏡和剪接也適時放大一些細節，易先生跟化名麥太太的王佳芝的眉眼交會，太太們從看牌到打出
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2007-10-25 07:10" pubdate>
+              2007-10-25
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%9F%E6%B4%BBfun/" class="category-chain-item">生活fun</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E7%94%9F%E6%B4%BBfun/%E9%96%B1%E8%AE%80%E8%BF%B4%E9%9F%BF/" class="category-chain-item">閱讀迴響</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/15/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/#board">14</a><a class="page-number" href="/page/15/#board">15</a><span class="page-number current">16</span><a class="page-number" href="/page/17/#board">17</a><a class="page-number" href="/page/18/#board">18</a><span class="space">&hellip;</span><a class="page-number" href="/page/31/#board">31</a><a class="extend next" rel="next" href="/page/17/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>

@@ -1,0 +1,764 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="mingster">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="this reference is OBSOLETEDcheck out the official up-to-date info  HomeBridge是基於nodejs server的應用，它模擬iOS HomeKit，成為一個我們可以『控制』的網關。  我們需要HomeBridge來搭入Apple設備，這樣就可以使用siri&#x2F;iPhone&#x2F;iPad 來控制小米、Home">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安裝 HomeBridge On Raspberry Pi 3b">
+<meta property="og:url" content="http://example.com/2018/01/13/homebridge_on_pi3b/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="this reference is OBSOLETEDcheck out the official up-to-date info  HomeBridge是基於nodejs server的應用，它模擬iOS HomeKit，成為一個我們可以『控制』的網關。  我們需要HomeBridge來搭入Apple設備，這樣就可以使用siri&#x2F;iPhone&#x2F;iPad 來控制小米、Home">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2018-01-13T07:19:41.000Z">
+<meta property="article:modified_time" content="2024-04-09T03:42:52.153Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="HomeBridge, Raspberry Pi">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>安裝 HomeBridge On Raspberry Pi 3b - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>mingster.com</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="安裝 HomeBridge On Raspberry Pi 3b"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2018-01-13 15:19" pubdate>
+          January 13, 2018 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          914 words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          8 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">安裝 HomeBridge On Raspberry Pi 3b</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="this-reference-is-OBSOLETED"><a href="#this-reference-is-OBSOLETED" class="headerlink" title="this reference is OBSOLETED"></a>this reference is OBSOLETED</h2><p>check out the <a target="_blank" rel="noopener" href="https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Raspbian#configuration-reference">official up-to-date info</a></p>
+<s>
+HomeBridge是基於nodejs server的應用，它模擬iOS HomeKit，成為一個我們可以『控制』的網關。
+
+<p>我們需要HomeBridge來搭入Apple設備，這樣就可以使用siri&#x2F;iPhone&#x2F;iPad 來控制小米、Home Assistant、或其他HomeBridge有plug-in的platform了。</p>
+<p>HomeBridge是基於nodejs的應用，在Pi上，nodejs的版本很關鍵。不work 大部份就是這裡出錯。</p>
+<p><a target="_blank" rel="noopener" href="https://sspai.com/post/38849">少數派已經有文</a>解釋了。以下是操作的筆記。</p>
+<p>#***** 很重要 – 本文只適用於 Pi 3B 的硬體 *****<br>要知道你的Pi是哪個版本，可以：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cat</span> /proc/cpuinfo | grep <span class="hljs-string">&#x27;Revision&#x27;</span> | awk <span class="hljs-string">&#x27;&#123;print $3&#125;&#x27;</span> | sed <span class="hljs-string">&#x27;s/^1000//&#x27;</span><br></code></pre></td></tr></table></figure>
+
+<p>a02082, a22082, 或 a32082 才是 Pi 3.</p>
+<p><a target="_blank" rel="noopener" href="https://elinux.org/RPi_HardwareHistory">出處</a></p>
+<p>硬體確認了，就可以進行以下HomeBridge的安裝。</p>
+<h2 id="第一步-清理nodejs"><a href="#第一步-清理nodejs" class="headerlink" title="第一步 清理nodejs"></a>第一步 清理nodejs</h2><p>裝了幾次HomeBridge都出錯，結論就是nodejs版本不正確，所以先清空nodejs可以保證接下來的安裝。</p>
+<p>若有其他node.js的東西在run，就不能這樣做了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt-get -y remove nodejs;<br><br>sudo <span class="hljs-built_in">rm</span> -rf /usr/lib/node_modules/; <span class="hljs-built_in">rm</span> -rf ~/node_modules/<br></code></pre></td></tr></table></figure>
+
+<h2 id="第二步-安裝HomeBridge所需軟體"><a href="#第二步-安裝HomeBridge所需軟體" class="headerlink" title="第二步 安裝HomeBridge所需軟體"></a>第二步 安裝HomeBridge所需軟體</h2><ol>
+<li><p>安裝相關軟體：</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vim">sudo apt-<span class="hljs-built_in">get</span> install git gcc g++ <span class="hljs-keyword">make</span> <span class="hljs-keyword">python3</span> net-tools<br></code></pre></td></tr></table></figure>
+
+</li>
+<li><p>安裝 nodejs (版本很重要，不能亂換)：</p>
+</li>
+</ol>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">cd ~/<br><br><span class="hljs-comment"># setup repo</span><br>curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -<br><br><span class="hljs-comment"># install Node.js</span><br>sudo apt-get install -y nodejs<br><br><span class="hljs-comment"># test node is working</span><br><span class="hljs-keyword">node</span> <span class="hljs-title">-v</span><br><br><span class="hljs-comment"># upgrade npm (version 6.13.4 has issues with git dependencies)</span><br>sudo npm install -g npm<br><br><br>sudo npm install -g <span class="hljs-keyword">node</span><span class="hljs-title">-gyp</span><br></code></pre></td></tr></table></figure>
+
+<p>this get you node 14.15.2</p>
+<ol start="3">
+<li>安裝Avahi包：</li>
+</ol>
+<figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs q">sudo apt-<span class="hljs-built_in">get</span> install -y libavahi-compat-libdnssd-<span class="hljs-built_in">dev</span><br></code></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>安裝 homebridge及相關 (–unsafe-perm 很重要，不能拿掉)：</li>
+</ol>
+<p>Reference: <a target="_blank" rel="noopener" href="https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Raspbian">Installing Homebridge</a></p>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm">sudo npm <span class="hljs-keyword">install </span>-g --unsafe-perm homebridge homebridge-<span class="hljs-built_in">config</span>-ui-x<br></code></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>安裝 bignum</li>
+</ol>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli"><span class="hljs-keyword">cd</span> <span class="hljs-string">/usr/lib/node_modules/homebridge/</span>;<br>sudo npm install <span class="hljs-params">--unsafe-perm</span> bignum<br></code></pre></td></tr></table></figure>
+<p>安裝會有錯誤warning，可以不理他。</p>
+<ol start="6">
+<li>安裝並重整 mdns</li>
+</ol>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">cd /usr/lib/node_modules/homebridge/;<br>sudo npm install --unsafe-perm mdns<br><br>sudo <span class="hljs-keyword">node</span><span class="hljs-title">-gyp</span> <span class="hljs-attr">BUILDTYPE=</span>Release rebuild<br></code></pre></td></tr></table></figure>
+
+<h2 id="第三步-安裝homebridge-homeassistant"><a href="#第三步-安裝homebridge-homeassistant" class="headerlink" title="第三步 安裝homebridge-homeassistant"></a>第三步 安裝homebridge-homeassistant</h2><p>安裝『homebridge-homeassistant』插件，就可以把HB跟HA串起來，來實現平台聯動：</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">sudo npm <span class="hljs-keyword">install</span> -g homebridge-homeassistant<br></code></pre></td></tr></table></figure>
+
+<h2 id="第四步-安裝broadlink-plug-in"><a href="#第四步-安裝broadlink-plug-in" class="headerlink" title="第四步 安裝broadlink plug-in"></a>第四步 安裝broadlink plug-in</h2><p><a target="_blank" rel="noopener" href="https://broadlink.kiwicam.nz/#homebridge-broadlink-rm">homebridge-broadlink-rm-pro</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo <span class="hljs-built_in">chmod</span> -R 755 /usr/lib/node_modules/;<br>sudo <span class="hljs-built_in">chown</span> -R pi.pi /usr/lib/node_modules/;<br><br><span class="hljs-built_in">rm</span> -rf ~/.cache/; <span class="hljs-built_in">mkdir</span> ~/.cache/; sudo <span class="hljs-built_in">chmod</span> -R 755 ~/.cache/;<br><br>sudo npm install -g homebridge-broadlink-rm-pro<br></code></pre></td></tr></table></figure>
+
+<ol>
+<li>Run “which node” to determine your node path.</li>
+<li>Run “sudo setcap cap_net_raw+ep &#x2F;path&#x2F;to&#x2F;node”.</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">which</span> node<br>sudo <span class="hljs-built_in">setcap</span> cap_net_raw+ep /usr/lib/<br></code></pre></td></tr></table></figure>
+
+<h2 id="第四步-HomeBridge-設定"><a href="#第四步-HomeBridge-設定" class="headerlink" title="第四步 HomeBridge 設定"></a>第四步 HomeBridge 設定</h2><p>以下是我的設定，接了小米及Home Assistant:</p>
+<figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs prolog">&#123;<br><span class="hljs-string">&quot;bridge&quot;</span>: &#123;<br>    <span class="hljs-string">&quot;name&quot;</span>:<span class="hljs-string">&quot;Homebridge&quot;</span>,<br>    <span class="hljs-string">&quot;username&quot;</span>:<span class="hljs-string">&quot;拉拉拉拉拉&quot;</span>,<br>    <span class="hljs-string">&quot;port&quot;</span>:<span class="hljs-number">51826</span>,<br>    <span class="hljs-string">&quot;pin&quot;</span>:<span class="hljs-string">&quot;拉拉拉拉拉&quot;</span><br>  &#125;,<br><span class="hljs-string">&quot;platforms&quot;</span>: [&#123;<br>      <span class="hljs-string">&quot;platform&quot;</span>: <span class="hljs-string">&quot;MiAqaraPlatform&quot;</span>,<br>      <span class="hljs-string">&quot;gateways&quot;</span>: &#123;<br>          <span class="hljs-string">&quot;拉拉拉拉拉&quot;</span>: <span class="hljs-string">&quot;拉拉拉拉拉&quot;</span><br>      &#125;<br>  &#125;],<br><span class="hljs-string">&quot;platforms&quot;</span>: [&#123;<br>    <span class="hljs-string">&quot;platform&quot;</span>: <span class="hljs-string">&quot;HomeAssistant&quot;</span>,<br>    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;HomeAssistant&quot;</span>,<br>    <span class="hljs-string">&quot;host&quot;</span>: <span class="hljs-string">&quot;http://127.0.0.1:8123&quot;</span>,<br>    <span class="hljs-string">&quot;password&quot;</span>: <span class="hljs-string">&quot;拉拉拉拉拉&quot;</span>,<br>    <span class="hljs-string">&quot;supported_types&quot;</span>: [<span class="hljs-string">&quot;automation&quot;</span>, <span class="hljs-string">&quot;binary_sensor&quot;</span>, <span class="hljs-string">&quot;climate&quot;</span>, <span class="hljs-string">&quot;cover&quot;</span>, <span class="hljs-string">&quot;device_tracker&quot;</span>, <span class="hljs-string">&quot;fan&quot;</span>, <span class="hljs-string">&quot;group&quot;</span>, <span class="hljs-string">&quot;input_boolean&quot;</span>, <span class="hljs-string">&quot;light&quot;</span>, <span class="hljs-string">&quot;lock&quot;</span>, <span class="hljs-string">&quot;media_player&quot;</span>, <span class="hljs-string">&quot;remote&quot;</span>, <span class="hljs-string">&quot;scene&quot;</span>, <span class="hljs-string">&quot;script&quot;</span>, <span class="hljs-string">&quot;sensor&quot;</span>, <span class="hljs-string">&quot;switch&quot;</span>, <span class="hljs-string">&quot;vacuum&quot;</span>],<br>    <span class="hljs-string">&quot;logging&quot;</span>: true,<br>    <span class="hljs-string">&quot;verify_ssl&quot;</span>: false<br>  &#125;]<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>小米如何設，可以看<a target="_blank" rel="noopener" href="https://sspai.com/post/40113">這裡</a>。</p>
+<h2 id="第五步-測試"><a href="#第五步-測試" class="headerlink" title="第五步 測試"></a>第五步 測試</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">homebridge -D</span><br></code></pre></td></tr></table></figure>
+
+<p>看看結果，Ctrl + C 來退出。</p>
+<h2 id="第六步-將-HomeBridge-安裝成服務"><a href="#第六步-將-HomeBridge-安裝成服務" class="headerlink" title="第六步 將 HomeBridge 安裝成服務"></a>第六步 將 HomeBridge 安裝成服務</h2><ol>
+<li><p>用root身份，新增服務設定 <code>sudo vi /etc/default/homebridge</code></p>
+<p> 貼上以下：</p>
+ <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-comment"># Defaults / Configuration options for homebridge</span><br><span class="hljs-comment"># The following settings tells homebridge where to find the config.json file and where to persist the data (i.e. pairing and others)</span><br><span class="hljs-attr">HOMEBRIDGE_OPTS</span>=-U /var/homebridge<br><br><span class="hljs-comment"># If you uncomment the following line, homebridge will log more</span><br><span class="hljs-comment"># You can display this via systemd&#x27;s journalctl: journalctl -f -u homebridge</span><br><span class="hljs-comment"># DEBUG=*</span><br></code></pre></td></tr></table></figure></li>
+<li><p>新增服務script: <code>sudo vi /etc/systemd/system/homebridge.service</code></p>
+<p> 貼上以下：</p>
+ <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs ini">	<span class="hljs-section">[Unit]</span><br><span class="hljs-attr">Description</span>=Node.js HomeKit Server<br><span class="hljs-attr">After</span>=syslog.target network-<span class="hljs-literal">on</span>line.target<br><span class="hljs-section">[Service]</span><br><span class="hljs-attr">Type</span>=simple<br><span class="hljs-attr">User</span>=homebridge<br><span class="hljs-attr">EnvironmentFile</span>=/etc/default/homebridge<br><span class="hljs-attr">ExecStart</span>=/usr/bin/homebridge <span class="hljs-variable">$HOMEBRIDGE_OPTS</span><br><span class="hljs-attr">Restart</span>=<span class="hljs-literal">on</span>-failure<br><span class="hljs-attr">RestartSec</span>=<span class="hljs-number">10</span><br><span class="hljs-attr">KillMode</span>=process<br><span class="hljs-section">[Install]</span><br><span class="hljs-attr">WantedBy</span>=multi-user.target<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>開HomeBridge專屬的帳號</p>
+ <figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs ada">sudo useradd <span class="hljs-comment">--system homebridge</span><br><br>sudo passwd homebridge<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>設定檔位置：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo <span class="hljs-built_in">mkdir</span> /var/homebridge<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>將測試好的設定檔拷到 <code>/var/homebridge/</code> 並設開放的權限：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo <span class="hljs-built_in">cp</span> ~/.homebridge/config.json /var/homebridge/<br>sudo <span class="hljs-built_in">cp</span> -r ~/.homebridge/persist /var/homebridge<br>sudo <span class="hljs-built_in">chmod</span> -R 0777 /var/homebridge<br></code></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="第六步-測試服務"><a href="#第六步-測試服務" class="headerlink" title="第六步 測試服務"></a>第六步 測試服務</h2><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs actionscript">homebridge -U /<span class="hljs-keyword">var</span>/homebridge<br></code></pre></td></tr></table></figure>
+
+<p>重整服務：</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo systemctl daemon-reload</span><br></code></pre></td></tr></table></figure>
+
+<p>啟用：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">sudo systemctl <span class="hljs-built_in">enable</span> homebridge<br></code></pre></td></tr></table></figure>
+
+<p>啟動：</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">sudo systemctl <span class="hljs-literal">start</span> homebridge<br></code></pre></td></tr></table></figure>
+
+<p>狀態：</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo systemctl status homebridge</span><br></code></pre></td></tr></table></figure>
+
+
+<p>進入homebridge身份：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">sudo su -s <span class="hljs-regexp">/bin/</span>bash homebridge<br></code></pre></td></tr></table></figure>
+
+<p>都裝好了，就可以開始<a target="_blank" rel="noopener" href="https://sspai.com/post/40075">將設備接入</a>。</p>
+<h2 id="第七步-更新"><a href="#第七步-更新" class="headerlink" title="第七步 更新"></a>第七步 更新</h2><p>要更新homebridge，可以：</p>
+<pre><code class="hljs">sudo npm upgrade -g homebridge
+
+sudo npm upgrade -g homebridge-homeassistant
+</code></pre>
+<h3 id="Node更新"><a href="#Node更新" class="headerlink" title="Node更新"></a>Node更新</h3><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo hb-service rebuild</span><br></code></pre></td></tr></table></figure>
+
+
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://alwayswithyouwhatcannotbedone.wordpress.com/2020/09/28/how-to-extract-all-your-custom-ir-hex-codes-from-a-broadlink-rm-mini-3-for-homebridge/">How to Extract All Your Custom IR Hex Codes from a Broadlink RM Mini 3 for Homebridge</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Raspbian">HomeBridge on Raspberry-Pi</a></li>
+<li><a target="_blank" rel="noopener" href="https://timleland.com/setup-homebridge-to-start-on-bootup/">Setup Homebridge to Start on Bootup</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/YinHangCode/homebridge-mi-aqara">homebridge-mi-aqara</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi">https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi</a></li>
+<li><a target="_blank" rel="noopener" href="https://timleland.com/setup-homebridge-to-start-on-bootup/">Setup Homebridge to Start on Bootup</a></li>
+<li><a target="_blank" rel="noopener" href="https://sspai.com/post/39851">入门智能家居，从米家到HomeKit （一）</a></li>
+<li><a target="_blank" rel="noopener" href="https://sspai.com/post/39851">入门智能家居，从米家到HomeKit （一）</a></li>
+<li><a target="_blank" rel="noopener" href="https://sspai.com/post/39881">入门智能家居，从 IFTTT 到 HomeKit 自动化（二）</a></li>
+</ul>
+</s>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/HomeAutomation/" class="category-chain-item">HomeAutomation</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/HomeBridge-Raspberry-Pi/" class="print-no-link">#HomeBridge, Raspberry Pi</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>安裝 HomeBridge On Raspberry Pi 3b</div>
+      <div>http://example.com/2018/01/13/homebridge_on_pi3b/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>mingster</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>January 13, 2018</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2018/01/13/homeassistant_on_existing_pi/" title="在既有的Raspberry Pi上安裝Home Assistant">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">在既有的Raspberry Pi上安裝Home Assistant</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2017/11/21/mercury%E7%B0%A1%E6%98%93%E6%94%B9%E8%A3%9D/" title="Mercury簡易改裝">
+                        <span class="hidden-mobile">Mercury簡易改裝</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>

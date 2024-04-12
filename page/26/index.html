@@ -1,0 +1,918 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/26/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>mingster.com</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text=""></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/07/25/%E8%80%81%E9%97%86%E6%9C%80%E8%A8%8E%E5%8E%AD%E7%9A%8410%E7%A8%AE%E7%88%9B%E5%80%8B%E6%80%A7/" target="_self">
+          老闆最討厭的10種爛個性
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/07/25/%E8%80%81%E9%97%86%E6%9C%80%E8%A8%8E%E5%8E%AD%E7%9A%8410%E7%A8%AE%E7%88%9B%E5%80%8B%E6%80%A7/" target="_self">
+        <div>
+          老闆最討厭的10種爛個性：  不能化繁為簡  爭功諉過  不能勇於任事  不能擁抱變革  拍馬屁與抓耙仔  只會授權，不會用人  太聽話  不誠信  孤芳自賞，沒有利潤觀  不能利他  年假剛結束，正是準備衝刺、蓄勢待發的時候。要成為職場搶手的人才，哪些態度該追求，哪些又是老闆眼中最討厭的爛個性？《Cheers》雜誌特地走訪各行各業的CEO，與他們深談在管理、帶人上的最大難題，歸納出你不可不知道的
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-07-25 17:19" pubdate>
+              2005-07-25
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BC%81%E7%AE%A1/" class="category-chain-item">企管</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/07/25/%E4%BC%8A%E8%97%A4%E7%A9%B0%E4%B8%80%EF%BC%9A%E6%8A%8A%E9%83%A8%E8%90%BD%E6%A0%BC%E3%80%8Cgoogle%E3%80%8D%E5%8C%96-2/" target="_self">
+          伊藤穰一：把部落格「Google」化
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/07/25/%E4%BC%8A%E8%97%A4%E7%A9%B0%E4%B8%80%EF%BC%9A%E6%8A%8A%E9%83%A8%E8%90%BD%E6%A0%BC%E3%80%8Cgoogle%E3%80%8D%E5%8C%96-2/" target="_self">
+        <div>
+          採訪－吳韻儀‧陳世耀‧卜繁裕撰文－張漢宜整理－卜繁裕圖片來源－天下資料庫2005年7月 e天下雜誌把部落格「Google化」的伊藤穰一，是全球最大的部落格供應商，眾多國際重量級媒體在探討亞洲經濟趨勢時，都不敢漏掉這號人物。科技創業經驗豐富、近年來致力投入部落格的他，有何獨到觀察？部落格搜尋引擎Technorati堪稱「部落格界的Google」，只要登上 http://www.technorati.
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-07-25 09:11" pubdate>
+              2005-07-25
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E7%9F%A5/" class="category-chain-item">產業新知</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/07/12/book-word-%E6%8E%92%E7%89%88%E8%97%9D%E8%A1%93/" target="_self">
+          Book: Word 排版藝術
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/07/12/book-word-%E6%8E%92%E7%89%88%E8%97%9D%E8%A1%93/" target="_self">
+        <div>
+          I have not yet meet anyone who can honestly claim that he/she can master everything in MS Word; however us knowledge workers have been use it so often that we should know better (regardless you like W
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-07-12 04:33" pubdate>
+              2005-07-12
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%96%B1%E8%AE%80%E8%BF%B4%E9%9F%BF/" class="category-chain-item">閱讀迴響</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/06/20/%E8%BF%85%E9%80%9F%E6%8F%90%E5%8D%87-net%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E6%8A%80%E5%B7%A7-75%E5%80%8B%E8%A8%A3%E7%AB%85%E5%B9%AB%E5%8A%A9%E4%BD%A0%E6%B8%9B%E5%B0%91%E7%A8%8B%E5%BC%8F%E4%B8%AD/" target="_self">
+          迅速提升.NET程式設計技巧 - 75個訣竅幫助你減少程式中潛在的問題
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/06/20/%E8%BF%85%E9%80%9F%E6%8F%90%E5%8D%87-net%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E6%8A%80%E5%B7%A7-75%E5%80%8B%E8%A8%A3%E7%AB%85%E5%B9%AB%E5%8A%A9%E4%BD%A0%E6%B8%9B%E5%B0%91%E7%A8%8B%E5%BC%8F%E4%B8%AD/" target="_self">
+        <div>
+          《作者簡介》蔡學鏞，清華大學資訊工程碩士、元智大學資訊系兼任講師、美商 O’Reilly 出版社技術編輯、臺灣微軟特約專欄作家、寰震科技技術顧問、研討會講師。蔡學鏞先生著譯有多本 Java 書籍，並在臺灣和大陸的多本 IT 雜誌開闢技術專欄，專長的語言為 C/C++、C#、Java、REBOL。他的聯繫方式：xy.cai@msa.hinet.net。 想要讓開發出來的程式碼穩固且容易維護，除了有必
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-06-20 10:16" pubdate>
+              2005-06-20
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/NET/" class="category-chain-item">.NET</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/NET/%E9%96%B1%E8%AE%80%E8%BF%B4%E9%9F%BF/" class="category-chain-item">閱讀迴響</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Net/">#.Net</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/06/08/%E5%BE%AE%E8%BB%9F%E7%99%BC%E5%B8%83%E9%A0%90%E8%A6%BD%E7%89%88%E3%80%8C%E7%99%BD%E9%A6%AC%E3%80%8D%E9%96%8B%E7%99%BC%E8%80%85%E5%B7%A5%E5%85%B7-whitehorse-visual-studio-2005-team-systm/" target="_self">
+          微軟發布預覽版「白馬」開發者工具 - Whitehorse, Visual Studio 2005 Team Systm
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/06/08/%E5%BE%AE%E8%BB%9F%E7%99%BC%E5%B8%83%E9%A0%90%E8%A6%BD%E7%89%88%E3%80%8C%E7%99%BD%E9%A6%AC%E3%80%8D%E9%96%8B%E7%99%BC%E8%80%85%E5%B7%A5%E5%85%B7-whitehorse-visual-studio-2005-team-systm/" target="_self">
+        <div>
+          微軟公司26日發布預覽版的新開發者工具，目的在協助企業用戶加速建置客製化的網路應用程式。 軟體巨人發布「社群技術預覽」版模組化工具(modeling tools)，昔日代稱「白馬」( Whitehorse)，日後會納入微軟為企業應用程式開發者設計的Visual Studio 2005 Team System。 新的模型化工具讓開發者把網路應用程式視覺化，即用複雜的圖形代表軟體元件。微軟首席產品經理
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-06-08 18:46" pubdate>
+              2005-06-08
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E7%9F%A5/" class="category-chain-item">產業新知</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E7%9F%A5/%E8%BB%9F%E9%AB%94%E6%96%B0%E7%9F%A5/" class="category-chain-item">軟體新知</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/05/26/%E7%B6%B2%E7%AB%99%E4%BA%92%E5%8B%95%E6%8A%80%E8%A1%93%E7%9A%84%E9%80%B2%E5%B1%95/" target="_self">
+          網站互動技術的進展
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/05/26/%E7%B6%B2%E7%AB%99%E4%BA%92%E5%8B%95%E6%8A%80%E8%A1%93%E7%9A%84%E9%80%B2%E5%B1%95/" target="_self">
+        <div>
+          CNET授權採用NYTimes文章：James Fallows‧郭文興譯　　2005/05/26 每個上網的人一定都有過這種讓人喪氣的類似經驗。 上星期我在美國明州阿坡里市，由於飛機誤點而要多等三個小時，這還不是讓人喪氣的地方。真正令人喪氣的，是我想用手提電腦連上機場提供的無線網路。要連上這個無線網路，必須要在螢幕上填寫一個註冊表單，要填上姓名、住址、電話、電子郵件、信用卡訊息，以及在網路上要使用
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-05-26 17:00" pubdate>
+              2005-05-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BD%BF%E7%94%A8%E6%80%A7/" class="category-chain-item">使用性</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/05/15/%E9%87%8D%E8%A6%96%E3%80%8C%E5%8C%96%E7%B9%81%E7%82%BA%E7%B0%A1%E3%80%8D%E7%9A%84%E9%A0%98%E5%B0%8E%E8%83%BD%E5%8A%9B/" target="_self">
+          重視「化繁為簡」的領導能力
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/05/15/%E9%87%8D%E8%A6%96%E3%80%8C%E5%8C%96%E7%B9%81%E7%82%BA%E7%B0%A1%E3%80%8D%E7%9A%84%E9%A0%98%E5%B0%8E%E8%83%BD%E5%8A%9B/" target="_self">
+        <div>
+          [ 商業周刊 ] 重視「化繁為簡」的領導能力石滋宜 2002-08-23「我們的未來並不在未來，未來是在今天，如果今天我們不做準備，到未來才開始準備當然是來不及，所以領導者必須把這樣的觀念，從現在起就要傳遞給他們。」但，在我輔導企業的經驗裡，卻發現有些領導者本身學識涵養很足，但其員工常常聽不懂他的意思，造成溝通的障礙，這是什麼問題呢？ 我發現有很大原因是，這些領導者常說得多又雜，犯了無法「言簡意賅
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-05-15 16:26" pubdate>
+              2005-05-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BC%81%E7%AE%A1/" class="category-chain-item">企管</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/05/15/next-ceo-%E8%80%81%E9%97%86%E7%9C%BC%E4%B8%AD%E7%9A%84%E6%98%8E%E6%98%9F/" target="_self">
+          NEXT CEO - 老闆眼中的明星
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/05/15/next-ceo-%E8%80%81%E9%97%86%E7%9C%BC%E4%B8%AD%E7%9A%84%E6%98%8E%E6%98%9F/" target="_self">
+        <div>
+          [ 商業周刊 ]你的名字已列在ＣＥＯ候選人的名單上嗎？你，有機會嗎？ 在證券界，日盛集團有一張無形的ＣＥＯ候選人名單。 七月四日下午，日盛集團召開經營委員會，六個人參加會議。日盛集團今年下半年的重大事務在這個會議中，以合議的方式形成決策。 參加會議的六個人，除了總裁陳國和之外、還包括日盛金控總經理趙永飛等人。陳國和說：「經營大企業太辛苦了，我計畫一年到一年半之後就交棒。日盛集團下一個世代的領導人將
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-05-15 15:54" pubdate>
+              2005-05-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BC%81%E7%AE%A1/" class="category-chain-item">企管</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/04/19/quck-intro-of-accessing-subversion/" target="_self">
+          Quck Intro of Accessing Subversion
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/04/19/quck-intro-of-accessing-subversion/" target="_self">
+        <div>
+          Version control is the art of managing changes to information. It has long been a critical tool for programmers, who typically spend their time making small changes to software and then undoing those
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-04-19 08:25" pubdate>
+              2005-04-19
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/book-review/" class="category-chain-item">book review</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/book-review/dev-enviornment/" class="category-chain-item">dev enviornment</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/book-review/dev-enviornment/Tech-Note/" class="category-chain-item">Tech Note</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/04/06/%E5%8D%83%E9%87%91%E9%9B%A3%E8%B2%B7%E6%97%A9%E7%9F%A5%E9%81%93-%E5%8F%B0%E7%81%A37-eleven%E5%89%B5%E6%96%B0%E8%A1%8C%E9%8A%B7%E5%AD%B8/" target="_self">
+          千金難買早知道 - 台灣7-ELEVEN創新行銷學
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/04/06/%E5%8D%83%E9%87%91%E9%9B%A3%E8%B2%B7%E6%97%A9%E7%9F%A5%E9%81%93-%E5%8F%B0%E7%81%A37-eleven%E5%89%B5%E6%96%B0%E8%A1%8C%E9%8A%B7%E5%AD%B8/" target="_self">
+        <div>
+          多年前的某一天，一家7-ELEVEN在營業時間快結束時，因鐵捲門故障而無法順利打烊，只好繼續營業，萬萬沒有想到夜間的生意反而特別好，自此7-ELEVEN決定將營業時間改為24小時營業，終年不打烊。 7-ELEVEN由一個小小的意外，成就另一個新的商業模式，若沒有鐵捲門故障事件，也許到現在都還是11點打烊。 喜歡在一成不變的生活中來點不同的刺激嗎？有時候需要冒一點風險，試著以不同的方法去完成同樣的一
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-04-06 04:49" pubdate>
+              2005-04-06
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%96%B1%E8%AE%80%E8%BF%B4%E9%9F%BF/" class="category-chain-item">閱讀迴響</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/25/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/#board">24</a><a class="page-number" href="/page/25/#board">25</a><span class="page-number current">26</span><a class="page-number" href="/page/27/#board">27</a><a class="page-number" href="/page/28/#board">28</a><span class="space">&hellip;</span><a class="page-number" href="/page/31/#board">31</a><a class="extend next" rel="next" href="/page/27/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>

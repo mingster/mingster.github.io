@@ -1,0 +1,904 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/25/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>mingster.com</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text=""></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/08/15/rss%E4%B8%8B%E4%B8%80%E4%BB%A3%E7%B6%B2%E8%B7%AF%E5%85%A7%E5%AE%B9%E5%82%B3%E9%81%9E%E9%97%9C%E9%8D%B5%E6%8A%80%E8%A1%93-ithome%E9%9B%BB%E8%85%A6%E5%A0%B1%E5%91%A8%E5%88%8A/" target="_self">
+          RSS下一代網路內容傳遞關鍵技術 (iThome電腦報周刊)
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/08/15/rss%E4%B8%8B%E4%B8%80%E4%BB%A3%E7%B6%B2%E8%B7%AF%E5%85%A7%E5%AE%B9%E5%82%B3%E9%81%9E%E9%97%9C%E9%8D%B5%E6%8A%80%E8%A1%93-ithome%E9%9B%BB%E8%85%A6%E5%A0%B1%E5%91%A8%E5%88%8A/" target="_self">
+        <div>
+          最近你只要瀏覽一些網站或部落格，一定會發現網頁上到處都有一些小小的橘色長方形色塊，標識著RSS、ATOM或XML等字樣，甚至還區分成RSS 0.9、RSS 1.0等字樣。 這些看起來頗有裝飾效果，卻也有點複雜的橘色色塊，背後所代表的正是逐漸興起的網頁內容傳遞技術－RSS，這個10年前就問市的通用內容傳遞技術，正隨著部落格的興起而翻身，甚至要躍上舞臺大秀一番。 微軟在上周宣布Longhorn作業系統
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-08-15 15:10" pubdate>
+              2005-08-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E8%81%9E/" class="category-chain-item">產業新聞</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/08/08/%E4%BC%81%E6%A5%AD%E9%96%93%E7%9A%84%E9%97%9C%E4%BF%82-3/" target="_self">
+          企業間的關係
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/08/08/%E4%BC%81%E6%A5%AD%E9%96%93%E7%9A%84%E9%97%9C%E4%BF%82-3/" target="_self">
+        <div>
+          關係有點黏，又不會太黏這個境界是很多企業羨慕的。 一家汽車製造公司長期與一家零件供應商合作。為了持續拿到汽車公司的訂單，這家供應商展現很大的配合彈性，努力了解汽車公司的經營運作，安排即時就近提供零件的裝配線，甚至不時接受汽車公司的削價要求。供應商還鼓勵員工與汽車公司的員工接觸，雙方一起合組橄欖球隊，藉由練球培養更深厚的關係。 表面上看來，汽車公司似乎從這個親近的合作關係中獲得許多利益，但是事實上卻
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-08-08 08:24" pubdate>
+              2005-08-08
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BC%81%E7%AE%A1/" class="category-chain-item">企管</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/08/05/web-2-0-of-visual-development/" target="_self">
+          Web 2.0 of Visual development
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/08/05/web-2-0-of-visual-development/" target="_self">
+        <div>
+          Visual development has been a standard process for many professional web application development team. Since 1995, techniques and tools have been developed and been improved. We're in the process of t
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-08-05 14:28" pubdate>
+              2005-08-05
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/AJAX/" class="category-chain-item">AJAX</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/AJAX/dev/" class="category-chain-item">dev</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/AJAX/dev/Methodology/" class="category-chain-item">Methodology</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/development/">#development</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/08/04/internet-explorer-beta-sparks-frustration/" target="_self">
+          Internet Explorer Beta Sparks Frustration
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/08/04/internet-explorer-beta-sparks-frustration/" target="_self">
+        <div>
+          When Microsoft announced the release of Internet Explorer 7 beta last week, a week earlier than previously expected, developers were quick to express frustration that this was to be a closed beta, ope
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-08-04 08:36" pubdate>
+              2005-08-04
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Tech-News/" class="category-chain-item">Tech News</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/08/01/%E5%95%86%E6%A5%AD%E5%91%A8%E5%88%8A-82005-%E6%A8%99%E6%BA%96%E5%8C%96%E4%BD%9C%E6%A5%AD%E3%80%80%E8%B3%A3%E5%87%BA%E8%8A%92%E6%9E%9C%E5%9C%8B%E9%9A%9B%E7%AB%B6%E7%88%AD%E5%8A%9B-2/" target="_self">
+          商業周刊 8/2005 - 標準化作業　賣出芒果國際競爭力
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/08/01/%E5%95%86%E6%A5%AD%E5%91%A8%E5%88%8A-82005-%E6%A8%99%E6%BA%96%E5%8C%96%E4%BD%9C%E6%A5%AD%E3%80%80%E8%B3%A3%E5%87%BA%E8%8A%92%E6%9E%9C%E5%9C%8B%E9%9A%9B%E7%AB%B6%E7%88%AD%E5%8A%9B-2/" target="_self">
+        <div>
+          小果農變富果農的翻身傳奇 在台南玉井種「酸仔」的吳清進常說自己是靠土地的「做事人」，為了把芒果賣到日本，他和產銷班大膽卯起來做國際標準化作業。小農經濟翻身，就由農企業的產銷革命開始。文/吳錦勳 七月十三日下午，台南左鎮鄉杜普國際的蒸熱處理廠裡，日本農林水產省派來駐地檢疫官武石先生，抽樣幾箱愛文芒果，戴起手套，在強光下用放大鏡一顆顆檢視。 大家屏息以待，一會兒他指著手裡的芒果，說：「啊諾，這顆斑紋不
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-08-01 16:20" pubdate>
+              2005-08-01
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BC%81%E7%AE%A1/" class="category-chain-item">企管</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/07/31/%E7%94%A2%E5%93%81%E6%87%89%E8%A9%B2%E8%B3%A3%E5%A4%9A%E5%B0%91%E9%8C%A2-2/" target="_self">
+          產品應該賣多少錢
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/07/31/%E7%94%A2%E5%93%81%E6%87%89%E8%A9%B2%E8%B3%A3%E5%A4%9A%E5%B0%91%E9%8C%A2-2/" target="_self">
+        <div>
+          公司產品的售價標籤上，到底要填上什麼數字？這是企業經營中最關鍵的問題之一。許多研究證明，消費者的購買決定常是不理性的。在一個經典研究中，大多數的消費者表示，在購買十五美元的計算機時，若能省下五美元，他們願意多走二十分鐘的路，到比較遠的商店去買。但是如果是購買一二五美元的外套，大多數人卻不願意為了省五美元，多走二十分鐘的路。 提出行為經濟理論，獲得諾貝爾獎的芝加哥大學商學院教授賽勒（Richard
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-07-31 19:19" pubdate>
+              2005-07-31
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BC%81%E7%AE%A1/" class="category-chain-item">企管</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/07/31/%E5%8C%97%E5%B8%82%E9%A6%96%E5%AE%B6%E7%84%A1%E4%BA%BA%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%95%9F%E7%94%A8-%E8%B3%A3%E5%A0%B4%E6%96%B0%E9%BB%9E%E5%AD%90-%E8%A1%80%E6%8B%BC%E5%85%BC%E5%80%9F%E6%9B%B8/" target="_self">
+          北市首家無人圖書館啟用 賣場新點子 血拼兼借書
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/07/31/%E5%8C%97%E5%B8%82%E9%A6%96%E5%AE%B6%E7%84%A1%E4%BA%BA%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%95%9F%E7%94%A8-%E8%B3%A3%E5%A0%B4%E6%96%B0%E9%BB%9E%E5%AD%90-%E8%A1%80%E6%8B%BC%E5%85%BC%E5%80%9F%E6%9B%B8/" target="_self">
+        <div>
+          全國第一個「無人圖書館」今天上午正式啟用！台北市立圖書館與賣場業者合作，在內湖地區試辦無人圖書館，民眾逛街血拼可順便免費借閱1萬本新書，而且要借什麼書自己拿了自己刷卡，要還書只要丟回還書箱或放上還書架即可，非常方便。  台北市長馬英九上午為無人圖書館「站台」宣傳，市圖引進的「射頻辦識晶片」RFID系統，在每一本書封底貼上一張晶片，靠著晶片自動掃描就可完成借還書，對節省人力成本具高度效果，市圖規劃將
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-07-31 12:06" pubdate>
+              2005-07-31
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E8%81%9E/" class="category-chain-item">產業新聞</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/07/30/4%E6%88%90%E4%BB%A5%E4%B8%8A%E4%BC%81%E6%A5%AD%E8%AA%8D%E5%90%8C%E6%95%B8%E4%BD%8D%E5%AD%B8%E7%BF%92/" target="_self">
+          4成以上企業認同數位學習
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/07/30/4%E6%88%90%E4%BB%A5%E4%B8%8A%E4%BC%81%E6%A5%AD%E8%AA%8D%E5%90%8C%E6%95%B8%E4%BD%8D%E5%AD%B8%E7%BF%92/" target="_self">
+        <div>
+          文⊙楊惠芬 根據資策會教育訓練處所提供的資料顯示，2004年臺灣1000大製造業、500大服務業、100大金融業對於數位學習（e-Learning）的導入現況，目前已有40%以上的企業認同數位學習，而已經完成數位學習導入的比例則有20%～32%。仔細分析，可以發現在目前100大金融業的導入比例，已經達到28%，其他包括1000大製造業與500大服務業的導入比例分別達到17%、23%。 除此之外，正
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-07-30 08:54" pubdate>
+              2005-07-30
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E8%81%9E/" class="category-chain-item">產業新聞</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/07/30/2005%E8%87%BA%E7%81%A32000%E5%A4%A7%E4%BC%81%E6%A5%ADit%E6%8E%A1%E8%B3%BC%E5%A4%A7%E8%AA%BF%E6%9F%A5-%E9%9D%88%E6%B4%BB%E8%AD%B0%E5%83%B9%EF%BC%8C%E6%8A%8A%E9%8C%A2%E8%8A%B1%E5%9C%A8%E5%88%80/" target="_self">
+          2005臺灣2000大企業IT採購大調查 - 靈活議價，把錢花在刀口上
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/07/30/2005%E8%87%BA%E7%81%A32000%E5%A4%A7%E4%BC%81%E6%A5%ADit%E6%8E%A1%E8%B3%BC%E5%A4%A7%E8%AA%BF%E6%9F%A5-%E9%9D%88%E6%B4%BB%E8%AD%B0%E5%83%B9%EF%BC%8C%E6%8A%8A%E9%8C%A2%E8%8A%B1%E5%9C%A8%E5%88%80/" target="_self">
+        <div>
+          文⊙賴怡安 硬體議價有彈性，維修合約也能殺；專案導入花費大，維護合約一併談，了卻後顧之憂 IT預算該如何編列，一直都是身為IT主管必須要瞭解的主要業務之一，而除了如何編列預算是一項重要的任務之外，在因應企業的營運發展而需要為公司添購軟硬體設備時，所面對軟硬體廠商的報價，該如何為公司樽節IT預算，把錢花在刀口上，也是一個必須要懂得的工作技巧。 在本刊此次調查裡，關於IT預算的分配，在IT建設的維運、
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-07-30 08:50" pubdate>
+              2005-07-30
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E8%81%9E/" class="category-chain-item">產業新聞</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2005/07/27/yahoo%E5%A5%87%E6%91%A9%EF%BC%9A%E7%9F%A5%E8%AD%98%E6%90%9C%E5%B0%8B%E5%B0%87%E6%88%90%E7%82%BA%E6%90%9C%E5%B0%8B%E6%9C%8D%E5%8B%99%E4%B8%8B%E4%B8%80%E5%80%8B%E9%97%9C%E9%8D%B5%E6%87%89%E7%94%A8/" target="_self">
+          Yahoo!奇摩：知識搜尋將成為搜尋服務下一個關鍵應用
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2005/07/27/yahoo%E5%A5%87%E6%91%A9%EF%BC%9A%E7%9F%A5%E8%AD%98%E6%90%9C%E5%B0%8B%E5%B0%87%E6%88%90%E7%82%BA%E6%90%9C%E5%B0%8B%E6%9C%8D%E5%8B%99%E4%B8%8B%E4%B8%80%E5%80%8B%E9%97%9C%E9%8D%B5%E6%87%89%E7%94%A8/" target="_self">
+        <div>
+          入口網站Yahoo!奇摩將自今日（7/26）起為旗下的「Yahoo!奇摩知識+」進行大規模的曝光活動，電視廣告也將在今日登場。Yahoo!奇摩搜尋分類服務事業部總監黃蕙雯表示，知識搜尋將成為搜尋引擎服務中，繼網頁搜尋之後最重要的關鍵應用。 黃蕙雯表示，知識搜尋服務正在創造一個具備規模的新市場，此外，過去網友使用搜尋工具時，並沒有明顯的忠誠度，哪裡查得到資訊就到哪裡查，但知識搜尋服務卻創造了社群及黏
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2005-07-27 09:07" pubdate>
+              2005-07-27
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E7%9F%A5/" class="category-chain-item">產業新知</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/24/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/23/#board">23</a><a class="page-number" href="/page/24/#board">24</a><span class="page-number current">25</span><a class="page-number" href="/page/26/#board">26</a><a class="page-number" href="/page/27/#board">27</a><span class="space">&hellip;</span><a class="page-number" href="/page/31/#board">31</a><a class="extend next" rel="next" href="/page/26/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>

@@ -1,0 +1,946 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/22/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>mingster.com</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text=""></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2006/05/26/%E5%8F%B0%E4%B8%AD%E9%A6%99%E8%95%89%E6%96%B0%E6%A8%82%E5%9C%92/" target="_self">
+          台中香蕉新樂園
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2006/05/26/%E5%8F%B0%E4%B8%AD%E9%A6%99%E8%95%89%E6%96%B0%E6%A8%82%E5%9C%92/" target="_self">
+        <div>
+          台中香蕉新樂園這家茶館和餐廳 (http://www.vernaldew.com.tw/) 是台中市近來很少見最特別的店家之一，這整棟大型的建築物裡面包含了將60年至80年前的街道重新造景在裡面，有清朝及日據時代的店面，還有其中一位股東收集的數百件古董，包括了老舊的信箱、路牌、海報、四十年的計程車、腳踏車、相片以及設備齊全的寫真館、牙醫診所、甘仔店、理髮店、及電影院。 大約有250個座位可提供顧客
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2006-05-26 03:11" pubdate>
+              2006-05-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%9F%E6%B4%BBfun/" class="category-chain-item">生活fun</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E7%94%9F%E6%B4%BBfun/%E5%8F%B0%E7%81%A3fun/" class="category-chain-item">台灣fun</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2006/05/04/%E6%83%85%E6%84%9F%E7%9A%84%E8%A8%AD%E8%A8%88/" target="_self">
+          情感的設計
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2006/05/04/%E6%83%85%E6%84%9F%E7%9A%84%E8%A8%AD%E8%A8%88/" target="_self">
+        <div>
+          這幾年來，設計變成了一門顯學。不論是哪個產業，都開始強調設計的重要性。 看看這期IDEO公司的這篇文章，你會發現，設計絕對不像我們刻板印象中所想的一樣，只是視覺或美感的層次而已。 對全球設計界首屈一指的企業IDEO來說，設計是在為使用者解決背後隱藏的問題。這家公司創立十五年來，美國商業週刊的年度產品設計獎首獎，年年都由它包辦。 它把設計的重點從創造產品，擴大到創造經驗上。例如，美國一家醫院希望藉由
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2006-05-04 03:14" pubdate>
+              2006-05-04
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E7%9F%A5/" class="category-chain-item">產業新知</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E7%94%A2%E6%A5%AD%E6%96%B0%E7%9F%A5/%E4%BD%BF%E7%94%A8%E6%80%A7/" class="category-chain-item">使用性</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2006/04/25/2006425-%E3%80%8A%E6%96%B0%E8%81%9E%E5%81%B4%E5%AF%AB%E3%80%8B%E8%A8%B1%E5%8B%9D%E9%9B%84%E3%80%81%E9%99%B3%E6%B0%B8%E6%B3%B0-%E5%A5%BD%E7%AE%87%E6%82%A3%E9%9B%A3%E7%9C%9F%E6%83%85/" target="_self">
+          2006/4/25 《新聞側寫》許勝雄、陳永泰 好箇患難真情
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2006/04/25/2006425-%E3%80%8A%E6%96%B0%E8%81%9E%E5%81%B4%E5%AF%AB%E3%80%8B%E8%A8%B1%E5%8B%9D%E9%9B%84%E3%80%81%E9%99%B3%E6%B0%B8%E6%B3%B0-%E5%A5%BD%E7%AE%87%E6%82%A3%E9%9B%A3%E7%9C%9F%E6%83%85/" target="_self">
+        <div>
+          【2006.04.26工商時報】林淑惠/台北報導 四月初，許勝雄親自跑了一趟震旦大樓，在那裡，陳永泰跟許勝雄，這一對廿多年的老朋友，閒聊幾句，就敲定了這宗入股案。 對許勝雄來說，陳永泰是「廿多年的患難之友」，他以「牢不可破的患難真情」形容倆人的私交篤厚。 其實，中華電信在農曆年後閃電宣佈神腦及聯強成為今年的年度手機採購代理商之後，也宣佈了震旦的發展空間、將越走越小。原本還是中華電信三家代理商之一的
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2006-04-25 09:32" pubdate>
+              2006-04-25
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/IPTV/" class="category-chain-item">IPTV</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2006/04/11/what-is-a-permission-by-keith-brown/" target="_self">
+          What Is A Permission, by Keith Brown
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2006/04/11/what-is-a-permission-by-keith-brown/" target="_self">
+        <div>
+          http://www.pluralsight.com/wiki/default.aspx/Keith.GuideBook.WhatIsAPermission  Throughout my discussions of access control and ACLs in this book, I will often talk about permissions as numbers. For e
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2006-04-11 04:44" pubdate>
+              2006-04-11
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/dev/" class="category-chain-item">dev</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/development/">#development</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2006/04/06/%E7%BE%8E%E5%9C%8B%E5%AF%8C%E8%B1%AA%E5%94%90%E7%B4%8D%E5%B7%9D%E6%99%AE%E4%B8%80%E6%89%8B%E7%AD%96%E5%8A%83%E7%86%B1%E9%96%80%E7%9A%84%E7%9C%9F%E4%BA%BA%E5%AF%A6%E5%A2%83%E7%A7%80-apprentice/" target="_self">
+          美國富豪唐納川普一手策劃熱門的真人實境秀 - Apprentice (誰是接班人)
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2006/04/06/%E7%BE%8E%E5%9C%8B%E5%AF%8C%E8%B1%AA%E5%94%90%E7%B4%8D%E5%B7%9D%E6%99%AE%E4%B8%80%E6%89%8B%E7%AD%96%E5%8A%83%E7%86%B1%E9%96%80%E7%9A%84%E7%9C%9F%E4%BA%BA%E5%AF%A6%E5%A2%83%E7%A7%80-apprentice/" target="_self">
+        <div>
+          2004年美國最熱門的真人實境秀『誰是接班人』，是由經歷金融風暴又鹹魚翻身的美國富豪唐納川普所一手策劃的全新節目。在節目中，川普找來十六位參賽者，每週進行比賽。題目由全美五百大企業提供，包括從路邊賣檸檬汁到廣告企劃，非常多元。 比賽的方式十分簡單，十六位參賽者分成兩組，每星期要想辦法解決川普所出的難題，輸的一方要淘汰一名組員。最後勝利者，可以獲得任職於川普旗下公司的機會，而且年薪高達六位數美金。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2006-04-06 04:35" pubdate>
+              2006-04-06
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%9F%E6%B4%BBfun/" class="category-chain-item">生活fun</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E7%94%9F%E6%B4%BBfun/%E4%BC%81%E7%AE%A1/" class="category-chain-item">企管</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2006/03/13/problem-vs2005-the-current-identity-does-not-have-write-access-to-temporary-file/" target="_self">
+          Problem:: VS2005 - The current identity does not have write access to temporary file...
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2006/03/13/problem-vs2005-the-current-identity-does-not-have-write-access-to-temporary-file/" target="_self">
+        <div>
+          I finally powered up again with my newly purchased&nbsp;dual-core laptop, which also enables me to&nbsp;refresh software installations that I've been wanting to do for a long time.&nbsp; As I'm puttin
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2006-03-13 04:30" pubdate>
+              2006-03-13
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/NET/" class="category-chain-item">.NET</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/NET/dev-enviornment/" class="category-chain-item">dev enviornment</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Net/">#.Net</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2006/02/15/subversion-for-windows-%E5%AE%89%E8%A3%9D%E6%8C%87%E5%8D%97-3/" target="_self">
+          Subversion for Windows 安裝指南
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2006/02/15/subversion-for-windows-%E5%AE%89%E8%A3%9D%E6%8C%87%E5%8D%97-3/" target="_self">
+        <div>
+          PDF download: Subversion for Windows 安装指南 this post is an updated version from Huanlin Tsai's revision 1.41 (http://huanlin.dyndns.org:8080/techshare/articles/2004061303/svn_install.htm) 摘要： 版本控制在軟體工程
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2006-02-15 04:45" pubdate>
+              2006-02-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%A2%E6%A5%ADKnow-How/" class="category-chain-item">產業Know-How</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E7%94%A2%E6%A5%ADKnow-How/%E8%BB%9F%E9%AB%94%E6%96%B0%E7%9F%A5/" class="category-chain-item">軟體新知</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E7%94%A2%E6%A5%ADKnow-How/%E8%BB%9F%E9%AB%94%E6%96%B0%E7%9F%A5/SVN/" class="category-chain-item">SVN</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2006/02/15/scm-good-beginner-intro-in-chinese-by-jedi/" target="_self">
+          SCM: Good beginner intro in Chinese, by Jedi
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2006/02/15/scm-good-beginner-intro-in-chinese-by-jedi/" target="_self">
+        <div>
+          版本控制系統不祇可以幫助妳追蹤修訂手上的工作進度，讓妳在千鈞一髮之際還能拾回過往辛苦的結晶，甚至能夠讓妳跟其他人協同工作、合作無間。 一般人聽到「版本控制系統 (Version Control System, VCS) 」或者「修訂版控制系統 (Revision Control System, RCS) 」，總會覺得那是寫程式的怪物們纔會去用的東西、祇有程式碼纔會被放在那樣的環境裡開發。然而隨著資
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2006-02-15 04:34" pubdate>
+              2006-02-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%BB%9F%E9%AB%94%E5%B7%A5%E6%B3%95/" class="category-chain-item">軟體工法</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E8%BB%9F%E9%AB%94%E5%B7%A5%E6%B3%95/SVN/" class="category-chain-item">SVN</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2006/02/11/install-osx-tiger-on-intel-boxes-vmware-rocks/" target="_self">
+          Install OSX Tiger on Intel Boxes - VMWare rocks!
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2006/02/11/install-osx-tiger-on-intel-boxes-vmware-rocks/" target="_self">
+        <div>
+          Many of the guides for installing OSX Tiger are complicated and use linux. You can install OSX using public-domain free windows only tools. If you wish to install OSX tiger to your intel machine or us
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2006-02-11 04:26" pubdate>
+              2006-02-11
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/IT/" class="category-chain-item">IT</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2006/01/24/%E5%8D%81%E7%A8%AE%E4%B8%8D%E5%8F%AF%E8%BF%BD%E9%9A%A8%E7%9A%84%E9%A0%98%E8%A2%96-%E8%80%81%E9%97%86/" target="_self">
+          十種不可追隨的領袖 (老闆)
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2006/01/24/%E5%8D%81%E7%A8%AE%E4%B8%8D%E5%8F%AF%E8%BF%BD%E9%9A%A8%E7%9A%84%E9%A0%98%E8%A2%96-%E8%80%81%E9%97%86/" target="_self">
+        <div>
+          應徵工作時，固然老闆有權選擇夥計的權利。但千萬別忘記，夥計也有選擇老闆的權利。 一生當中，你我能有幾次錯誤的選擇呢？畢業後，若你遇人不淑，連續換了三、五個工作，成功的機會便已大為減低了。因此，慎選值得追隨的老闆，是一生當中少數幾個最重要的個人決策之一。 我們無法知道誰才是值得追隨的老闆，但卻有能力判斷誰是不值得追隨的老闆。以下列出的十種特質，可當做求職，或在職期間對老闆評估的參考。 1.【沒有成功
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2006-01-24 04:21" pubdate>
+              2006-01-24
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BC%81%E7%AE%A1/" class="category-chain-item">企管</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/21/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/#board">20</a><a class="page-number" href="/page/21/#board">21</a><span class="page-number current">22</span><a class="page-number" href="/page/23/#board">23</a><a class="page-number" href="/page/24/#board">24</a><span class="space">&hellip;</span><a class="page-number" href="/page/31/#board">31</a><a class="extend next" rel="next" href="/page/23/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
