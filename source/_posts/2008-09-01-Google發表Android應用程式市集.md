@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Google發表Android應用程式市集 -
+title: Google發表Android應用程式市集
 date: 2008-09-01 02:09:00.000000000 +08:00
 type: post
 published: true

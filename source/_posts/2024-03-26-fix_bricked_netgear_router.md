@@ -1,6 +1,6 @@
 ---
-title: Fix bricked Netgear router from macos
 layout: post
+title: Fix bricked Netgear router from macos
 date: 2024-03-26 23:19:41.000000000 +08:00
 type: post
 published: true

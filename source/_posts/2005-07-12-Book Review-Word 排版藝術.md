@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Book: Word 排版藝術'
+title: Book Review-Word 排版藝術
 date: 2005-07-12 12:33:00.000000000 +08:00
 type: post
 published: true

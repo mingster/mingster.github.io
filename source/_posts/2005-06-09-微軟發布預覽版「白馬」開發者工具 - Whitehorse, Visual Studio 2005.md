@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 微軟發布預覽版「白馬」開發者工具 - Whitehorse, Visual Studio 2005 Team Systm
+title: 微軟發布預覽版「白馬」開發者工具 - Whitehorse, Visual Studio 2005
 date: 2005-06-09 02:46:00.000000000 +08:00
 type: post
 published: true
@@ -17,6 +17,7 @@ meta:
   _wp_old_slug: '54'
 author: mingster
 ---
+
 <p>微軟公司26日發布預覽版的新開發者工具，目的在協助企業用戶加速建置客製化的網路應用程式。</p>
 <p>軟體巨人發布「社群技術預覽」版模組化工具(modeling tools)，昔日代稱「白馬」( Whitehorse)，日後會納入微軟為企業應用程式開發者設計的Visual Studio 2005 Team System。</p>
 <p>新的模型化工具讓開發者把網路應用程式視覺化，即用複雜的圖形代表軟體元件。微軟首席產品經理Prashant Sridharan說，此概念的用意，是讓開發者更容易洞悉程式內部組合的方式，以增進開發者的生產力並提昇軟體的品質。</p>
