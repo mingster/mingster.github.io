@@ -89,7 +89,11 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include: assets
+include:
+  # Include any file and subfolder in 'source/assets/'.
+  - "assets/**/*"
+  # Include any file and subfolder in 'source/assets/'.
+  - "img/**/*"
 exclude:
 ignore:
 
